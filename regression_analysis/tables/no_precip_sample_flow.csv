@@ -1,0 +1,7 @@
+﻿stage,all_flights,valid_arrivals,delayed_ge15,removed_all_from_previous,removed_main_from_previous
+all_input,7079060,6965246,1449966,0,0
+matched_weather_0_to_90_min,7055161,6941700,1445480,23899,23546
+three_weather_values_finite,7038088,6925683,1442027,17073,16017
+three_weather_quality_usable,7025181,6913364,1438497,12907,12319
+nonnegative_wind_visibility,7025181,6913364,1438497,0,0
+valid_controls_and_distance,7025181,6913364,1438497,0,0

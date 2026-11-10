@@ -1,0 +1,8 @@
+﻿stage,all_flights,valid_arrivals,delayed_ge15,severe_ge60,cancelled,diverted,removed_all_from_previous,removed_valid_arrivals_from_previous
+all_input,7079060,6965246,1449966,511633,96315,17499,0,0
+matched_weather_0_to_90_min,7055161,6941700,1445480,510018,96048,17413,23899,23546
+four_weather_values_finite,6405811,6302955,1309898,461186,87146,15710,649350,638745
+four_weather_quality_usable,6385872,6284029,1303570,458457,86214,15629,19939,18926
+precipitation_period_one_hour,6373724,6272073,1300994,457528,86066,15585,12148,11956
+nonnegative_wind_visibility_precipitation,6373724,6272073,1300994,457528,86066,15585,0,0
+valid_controls_and_distance,6373724,6272073,1300994,457528,86066,15585,0,0

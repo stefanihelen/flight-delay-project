@@ -1,0 +1,51 @@
+{
+  "n_airports": 348,
+  "coord_source": {
+    "mapping_reviewed": 348
+  },
+  "tz_success": 348,
+  "tz_fail": 0,
+  "tz_method_distribution": {
+    "timezonefinder": 348
+  },
+  "tz_unique_count": 22,
+  "gold_standard": [
+    {
+      "code": "JFK",
+      "expect": "America/New_York",
+      "got": "America/New_York",
+      "result": "PASS"
+    },
+    {
+      "code": "ORD",
+      "expect": "America/Chicago",
+      "got": "America/Chicago",
+      "result": "PASS"
+    },
+    {
+      "code": "LAX",
+      "expect": "America/Los_Angeles",
+      "got": "America/Los_Angeles",
+      "result": "PASS"
+    },
+    {
+      "code": "DEN",
+      "expect": "America/Denver",
+      "got": "America/Denver",
+      "result": "PASS"
+    },
+    {
+      "code": "PHX",
+      "expect": "America/Phoenix",
+      "got": "America/Phoenix",
+      "result": "PASS"
+    }
+  ],
+  "state_inside_polygon": 348,
+  "state_boundary_or_outside": 0,
+  "state_consistent": 345,
+  "state_inconsistent": 0,
+  "state_na": 3,
+  "bts_TT_count": 3,
+  "crs_note": "NAD83 (州界) 与 WGS84 (机场坐标) 均为十进制度，500k 比例尺下近似按同一经纬度处理，未做投影/基准转换"
+}

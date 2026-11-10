@@ -1,0 +1,227 @@
+{
+  "flight_total": 7079060,
+  "weather_match_status_counts": {
+    "matched": 7055161,
+    "no_obs_within_90": 18904,
+    "no_station_usable": 3023,
+    "no_station": 1972
+  },
+  "weather_match_status_pct": {
+    "matched": 99.662,
+    "no_obs_within_90": 0.267,
+    "no_station_usable": 0.043,
+    "no_station": 0.028
+  },
+  "airport_match_rate": {
+    "flights_with_usable_station": 7074065,
+    "pct": 99.929
+  },
+  "weather_match_rate_90min": {
+    "matched": 7055161,
+    "pct": 99.662
+  },
+  "weather_match_rate_60min": {
+    "matched_within_60": 7047642,
+    "pct": 99.556
+  },
+  "gap_minutes_distribution_matched_only": {
+    "min": 0.0,
+    "p10": 5.0,
+    "p25": 10.0,
+    "median": 25.0,
+    "p75": 42.0,
+    "p90": 52.0,
+    "max": 90.0
+  },
+  "gap_minutes_bins_pct": {
+    "0_30_min_pct": 57.558,
+    "30_60_min_pct": 42.336,
+    "60_90_min_pct": 0.107
+  },
+  "key_variable_missing_pct_in_matched": {
+    "temp_c_missing_pct": 0.129,
+    "vis_m_missing_pct": 0.025,
+    "wind_speed_kts_missing_pct": 0.113,
+    "precip_mm_missing_pct": 9.025
+  },
+  "quality_code_dist_in_matched": {
+    "temp_q": {
+      "5": 6662106,
+      "1": 347051,
+      "C": 20788,
+      "A": 9471,
+      "9": 9072,
+      "7": 4092,
+      "6": 2427,
+      "2": 114,
+      "P": 40
+    },
+    "vis_q": {
+      "5": 6693184,
+      "1": 342368,
+      "A": 11724,
+      "6": 4971,
+      "7": 1047,
+      "P": 1014,
+      "9": 853
+    },
+    "wind_speed_q": {
+      "5": 6702945,
+      "1": 342754,
+      "9": 7988,
+      "A": 777,
+      "6": 250,
+      "P": 248,
+      "U": 145,
+      "7": 25,
+      "I": 22,
+      "2": 7
+    },
+    "precip_q": {
+      "5": 6209831,
+      "NaN": 636167,
+      "1": 199467,
+      "6": 5852,
+      "P": 3194,
+      "9": 583,
+      "I": 66,
+      "2": 1
+    }
+  },
+  "timezone": {
+    "dep_utc_nat_count": 0,
+    "origin_tz_missing_rows": 0,
+    "ambiguous_fallback_rule": "夏令时回退夜(11月第一个周日 1:00-1:59 本地)按标准时间解释(ambiguous=False)"
+  },
+  "state_check": {
+    "consistent_rows": 7077837,
+    "inconsistent_rows": 1223,
+    "TT_origin_rows": 1223,
+    "note": "origin_polygon_state 取自 airport_state_check.csv 的 polygon_state 列；TT 三机场(GUM/PPG/SPN)为 BTS 领地代码，polygon 分别为 GU/AS/MP"
+  },
+  "observations_dedup": {
+    "before": 3905968,
+    "after": 3898753
+  },
+  "sample_verification": {
+    "timezone_cases": [
+      {
+        "airport": "JFK",
+        "local": "2024-01-09 09:00:00",
+        "tz": "America/New_York",
+        "got_utc": "2024-01-09 14:00",
+        "expected_utc": "2024-01-09 14:00",
+        "found": true,
+        "ok": true
+      },
+      {
+        "airport": "ORD",
+        "local": "2024-07-09 12:00:00",
+        "tz": "America/Chicago",
+        "got_utc": "2024-07-09 17:00",
+        "expected_utc": "2024-07-09 17:00",
+        "found": true,
+        "ok": true
+      },
+      {
+        "airport": "LAX",
+        "local": "2024-07-09 10:00:00",
+        "tz": "America/Los_Angeles",
+        "got_utc": "2024-07-09 17:00",
+        "expected_utc": "2024-07-09 17:00",
+        "found": true,
+        "ok": true
+      },
+      {
+        "airport": "PHX",
+        "local": "2024-07-09 10:00:00",
+        "tz": "America/Phoenix",
+        "got_utc": "2024-07-09 17:00",
+        "expected_utc": "2024-07-09 17:00",
+        "found": true,
+        "ok": true
+      },
+      {
+        "type": "2400_crossday",
+        "flight_id": "2024-03-08_HA_1004_HNL_LAX_2400",
+        "origin": "HNL",
+        "crs_dep_hhmm": 2400,
+        "sched_dep_local": "2024-03-09 00:00:00",
+        "tz": "Pacific/Honolulu",
+        "dep_utc": "2024-03-09 10:00:00"
+      },
+      {
+        "type": "early_morning_same_day",
+        "note": "crs_dep_hhmm<100 的凌晨时刻航班全年共12331条（如28=00:28），按当日00:xx处理，非2400跨日",
+        "flight_id": "2024-01-01_AA_154_DEN_MIA_0028",
+        "origin": "DEN",
+        "crs_dep_hhmm": 28,
+        "sched_dep_local": "2024-01-01 00:28:00",
+        "tz": "America/Denver",
+        "dep_utc": "2024-01-01 07:28:00"
+      }
+    ],
+    "weather_cases": [
+      {
+        "flight_id": "2024-01-08_9E_4801_LGA_OMA_0856",
+        "origin": "LGA",
+        "station": "72503014732",
+        "dep_utc": "2024-01-08 13:56:00",
+        "obs_utc": "2024-01-08 13:51:00",
+        "gap_minutes": 5.0,
+        "temp_c": 3.3,
+        "vis_m": 16093.0
+      },
+      {
+        "flight_id": "2024-01-09_9E_4801_LGA_OMA_0856",
+        "origin": "LGA",
+        "station": "72503014732",
+        "dep_utc": "2024-01-09 13:56:00",
+        "obs_utc": "2024-01-09 13:51:00",
+        "gap_minutes": 5.0,
+        "temp_c": 5.6,
+        "vis_m": 16093.0
+      },
+      {
+        "flight_id": "2024-01-10_9E_4801_LGA_OMA_0856",
+        "origin": "LGA",
+        "station": "72503014732",
+        "dep_utc": "2024-01-10 13:56:00",
+        "obs_utc": "2024-01-10 13:51:00",
+        "gap_minutes": 5.0,
+        "temp_c": 10.0,
+        "vis_m": 16093.0
+      },
+      {
+        "airport": "XWA",
+        "flights": 1972,
+        "status_counts": {
+          "no_station": 1972
+        },
+        "station_id": NaN
+      },
+      {
+        "airport": "SGU",
+        "flights": 3023,
+        "status_counts": {
+          "no_station_usable": 3023
+        },
+        "station_id": "72475423186"
+      },
+      {
+        "airport": "WYS",
+        "flights": 313,
+        "status_counts": {
+          "matched": 307,
+          "no_obs_within_90": 6
+        },
+        "station_id": "72676494163"
+      }
+    ]
+  },
+  "exceptions": {
+    "XWA_no_station": 1972,
+    "SGU_no_station_usable": 3023,
+    "WYS_partial_coverage_note": "WYS/72676494163 仅 2024-04-29~11-06 有观测，覆盖外时段自然落入 no_obs_within_90，不补造天气"
+  }
+}

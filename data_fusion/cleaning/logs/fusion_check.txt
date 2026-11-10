@@ -1,0 +1,57 @@
+==============================================================================
+04_fusion_weather.py  航班-天气融合（一行一班）
+==============================================================================
+
+[1] 读取输入 ...
+  BTS flights: (7079060, 20)
+  NOAA obs   : (3905968, 19)
+  tz=(348, 8), state_check=(348, 9), mapping=(348, 25), full346=(346, 25)
+
+[2] 关联时区、州界、站点映射 ...
+  origin_tz_iana 缺失行数: 0
+  origin_polygon_state 缺失行数: 0
+  station_id 缺失行数(XWA): 1972
+  有可用站点(在346清单内)航班: 7074065
+  无站点(XWA)航班: 1972
+  有站点但不在346清单(SGU)航班: 3023
+    -> 不在346清单的机场: ['SGU']
+    -> 无站点机场: ['XWA']
+
+[3] 时区转换 sched_dep_local -> dep_utc ...
+  dep_utc 为 NaT 的行数: 0
+
+[4] NOAA 观测按 (station_id, obs_utc) 去重，优先 FM-15 ...
+  去重前 3905968 -> 去重后 3898753（移除 7215 条重复时刻）
+
+[5] merge_asof 天气匹配 ...
+  参与 asof 匹配的航班: 7074065
+
+[6] 硬校验 ...
+  最终行数: 7079060
+  flight_id 唯一: True
+  写出 parquet: C:\Users\houchangjie\Desktop\大数据\新建文件夹\flight_delay_project\data\integrated\flights_weather_2024.parquet  shape=(7079060, 44)
+  写出样本CSV: C:\Users\houchangjie\Desktop\大数据\新建文件夹\flight_delay_project\data\integrated\flights_weather_2024_sample.csv  shape=(20000, 44)（前20,000行，仅查看样本非全量）
+
+[7] 抽样核验 ...
+  [TZ OK] JFK冬季EST: JFK local=2024-01-09 09:00:00 tz=America/New_York -> utc=2024-01-09 14:00  (期望 2024-01-09 14:00)
+  [TZ OK] ORD夏季CDT: ORD local=2024-07-09 12:00:00 tz=America/Chicago -> utc=2024-07-09 17:00  (期望 2024-07-09 17:00)
+  [TZ OK] LAX夏季PDT: LAX local=2024-07-09 10:00:00 tz=America/Los_Angeles -> utc=2024-07-09 17:00  (期望 2024-07-09 17:00)
+  [TZ OK] PHX无DST MST: PHX local=2024-07-09 10:00:00 tz=America/Phoenix -> utc=2024-07-09 17:00  (期望 2024-07-09 17:00)
+  [2400跨日样例] flight_id=2024-01-01_AA_154_DEN_MIA_0028 origin=DEN crs_dep_hhmm=28 sched_dep_local=2024-01-01 00:28:00 tz=America/Denver dep_utc=2024-01-01 07:28:00
+  天气匹配抽样:
+    2024-01-08_9E_4801_LGA_OMA_0856 origin=LGA station=72503014732 dep_utc=2024-01-08 13:56:00 obs_utc=2024-01-08 13:51:00 gap=5.0min temp=3.3 vis=16093.0
+    2024-01-09_9E_4801_LGA_OMA_0856 origin=LGA station=72503014732 dep_utc=2024-01-09 13:56:00 obs_utc=2024-01-09 13:51:00 gap=5.0min temp=5.6 vis=16093.0
+    2024-01-10_9E_4801_LGA_OMA_0856 origin=LGA station=72503014732 dep_utc=2024-01-10 13:56:00 obs_utc=2024-01-10 13:51:00 gap=5.0min temp=10.0 vis=16093.0
+    XWA: 1972 班, status分布={'no_station': 1972}, station_id=nan
+    SGU: 3023 班, status分布={'no_station_usable': 3023}, station_id=72475423186
+    WYS: 313 班, status分布={'matched': 307, 'no_obs_within_90': 6}, station_id=72676494163
+
+[8] 计算统计 ...
+  写出统计: C:\Users\houchangjie\Desktop\大数据\新建文件夹\flight_delay_project\data\integrated\fusion_stats.json
+
+[9] 自检：重读主 parquet ...
+  重读 shape: (7079060, 44)
+  flight_id 唯一: True
+  weather_match_status 分布: {'matched': 7055161, 'no_obs_within_90': 18904, 'no_station_usable': 3023, 'no_station': 1972}
+  列数: 44
+  样例首行: {'flight_id': '2024-01-08_9E_4801_LGA_OMA_0856', 'origin': 'LGA', 'dep_utc': Timestamp('2024-01-08 13:56:00'), 'weather_match_status': 'matched', 'weather_gap_minutes': 5.0}

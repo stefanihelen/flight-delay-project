@@ -1,0 +1,416 @@
+{
+  "source": "U.S. Census Bureau",
+  "dataset": "2024 State and Equivalent Entities 1:500,000",
+  "download_url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_500k.zip",
+  "filename": "cb_2024_us_state_500k.zip",
+  "zip_bytes": 3242450,
+  "sha256": "3e81cbb6cf5f60d9b01ef3e730afa14d61ce5f784252a0b33a696135e71447bc",
+  "zip_crc_check": "passed",
+  "archive_files": [
+    {
+      "filename": "cb_2024_us_state_500k.shp.ea.iso.xml",
+      "uncompressed_bytes": 16129,
+      "compressed_bytes": 2102,
+      "crc32": "a012138d"
+    },
+    {
+      "filename": "cb_2024_us_state_500k.shp.iso.xml",
+      "uncompressed_bytes": 44850,
+      "compressed_bytes": 6365,
+      "crc32": "22cbfb5f"
+    },
+    {
+      "filename": "cb_2024_us_state_500k.shp",
+      "uncompressed_bytes": 4580008,
+      "compressed_bytes": 3229917,
+      "crc32": "efa31a83"
+    },
+    {
+      "filename": "cb_2024_us_state_500k.shx",
+      "uncompressed_bytes": 548,
+      "compressed_bytes": 448,
+      "crc32": "70f7fded"
+    },
+    {
+      "filename": "cb_2024_us_state_500k.dbf",
+      "uncompressed_bytes": 9058,
+      "compressed_bytes": 2174,
+      "crc32": "077857cb"
+    },
+    {
+      "filename": "cb_2024_us_state_500k.prj",
+      "uncompressed_bytes": 165,
+      "compressed_bytes": 133,
+      "crc32": "aa147e60"
+    },
+    {
+      "filename": "cb_2024_us_state_500k.cpg",
+      "uncompressed_bytes": 5,
+      "compressed_bytes": 5,
+      "crc32": "0e813c50"
+    }
+  ],
+  "dbf_declared_records": 56,
+  "active_records": 56,
+  "deleted_records": 0,
+  "shx_index_records": 56,
+  "dbf_fields": [
+    "STATEFP",
+    "STATENS",
+    "GEOIDFQ",
+    "GEOID",
+    "STUSPS",
+    "NAME",
+    "LSAD",
+    "ALAND",
+    "AWATER"
+  ],
+  "shape_type": 5,
+  "bounds": [
+    -179.146711,
+    -14.548699,
+    179.77847,
+    71.387815
+  ],
+  "projection_wkt": "GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137,298.257222101]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]]",
+  "states": [
+    {
+      "STATEFP": "35",
+      "STUSPS": "NM",
+      "NAME": "New Mexico",
+      "GEOID": "35"
+    },
+    {
+      "STATEFP": "46",
+      "STUSPS": "SD",
+      "NAME": "South Dakota",
+      "GEOID": "46"
+    },
+    {
+      "STATEFP": "06",
+      "STUSPS": "CA",
+      "NAME": "California",
+      "GEOID": "06"
+    },
+    {
+      "STATEFP": "21",
+      "STUSPS": "KY",
+      "NAME": "Kentucky",
+      "GEOID": "21"
+    },
+    {
+      "STATEFP": "01",
+      "STUSPS": "AL",
+      "NAME": "Alabama",
+      "GEOID": "01"
+    },
+    {
+      "STATEFP": "13",
+      "STUSPS": "GA",
+      "NAME": "Georgia",
+      "GEOID": "13"
+    },
+    {
+      "STATEFP": "05",
+      "STUSPS": "AR",
+      "NAME": "Arkansas",
+      "GEOID": "05"
+    },
+    {
+      "STATEFP": "42",
+      "STUSPS": "PA",
+      "NAME": "Pennsylvania",
+      "GEOID": "42"
+    },
+    {
+      "STATEFP": "29",
+      "STUSPS": "MO",
+      "NAME": "Missouri",
+      "GEOID": "29"
+    },
+    {
+      "STATEFP": "08",
+      "STUSPS": "CO",
+      "NAME": "Colorado",
+      "GEOID": "08"
+    },
+    {
+      "STATEFP": "49",
+      "STUSPS": "UT",
+      "NAME": "Utah",
+      "GEOID": "49"
+    },
+    {
+      "STATEFP": "40",
+      "STUSPS": "OK",
+      "NAME": "Oklahoma",
+      "GEOID": "40"
+    },
+    {
+      "STATEFP": "47",
+      "STUSPS": "TN",
+      "NAME": "Tennessee",
+      "GEOID": "47"
+    },
+    {
+      "STATEFP": "56",
+      "STUSPS": "WY",
+      "NAME": "Wyoming",
+      "GEOID": "56"
+    },
+    {
+      "STATEFP": "18",
+      "STUSPS": "IN",
+      "NAME": "Indiana",
+      "GEOID": "18"
+    },
+    {
+      "STATEFP": "25",
+      "STUSPS": "MA",
+      "NAME": "Massachusetts",
+      "GEOID": "25"
+    },
+    {
+      "STATEFP": "16",
+      "STUSPS": "ID",
+      "NAME": "Idaho",
+      "GEOID": "16"
+    },
+    {
+      "STATEFP": "02",
+      "STUSPS": "AK",
+      "NAME": "Alaska",
+      "GEOID": "02"
+    },
+    {
+      "STATEFP": "32",
+      "STUSPS": "NV",
+      "NAME": "Nevada",
+      "GEOID": "32"
+    },
+    {
+      "STATEFP": "17",
+      "STUSPS": "IL",
+      "NAME": "Illinois",
+      "GEOID": "17"
+    },
+    {
+      "STATEFP": "50",
+      "STUSPS": "VT",
+      "NAME": "Vermont",
+      "GEOID": "50"
+    },
+    {
+      "STATEFP": "27",
+      "STUSPS": "MN",
+      "NAME": "Minnesota",
+      "GEOID": "27"
+    },
+    {
+      "STATEFP": "38",
+      "STUSPS": "ND",
+      "NAME": "North Dakota",
+      "GEOID": "38"
+    },
+    {
+      "STATEFP": "19",
+      "STUSPS": "IA",
+      "NAME": "Iowa",
+      "GEOID": "19"
+    },
+    {
+      "STATEFP": "33",
+      "STUSPS": "NH",
+      "NAME": "New Hampshire",
+      "GEOID": "33"
+    },
+    {
+      "STATEFP": "10",
+      "STUSPS": "DE",
+      "NAME": "Delaware",
+      "GEOID": "10"
+    },
+    {
+      "STATEFP": "11",
+      "STUSPS": "DC",
+      "NAME": "District of Columbia",
+      "GEOID": "11"
+    },
+    {
+      "STATEFP": "66",
+      "STUSPS": "GU",
+      "NAME": "Guam",
+      "GEOID": "66"
+    },
+    {
+      "STATEFP": "60",
+      "STUSPS": "AS",
+      "NAME": "American Samoa",
+      "GEOID": "60"
+    },
+    {
+      "STATEFP": "09",
+      "STUSPS": "CT",
+      "NAME": "Connecticut",
+      "GEOID": "09"
+    },
+    {
+      "STATEFP": "30",
+      "STUSPS": "MT",
+      "NAME": "Montana",
+      "GEOID": "30"
+    },
+    {
+      "STATEFP": "04",
+      "STUSPS": "AZ",
+      "NAME": "Arizona",
+      "GEOID": "04"
+    },
+    {
+      "STATEFP": "31",
+      "STUSPS": "NE",
+      "NAME": "Nebraska",
+      "GEOID": "31"
+    },
+    {
+      "STATEFP": "53",
+      "STUSPS": "WA",
+      "NAME": "Washington",
+      "GEOID": "53"
+    },
+    {
+      "STATEFP": "72",
+      "STUSPS": "PR",
+      "NAME": "Puerto Rico",
+      "GEOID": "72"
+    },
+    {
+      "STATEFP": "48",
+      "STUSPS": "TX",
+      "NAME": "Texas",
+      "GEOID": "48"
+    },
+    {
+      "STATEFP": "39",
+      "STUSPS": "OH",
+      "NAME": "Ohio",
+      "GEOID": "39"
+    },
+    {
+      "STATEFP": "55",
+      "STUSPS": "WI",
+      "NAME": "Wisconsin",
+      "GEOID": "55"
+    },
+    {
+      "STATEFP": "41",
+      "STUSPS": "OR",
+      "NAME": "Oregon",
+      "GEOID": "41"
+    },
+    {
+      "STATEFP": "28",
+      "STUSPS": "MS",
+      "NAME": "Mississippi",
+      "GEOID": "28"
+    },
+    {
+      "STATEFP": "37",
+      "STUSPS": "NC",
+      "NAME": "North Carolina",
+      "GEOID": "37"
+    },
+    {
+      "STATEFP": "51",
+      "STUSPS": "VA",
+      "NAME": "Virginia",
+      "GEOID": "51"
+    },
+    {
+      "STATEFP": "54",
+      "STUSPS": "WV",
+      "NAME": "West Virginia",
+      "GEOID": "54"
+    },
+    {
+      "STATEFP": "22",
+      "STUSPS": "LA",
+      "NAME": "Louisiana",
+      "GEOID": "22"
+    },
+    {
+      "STATEFP": "36",
+      "STUSPS": "NY",
+      "NAME": "New York",
+      "GEOID": "36"
+    },
+    {
+      "STATEFP": "26",
+      "STUSPS": "MI",
+      "NAME": "Michigan",
+      "GEOID": "26"
+    },
+    {
+      "STATEFP": "20",
+      "STUSPS": "KS",
+      "NAME": "Kansas",
+      "GEOID": "20"
+    },
+    {
+      "STATEFP": "12",
+      "STUSPS": "FL",
+      "NAME": "Florida",
+      "GEOID": "12"
+    },
+    {
+      "STATEFP": "78",
+      "STUSPS": "VI",
+      "NAME": "United States Virgin Islands",
+      "GEOID": "78"
+    },
+    {
+      "STATEFP": "34",
+      "STUSPS": "NJ",
+      "NAME": "New Jersey",
+      "GEOID": "34"
+    },
+    {
+      "STATEFP": "24",
+      "STUSPS": "MD",
+      "NAME": "Maryland",
+      "GEOID": "24"
+    },
+    {
+      "STATEFP": "45",
+      "STUSPS": "SC",
+      "NAME": "South Carolina",
+      "GEOID": "45"
+    },
+    {
+      "STATEFP": "23",
+      "STUSPS": "ME",
+      "NAME": "Maine",
+      "GEOID": "23"
+    },
+    {
+      "STATEFP": "15",
+      "STUSPS": "HI",
+      "NAME": "Hawaii",
+      "GEOID": "15"
+    },
+    {
+      "STATEFP": "69",
+      "STUSPS": "MP",
+      "NAME": "Commonwealth of the Northern Mariana Islands",
+      "GEOID": "69"
+    },
+    {
+      "STATEFP": "44",
+      "STUSPS": "RI",
+      "NAME": "Rhode Island",
+      "GEOID": "44"
+    }
+  ],
+  "checked_at_utc": "2026-10-29T09:28:47.913182+00:00",
+  "downloaded_at": null
+}

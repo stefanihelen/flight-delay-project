@@ -1,0 +1,310 @@
+{
+  "status": "passed",
+  "started_at": "2026-11-07T22:56:11.815291+08:00",
+  "completed_at": "2026-11-07T22:56:40.873510+08:00",
+  "input": "C:\\Users\\lenovo\\Documents\\Codex\\2026-11-07\\new-chat\\work\\member2\\data\\integrated\\flights_weather_2024.parquet",
+  "input_sha256": "7eb3dc4b1eceaf994207717f3460f6df7d0a519c21b3f4ecb2f9654d592f610b",
+  "input_rows": 7079060,
+  "output": "C:\\Users\\lenovo\\Documents\\Codex\\2026-11-07\\new-chat\\work\\model_data_no_precip.csv",
+  "output_rows": 7025181,
+  "output_columns": [
+    "date_id",
+    "month",
+    "weekday",
+    "hour",
+    "origin",
+    "dest",
+    "airline",
+    "station",
+    "route",
+    "distance_log",
+    "temp10",
+    "temp10sq",
+    "wind",
+    "vis",
+    "rain",
+    "strict_q",
+    "within60",
+    "y_delay",
+    "y_severe",
+    "y_disrupt"
+  ],
+  "expanded_main_arrivals": 6913364,
+  "expanded_main_delayed": 1438497,
+  "reconciled_original_all": 6373724,
+  "reconciled_original_main": 6272073,
+  "sample_flow": [
+    {
+      "stage": "all_input",
+      "all_flights": 7079060,
+      "valid_arrivals": 6965246,
+      "delayed_ge15": 1449966,
+      "removed_all_from_previous": 0,
+      "removed_main_from_previous": 0
+    },
+    {
+      "stage": "matched_weather_0_to_90_min",
+      "all_flights": 7055161,
+      "valid_arrivals": 6941700,
+      "delayed_ge15": 1445480,
+      "removed_all_from_previous": 23899,
+      "removed_main_from_previous": 23546
+    },
+    {
+      "stage": "three_weather_values_finite",
+      "all_flights": 7038088,
+      "valid_arrivals": 6925683,
+      "delayed_ge15": 1442027,
+      "removed_all_from_previous": 17073,
+      "removed_main_from_previous": 16017
+    },
+    {
+      "stage": "three_weather_quality_usable",
+      "all_flights": 7025181,
+      "valid_arrivals": 6913364,
+      "delayed_ge15": 1438497,
+      "removed_all_from_previous": 12907,
+      "removed_main_from_previous": 12319
+    },
+    {
+      "stage": "nonnegative_wind_visibility",
+      "all_flights": 7025181,
+      "valid_arrivals": 6913364,
+      "delayed_ge15": 1438497,
+      "removed_all_from_previous": 0,
+      "removed_main_from_previous": 0
+    },
+    {
+      "stage": "valid_controls_and_distance",
+      "all_flights": 7025181,
+      "valid_arrivals": 6913364,
+      "delayed_ge15": 1438497,
+      "removed_all_from_previous": 0,
+      "removed_main_from_previous": 0
+    }
+  ],
+  "sample_by_month": [
+    {
+      "month": 1,
+      "all_input": 547271,
+      "valid_arrivals_input": 525370,
+      "matched_all": 546684,
+      "precip_nonfinite_matched_all": 33451,
+      "expanded_all_outcomes": 543821,
+      "expanded_main_arrivals": 522059,
+      "expanded_main_delayed": 125750,
+      "original_precip_eligible_main": 489287,
+      "additional_main_without_precip_filter": 32772,
+      "precip_nonfinite_expanded_main": 31617,
+      "expanded_main_retention": 0.993697774901498,
+      "original_main_retention": 0.9313188800274093
+    },
+    {
+      "month": 2,
+      "all_input": 519221,
+      "valid_arrivals_input": 515269,
+      "matched_all": 518634,
+      "precip_nonfinite_matched_all": 22790,
+      "expanded_all_outcomes": 514407,
+      "expanded_main_arrivals": 510496,
+      "expanded_main_delayed": 81168,
+      "original_precip_eligible_main": 487912,
+      "additional_main_without_precip_filter": 22584,
+      "precip_nonfinite_expanded_main": 21519,
+      "expanded_main_retention": 0.9907368772427606,
+      "original_main_retention": 0.9469073435428873
+    },
+    {
+      "month": 3,
+      "all_input": 591767,
+      "valid_arrivals_input": 585413,
+      "matched_all": 589979,
+      "precip_nonfinite_matched_all": 34543,
+      "expanded_all_outcomes": 588680,
+      "expanded_main_arrivals": 582401,
+      "expanded_main_delayed": 121389,
+      "original_precip_eligible_main": 547395,
+      "additional_main_without_precip_filter": 35006,
+      "precip_nonfinite_expanded_main": 33782,
+      "expanded_main_retention": 0.9948549143937698,
+      "original_main_retention": 0.93505781388524
+    },
+    {
+      "month": 4,
+      "all_input": 582185,
+      "valid_arrivals_input": 576915,
+      "matched_all": 579708,
+      "precip_nonfinite_matched_all": 65439,
+      "expanded_all_outcomes": 578144,
+      "expanded_main_arrivals": 572920,
+      "expanded_main_delayed": 109171,
+      "original_precip_eligible_main": 505694,
+      "additional_main_without_precip_filter": 67226,
+      "precip_nonfinite_expanded_main": 64238,
+      "expanded_main_retention": 0.9930752363866427,
+      "original_main_retention": 0.8765485383462035
+    },
+    {
+      "month": 5,
+      "all_input": 609743,
+      "valid_arrivals_input": 599226,
+      "matched_all": 608757,
+      "precip_nonfinite_matched_all": 39015,
+      "expanded_all_outcomes": 607055,
+      "expanded_main_arrivals": 596608,
+      "expanded_main_delayed": 157598,
+      "original_precip_eligible_main": 557648,
+      "additional_main_without_precip_filter": 38960,
+      "precip_nonfinite_expanded_main": 37523,
+      "expanded_main_retention": 0.9956310306962648,
+      "original_main_retention": 0.9306138251677998
+    },
+    {
+      "month": 6,
+      "all_input": 611132,
+      "valid_arrivals_input": 601272,
+      "matched_all": 610518,
+      "precip_nonfinite_matched_all": 29864,
+      "expanded_all_outcomes": 608963,
+      "expanded_main_arrivals": 599169,
+      "expanded_main_delayed": 149381,
+      "original_precip_eligible_main": 569124,
+      "additional_main_without_precip_filter": 30045,
+      "precip_nonfinite_expanded_main": 28970,
+      "expanded_main_retention": 0.9965024148804534,
+      "original_main_retention": 0.9465333492994851
+    },
+    {
+      "month": 7,
+      "all_input": 634613,
+      "valid_arrivals_input": 613938,
+      "matched_all": 632585,
+      "precip_nonfinite_matched_all": 34039,
+      "expanded_all_outcomes": 631112,
+      "expanded_main_arrivals": 610546,
+      "expanded_main_delayed": 180826,
+      "original_precip_eligible_main": 576853,
+      "additional_main_without_precip_filter": 33693,
+      "precip_nonfinite_expanded_main": 32581,
+      "expanded_main_retention": 0.9944750121347758,
+      "original_main_retention": 0.9395948776586561
+    },
+    {
+      "month": 8,
+      "all_input": 619024,
+      "valid_arrivals_input": 604302,
+      "matched_all": 618325,
+      "precip_nonfinite_matched_all": 30967,
+      "expanded_all_outcomes": 617052,
+      "expanded_main_arrivals": 602425,
+      "expanded_main_delayed": 141238,
+      "original_precip_eligible_main": 571348,
+      "additional_main_without_precip_filter": 31077,
+      "precip_nonfinite_expanded_main": 29900,
+      "expanded_main_retention": 0.9968939371373916,
+      "original_main_retention": 0.9454676635192337
+    },
+    {
+      "month": 9,
+      "all_input": 582622,
+      "valid_arrivals_input": 578262,
+      "matched_all": 581643,
+      "precip_nonfinite_matched_all": 33778,
+      "expanded_all_outcomes": 580207,
+      "expanded_main_arrivals": 576027,
+      "expanded_main_delayed": 89303,
+      "original_precip_eligible_main": 541917,
+      "additional_main_without_precip_filter": 34110,
+      "precip_nonfinite_expanded_main": 33269,
+      "expanded_main_retention": 0.9961349699617128,
+      "original_main_retention": 0.9371478672297332
+    },
+    {
+      "month": 10,
+      "all_input": 615497,
+      "valid_arrivals_input": 608514,
+      "matched_all": 614698,
+      "precip_nonfinite_matched_all": 27906,
+      "expanded_all_outcomes": 610488,
+      "expanded_main_arrivals": 604380,
+      "expanded_main_delayed": 79741,
+      "original_precip_eligible_main": 577275,
+      "additional_main_without_precip_filter": 27105,
+      "precip_nonfinite_expanded_main": 26836,
+      "expanded_main_retention": 0.9932064011674341,
+      "original_main_retention": 0.9486634654256105
+    },
+    {
+      "month": 11,
+      "all_input": 575404,
+      "valid_arrivals_input": 571933,
+      "matched_all": 573365,
+      "precip_nonfinite_matched_all": 51464,
+      "expanded_all_outcomes": 569669,
+      "expanded_main_arrivals": 566345,
+      "expanded_main_delayed": 82528,
+      "original_precip_eligible_main": 514997,
+      "additional_main_without_precip_filter": 51348,
+      "precip_nonfinite_expanded_main": 50201,
+      "expanded_main_retention": 0.9902296247987089,
+      "original_main_retention": 0.90044987787031
+    },
+    {
+      "month": 12,
+      "all_input": 590581,
+      "valid_arrivals_input": 584832,
+      "matched_all": 580265,
+      "precip_nonfinite_matched_all": 233494,
+      "expanded_all_outcomes": 575583,
+      "expanded_main_arrivals": 569988,
+      "expanded_main_delayed": 120404,
+      "original_precip_eligible_main": 332623,
+      "additional_main_without_precip_filter": 237365,
+      "precip_nonfinite_expanded_main": 230383,
+      "expanded_main_retention": 0.9746183519369666,
+      "original_main_retention": 0.568749658021449
+    }
+  ],
+  "category_counts": {
+    "wind": {
+      "0": 1812659,
+      "1": 3534794,
+      "2": 1565955,
+      "3": 111773
+    },
+    "vis": {
+      "0": 6568760,
+      "1": 209063,
+      "2": 198612,
+      "3": 48746
+    },
+    "strict_q": {
+      "0": 42391,
+      "1": 6982790
+    },
+    "within60": {
+      "0": 7462,
+      "1": 7017719
+    },
+    "y_delay": {
+      "-1": 111817,
+      "0": 5474867,
+      "1": 1438497
+    },
+    "y_severe": {
+      "-1": 111817,
+      "0": 6406108,
+      "1": 507256
+    },
+    "y_disrupt": {
+      "0": 5474867,
+      "1": 1550314
+    }
+  },
+  "weather_filter": "Finite temperature, wind, visibility; all three accepted quality codes in 0,1,4,5,A,C; nonnegative wind and visibility; matched observation 0–90 minutes before scheduled departure; positive distance and valid controls.",
+  "precipitation_filter": "NONE: neither value completeness, quality code, nor accumulation-period restriction is imposed.",
+  "rain_column": "CONSTANT ZERO PLACEHOLDER, not observed no precipitation. MUST BE EXCLUDED FROM ALL EXPANDED MODEL FORMULAS.",
+  "strict_q": "All THREE included weather-element quality codes are in 1,5; differs from four-element strict_q in original CSV.",
+  "source_checks": "SHA256 equals original preprocessed file. Full ID uniqueness and timestamp consistency checks are recorded in data_audit.json for this identical source; not rerun here.",
+  "comparison_logic": "Compare no-precipitation formula on original vs expanded cohorts to isolate sample-composition differences; compare with-vs-without precipitation on original cohort to isolate specification differences. This does not identify missing-data causal effects."
+}

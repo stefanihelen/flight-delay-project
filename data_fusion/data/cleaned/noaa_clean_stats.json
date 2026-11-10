@@ -1,0 +1,5272 @@
+{
+  "station_count": 346,
+  "official_list_size": 346,
+  "missing_files": [],
+  "skipped_sgu": [
+    "72475423186"
+  ],
+  "n_raw_all_report_types": 4529560,
+  "n_after_type_filter_fm15_fm16": 3905968,
+  "n_fm15_raw": 3204352,
+  "n_fm16_raw": 701616,
+  "n_duplicates_removed": 0,
+  "n_cleaned_final": 3905968,
+  "rtype_counts_global": {
+    "FM-15": 3204352,
+    "FM-12": 483321,
+    "FM-16": 701616,
+    "SOD": 119322,
+    "SOM": 3504,
+    "SY-MT": 2233,
+    "SHEF": 6893,
+    "MESOW": 8,
+    "FM-13": 8311
+  },
+  "missing_rate": {
+    "temp_c": 0.004576586392924878,
+    "dew_c": 0.007091711964870168,
+    "slp_hpa": 0.27012766105610697,
+    "wind_dir_deg": 0.18178976376662584,
+    "wind_speed_kts": 0.005633942725593246,
+    "vis_m": 0.0019273071361567734,
+    "precip_mm": 0.2550461242898047
+  },
+  "quality_code_dist": {
+    "temp_q": {
+      "5": 3544237,
+      "1": 225485,
+      "C": 105510,
+      "9": 17876,
+      "A": 7575,
+      "7": 2556,
+      "6": 2534,
+      "2": 167,
+      "P": 28
+    },
+    "dew_q": {
+      "5": 3537673,
+      "1": 224836,
+      "C": 105428,
+      "9": 27700,
+      "A": 6810,
+      "7": 2549,
+      "6": 853,
+      "2": 102,
+      "P": 17
+    },
+    "slp_q": {
+      "5": 2701767,
+      "9": 1055110,
+      "1": 148010,
+      "6": 694,
+      "2": 387
+    },
+    "wind_speed_q": {
+      "5": 3669474,
+      "1": 212952,
+      "9": 22006,
+      "A": 616,
+      "P": 373,
+      "6": 340,
+      "U": 109,
+      "7": 74,
+      "I": 19,
+      "2": 5
+    },
+    "vis_q": {
+      "5": 3674586,
+      "1": 212958,
+      "A": 5135,
+      "9": 4833,
+      "7": 4311,
+      "6": 2811,
+      "P": 1334
+    },
+    "precip_q": {
+      "5": 2595975,
+      "nan": 994879,
+      "1": 307175,
+      "6": 3886,
+      "P": 2629,
+      "9": 1323,
+      "I": 93,
+      "2": 5,
+      "7": 3
+    }
+  },
+  "per_station": [
+    {
+      "station_id": "72219013874",
+      "n_raw": 13448,
+      "rtype_counts": {
+        "FM-15": 8773,
+        "FM-12": 2773,
+        "FM-16": 1516,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 8
+      },
+      "n_after_type_filter": 10289,
+      "n_bad_date": 0,
+      "n_after_dedup": 10289,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72259003927",
+      "n_raw": 13458,
+      "rtype_counts": {
+        "FM-15": 8765,
+        "FM-12": 2765,
+        "FM-16": 1538,
+        "SOD": 366,
+        "SY-MT": 13,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10303,
+      "n_bad_date": 0,
+      "n_after_dedup": 10303,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72565003017",
+      "n_raw": 13421,
+      "rtype_counts": {
+        "FM-15": 8763,
+        "FM-12": 2770,
+        "FM-16": 1500,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 10263,
+      "n_bad_date": 0,
+      "n_after_dedup": 10263,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72530094846",
+      "n_raw": 14041,
+      "rtype_counts": {
+        "FM-15": 8756,
+        "FM-12": 2766,
+        "FM-16": 2140,
+        "SOD": 353,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10896,
+      "n_bad_date": 0,
+      "n_after_dedup": 10896,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72314013881",
+      "n_raw": 13820,
+      "rtype_counts": {
+        "FM-15": 8765,
+        "FM-12": 2767,
+        "FM-16": 1903,
+        "SOD": 366,
+        "SOM": 11,
+        "SY-MT": 8
+      },
+      "n_after_type_filter": 10668,
+      "n_bad_date": 0,
+      "n_after_dedup": 10668,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72295023174",
+      "n_raw": 14049,
+      "rtype_counts": {
+        "FM-15": 8761,
+        "FM-12": 2770,
+        "FM-16": 2134,
+        "SOD": 366,
+        "SOM": 11,
+        "SY-MT": 7
+      },
+      "n_after_type_filter": 10895,
+      "n_bad_date": 0,
+      "n_after_dedup": 10895,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72278023183",
+      "n_raw": 12246,
+      "rtype_counts": {
+        "FM-15": 8760,
+        "FM-12": 2773,
+        "FM-16": 356,
+        "SOD": 336,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 9116,
+      "n_bad_date": 0,
+      "n_after_dedup": 9116,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72386023169",
+      "n_raw": 12345,
+      "rtype_counts": {
+        "FM-15": 8717,
+        "FM-12": 2760,
+        "FM-16": 479,
+        "SOD": 366,
+        "SY-MT": 12,
+        "SOM": 11
+      },
+      "n_after_type_filter": 9196,
+      "n_bad_date": 0,
+      "n_after_dedup": 9196,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72793024233",
+      "n_raw": 14192,
+      "rtype_counts": {
+        "FM-15": 8735,
+        "FM-12": 2770,
+        "FM-16": 2313,
+        "SOD": 351,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 11048,
+      "n_bad_date": 0,
+      "n_after_dedup": 11048,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72503014732",
+      "n_raw": 13414,
+      "rtype_counts": {
+        "FM-15": 8768,
+        "FM-12": 2771,
+        "FM-16": 1487,
+        "SOD": 366,
+        "SOM": 11,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10255,
+      "n_bad_date": 0,
+      "n_after_dedup": 10255,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72205012815",
+      "n_raw": 13242,
+      "rtype_counts": {
+        "FM-15": 8765,
+        "FM-12": 2730,
+        "FM-16": 1366,
+        "SOD": 342,
+        "SY-MT": 27,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10131,
+      "n_bad_date": 0,
+      "n_after_dedup": 10131,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72509014739",
+      "n_raw": 13950,
+      "rtype_counts": {
+        "FM-15": 8772,
+        "FM-12": 2746,
+        "FM-16": 2043,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10815,
+      "n_bad_date": 0,
+      "n_after_dedup": 10815,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72405013743",
+      "n_raw": 14581,
+      "rtype_counts": {
+        "FM-15": 8773,
+        "FM-12": 2771,
+        "FM-16": 2306,
+        "SOD": 366,
+        "SHEF": 346,
+        "SOM": 12,
+        "SY-MT": 7
+      },
+      "n_after_type_filter": 11079,
+      "n_bad_date": 0,
+      "n_after_dedup": 11079,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72494023234",
+      "n_raw": 13063,
+      "rtype_counts": {
+        "FM-15": 8728,
+        "FM-12": 2769,
+        "FM-16": 1191,
+        "SOD": 352,
+        "SY-MT": 12,
+        "SOM": 11
+      },
+      "n_after_type_filter": 9919,
+      "n_bad_date": 0,
+      "n_after_dedup": 9919,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72537094847",
+      "n_raw": 15187,
+      "rtype_counts": {
+        "FM-15": 8760,
+        "FM-12": 2770,
+        "FM-16": 2428,
+        "SHEF": 842,
+        "SOD": 366,
+        "SOM": 11,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 11188,
+      "n_bad_date": 0,
+      "n_after_dedup": 11188,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72502014734",
+      "n_raw": 13093,
+      "rtype_counts": {
+        "FM-15": 8764,
+        "FM-12": 2764,
+        "FM-16": 1176,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 9940,
+      "n_bad_date": 0,
+      "n_after_dedup": 9940,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72658014922",
+      "n_raw": 14170,
+      "rtype_counts": {
+        "FM-15": 8742,
+        "FM-12": 2770,
+        "FM-16": 2241,
+        "SOD": 358,
+        "SHEF": 30,
+        "SOM": 11,
+        "SY-MT": 10,
+        "MESOW": 8
+      },
+      "n_after_type_filter": 10983,
+      "n_bad_date": 0,
+      "n_after_dedup": 10983,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74486094789",
+      "n_raw": 13048,
+      "rtype_counts": {
+        "FM-15": 8754,
+        "FM-12": 2764,
+        "FM-16": 1153,
+        "SOD": 354,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 9907,
+      "n_bad_date": 0,
+      "n_after_dedup": 9907,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72243012960",
+      "n_raw": 13452,
+      "rtype_counts": {
+        "FM-15": 8771,
+        "FM-12": 2767,
+        "FM-16": 1524,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10295,
+      "n_bad_date": 0,
+      "n_after_dedup": 10295,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72572024127",
+      "n_raw": 13149,
+      "rtype_counts": {
+        "FM-15": 8754,
+        "FM-12": 2761,
+        "FM-16": 1253,
+        "SOD": 357,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10007,
+      "n_bad_date": 0,
+      "n_after_dedup": 10007,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72202012839",
+      "n_raw": 13107,
+      "rtype_counts": {
+        "FM-15": 8757,
+        "FM-12": 2770,
+        "FM-16": 1213,
+        "SOD": 345,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 9970,
+      "n_bad_date": 0,
+      "n_after_dedup": 9970,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72408013739",
+      "n_raw": 14248,
+      "rtype_counts": {
+        "FM-15": 8748,
+        "FM-12": 2763,
+        "FM-16": 2358,
+        "SOD": 354,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11106,
+      "n_bad_date": 0,
+      "n_after_dedup": 11106,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72327013897",
+      "n_raw": 13431,
+      "rtype_counts": {
+        "FM-15": 8778,
+        "FM-12": 2770,
+        "FM-16": 1492,
+        "SOD": 366,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10270,
+      "n_bad_date": 0,
+      "n_after_dedup": 10270,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72406093721",
+      "n_raw": 13548,
+      "rtype_counts": {
+        "FM-15": 8771,
+        "FM-12": 2766,
+        "FM-16": 1621,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10392,
+      "n_bad_date": 0,
+      "n_after_dedup": 10392,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72290023188",
+      "n_raw": 14332,
+      "rtype_counts": {
+        "FM-15": 8767,
+        "FM-12": 2768,
+        "FM-16": 2419,
+        "SOD": 357,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 11186,
+      "n_bad_date": 0,
+      "n_after_dedup": 11186,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74783012849",
+      "n_raw": 10380,
+      "rtype_counts": {
+        "FM-15": 8772,
+        "FM-16": 1252,
+        "SOD": 344,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10024,
+      "n_bad_date": 0,
+      "n_after_dedup": 10024,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72254013904",
+      "n_raw": 13934,
+      "rtype_counts": {
+        "FM-15": 8760,
+        "FM-12": 2942,
+        "FM-16": 1829,
+        "SOD": 366,
+        "SY-MT": 25,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10589,
+      "n_bad_date": 0,
+      "n_after_dedup": 10589,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72534014819",
+      "n_raw": 12079,
+      "rtype_counts": {
+        "FM-15": 8759,
+        "FM-16": 1570,
+        "FM-12": 1379,
+        "SOD": 353,
+        "SOM": 12,
+        "SY-MT": 6
+      },
+      "n_after_type_filter": 10329,
+      "n_bad_date": 0,
+      "n_after_dedup": 10329,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72211012842",
+      "n_raw": 13349,
+      "rtype_counts": {
+        "FM-15": 8729,
+        "FM-12": 2767,
+        "FM-16": 1488,
+        "SOD": 344,
+        "SY-MT": 11,
+        "SOM": 10
+      },
+      "n_after_type_filter": 10217,
+      "n_bad_date": 0,
+      "n_after_dedup": 10217,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72258013960",
+      "n_raw": 10792,
+      "rtype_counts": {
+        "FM-15": 8784,
+        "FM-16": 1630,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10414,
+      "n_bad_date": 0,
+      "n_after_dedup": 10414,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72434013994",
+      "n_raw": 13957,
+      "rtype_counts": {
+        "FM-15": 8747,
+        "FM-12": 2699,
+        "FM-16": 2080,
+        "SOD": 349,
+        "SHEF": 60,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 10827,
+      "n_bad_date": 0,
+      "n_after_dedup": 10827,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "91182022521",
+      "n_raw": 12357,
+      "rtype_counts": {
+        "FM-15": 8883,
+        "FM-12": 2770,
+        "FM-16": 358,
+        "SOD": 325,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 9241,
+      "n_bad_date": 0,
+      "n_after_dedup": 9241,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72306013722",
+      "n_raw": 13216,
+      "rtype_counts": {
+        "FM-15": 8747,
+        "FM-12": 2768,
+        "FM-16": 1329,
+        "SOD": 348,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10076,
+      "n_bad_date": 0,
+      "n_after_dedup": 10076,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72698024229",
+      "n_raw": 13644,
+      "rtype_counts": {
+        "FM-15": 8748,
+        "FM-12": 2771,
+        "FM-16": 1742,
+        "SOD": 361,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 10490,
+      "n_bad_date": 0,
+      "n_after_dedup": 10490,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72244012918",
+      "n_raw": 11444,
+      "rtype_counts": {
+        "FM-15": 8862,
+        "FM-16": 2204,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11066,
+      "n_bad_date": 0,
+      "n_after_dedup": 11066,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72483993225",
+      "n_raw": 9941,
+      "rtype_counts": {
+        "FM-15": 8744,
+        "FM-16": 828,
+        "SOD": 364,
+        "SOM": 5
+      },
+      "n_after_type_filter": 9572,
+      "n_bad_date": 0,
+      "n_after_dedup": 9572,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72403093738",
+      "n_raw": 13523,
+      "rtype_counts": {
+        "FM-15": 8774,
+        "FM-12": 2771,
+        "FM-16": 1590,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 10364,
+      "n_bad_date": 0,
+      "n_after_dedup": 10364,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72494523293",
+      "n_raw": 9890,
+      "rtype_counts": {
+        "FM-15": 8757,
+        "FM-16": 771,
+        "SOD": 350,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9528,
+      "n_bad_date": 0,
+      "n_after_dedup": 9528,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72231012916",
+      "n_raw": 14377,
+      "rtype_counts": {
+        "FM-15": 8772,
+        "FM-12": 2761,
+        "FM-16": 2470,
+        "SOD": 351,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 11242,
+      "n_bad_date": 0,
+      "n_after_dedup": 11242,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72446003947",
+      "n_raw": 13588,
+      "rtype_counts": {
+        "FM-15": 8754,
+        "FM-12": 2768,
+        "FM-16": 1690,
+        "SOD": 349,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10444,
+      "n_bad_date": 0,
+      "n_after_dedup": 10444,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72438093819",
+      "n_raw": 14186,
+      "rtype_counts": {
+        "FM-15": 8772,
+        "FM-12": 2751,
+        "FM-16": 2271,
+        "SOD": 366,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11043,
+      "n_bad_date": 0,
+      "n_after_dedup": 11043,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72520094823",
+      "n_raw": 13379,
+      "rtype_counts": {
+        "FM-15": 8760,
+        "FM-12": 2769,
+        "FM-16": 1469,
+        "SOD": 359,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 10229,
+      "n_bad_date": 0,
+      "n_after_dedup": 10229,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72297793184",
+      "n_raw": 11257,
+      "rtype_counts": {
+        "FM-15": 8744,
+        "FM-16": 2149,
+        "SOD": 352,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10893,
+      "n_bad_date": 0,
+      "n_after_dedup": 10893,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72428014821",
+      "n_raw": 13655,
+      "rtype_counts": {
+        "FM-15": 8772,
+        "FM-12": 2765,
+        "FM-16": 1728,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10500,
+      "n_bad_date": 0,
+      "n_after_dedup": 10500,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72253012921",
+      "n_raw": 13759,
+      "rtype_counts": {
+        "FM-15": 8752,
+        "FM-12": 2745,
+        "FM-16": 1890,
+        "SOD": 350,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 10642,
+      "n_bad_date": 0,
+      "n_after_dedup": 10642,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72493023230",
+      "n_raw": 10488,
+      "rtype_counts": {
+        "FM-15": 8781,
+        "FM-16": 1329,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10110,
+      "n_bad_date": 0,
+      "n_after_dedup": 10110,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72421093814",
+      "n_raw": 14148,
+      "rtype_counts": {
+        "FM-15": 8771,
+        "FM-12": 2769,
+        "FM-16": 2219,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10990,
+      "n_bad_date": 0,
+      "n_after_dedup": 10990,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72524014820",
+      "n_raw": 14478,
+      "rtype_counts": {
+        "FM-15": 8785,
+        "FM-12": 2770,
+        "FM-16": 2534,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 11319,
+      "n_bad_date": 0,
+      "n_after_dedup": 11319,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "78526011641",
+      "n_raw": 12202,
+      "rtype_counts": {
+        "FM-15": 8709,
+        "FM-12": 2723,
+        "FM-16": 383,
+        "SOD": 360,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9092,
+      "n_bad_date": 0,
+      "n_after_dedup": 9092,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72210812894",
+      "n_raw": 11299,
+      "rtype_counts": {
+        "FM-15": 8760,
+        "FM-16": 2182,
+        "SOD": 345,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10942,
+      "n_bad_date": 0,
+      "n_after_dedup": 10942,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72288023152",
+      "n_raw": 10576,
+      "rtype_counts": {
+        "FM-15": 8785,
+        "FM-16": 1413,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10198,
+      "n_bad_date": 0,
+      "n_after_dedup": 10198,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72206013889",
+      "n_raw": 13698,
+      "rtype_counts": {
+        "FM-15": 8761,
+        "FM-12": 2764,
+        "FM-16": 1778,
+        "SOD": 366,
+        "SY-MT": 17,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10539,
+      "n_bad_date": 0,
+      "n_after_dedup": 10539,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72203012844",
+      "n_raw": 12827,
+      "rtype_counts": {
+        "FM-15": 8750,
+        "FM-12": 2766,
+        "FM-16": 940,
+        "SOD": 347,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 9690,
+      "n_bad_date": 0,
+      "n_after_dedup": 9690,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72640014839",
+      "n_raw": 13775,
+      "rtype_counts": {
+        "FM-15": 8757,
+        "FM-12": 2767,
+        "FM-16": 1875,
+        "SOD": 353,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10632,
+      "n_bad_date": 0,
+      "n_after_dedup": 10632,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "91190022516",
+      "n_raw": 12674,
+      "rtype_counts": {
+        "FM-15": 9010,
+        "FM-12": 2764,
+        "FM-16": 549,
+        "SOD": 328,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 9559,
+      "n_bad_date": 0,
+      "n_after_dedup": 9559,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74704003102",
+      "n_raw": 10079,
+      "rtype_counts": {
+        "FM-15": 8762,
+        "FM-16": 956,
+        "SOD": 349,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9718,
+      "n_bad_date": 0,
+      "n_after_dedup": 9718,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72208013880",
+      "n_raw": 13165,
+      "rtype_counts": {
+        "FM-15": 8763,
+        "FM-12": 2765,
+        "FM-16": 1244,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10007,
+      "n_bad_date": 0,
+      "n_after_dedup": 10007,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72423093821",
+      "n_raw": 14233,
+      "rtype_counts": {
+        "FM-15": 8745,
+        "FM-12": 2767,
+        "FM-16": 2344,
+        "SOD": 352,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11089,
+      "n_bad_date": 0,
+      "n_after_dedup": 11089,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72365023050",
+      "n_raw": 12581,
+      "rtype_counts": {
+        "FM-15": 8777,
+        "FM-12": 2776,
+        "FM-16": 644,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 6
+      },
+      "n_after_type_filter": 9421,
+      "n_bad_date": 0,
+      "n_after_dedup": 9421,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72550014942",
+      "n_raw": 13388,
+      "rtype_counts": {
+        "FM-15": 8750,
+        "FM-12": 2759,
+        "FM-16": 1506,
+        "SOD": 351,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 10256,
+      "n_bad_date": 0,
+      "n_after_dedup": 10256,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72681024131",
+      "n_raw": 13448,
+      "rtype_counts": {
+        "FM-15": 8759,
+        "FM-12": 2763,
+        "FM-16": 1537,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10296,
+      "n_bad_date": 0,
+      "n_after_dedup": 10296,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72353013967",
+      "n_raw": 13486,
+      "rtype_counts": {
+        "FM-15": 8751,
+        "FM-12": 2771,
+        "FM-16": 1593,
+        "SOD": 350,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 10344,
+      "n_bad_date": 0,
+      "n_after_dedup": 10344,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72334013893",
+      "n_raw": 14244,
+      "rtype_counts": {
+        "FM-15": 8741,
+        "FM-12": 2758,
+        "FM-16": 2023,
+        "SOD": 353,
+        "SHEF": 342,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10764,
+      "n_bad_date": 0,
+      "n_after_dedup": 10764,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72508014740",
+      "n_raw": 13950,
+      "rtype_counts": {
+        "FM-15": 8760,
+        "FM-12": 2772,
+        "FM-16": 2029,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10789,
+      "n_bad_date": 0,
+      "n_after_dedup": 10789,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72528014733",
+      "n_raw": 15308,
+      "rtype_counts": {
+        "FM-15": 8769,
+        "FM-16": 2901,
+        "FM-12": 2767,
+        "SHEF": 481,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 11670,
+      "n_bad_date": 0,
+      "n_after_dedup": 11670,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72308013737",
+      "n_raw": 14322,
+      "rtype_counts": {
+        "FM-15": 8745,
+        "FM-12": 2762,
+        "FM-16": 2442,
+        "SOD": 348,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11187,
+      "n_bad_date": 0,
+      "n_after_dedup": 11187,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72488023185",
+      "n_raw": 12388,
+      "rtype_counts": {
+        "FM-15": 8747,
+        "FM-12": 2768,
+        "FM-16": 501,
+        "SOD": 347,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9248,
+      "n_bad_date": 0,
+      "n_after_dedup": 9248,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72274023160",
+      "n_raw": 12476,
+      "rtype_counts": {
+        "FM-15": 8732,
+        "FM-12": 2768,
+        "FM-16": 616,
+        "SOD": 336,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 9348,
+      "n_bad_date": 0,
+      "n_after_dedup": 9348,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72207003822",
+      "n_raw": 13912,
+      "rtype_counts": {
+        "FM-15": 8744,
+        "FM-12": 2768,
+        "FM-16": 2027,
+        "SOD": 352,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 10771,
+      "n_bad_date": 0,
+      "n_after_dedup": 10771,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70273026451",
+      "n_raw": 13672,
+      "rtype_counts": {
+        "FM-15": 8744,
+        "FM-12": 2725,
+        "FM-16": 1826,
+        "SOD": 351,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10570,
+      "n_bad_date": 0,
+      "n_after_dedup": 10570,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72401013740",
+      "n_raw": 13659,
+      "rtype_counts": {
+        "FM-15": 8748,
+        "FM-12": 2761,
+        "FM-16": 1778,
+        "SOD": 348,
+        "SY-MT": 13,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10526,
+      "n_bad_date": 0,
+      "n_after_dedup": 10526,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72635094860",
+      "n_raw": 14427,
+      "rtype_counts": {
+        "FM-15": 8757,
+        "FM-12": 2765,
+        "FM-16": 2516,
+        "SOD": 366,
+        "SY-MT": 12,
+        "SOM": 11
+      },
+      "n_after_type_filter": 11273,
+      "n_bad_date": 0,
+      "n_after_dedup": 11273,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72297023129",
+      "n_raw": 13996,
+      "rtype_counts": {
+        "FM-15": 8601,
+        "FM-12": 2588,
+        "FM-16": 2418,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 11019,
+      "n_bad_date": 0,
+      "n_after_dedup": 11019,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72785024157",
+      "n_raw": 13954,
+      "rtype_counts": {
+        "FM-15": 8771,
+        "FM-12": 2770,
+        "FM-16": 1935,
+        "SOD": 348,
+        "SHEF": 109,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 10706,
+      "n_bad_date": 0,
+      "n_after_dedup": 10706,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72270023044",
+      "n_raw": 12213,
+      "rtype_counts": {
+        "FM-15": 8775,
+        "FM-12": 2772,
+        "SOD": 366,
+        "FM-16": 278,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 9053,
+      "n_bad_date": 0,
+      "n_after_dedup": 9053,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72228013876",
+      "n_raw": 11218,
+      "rtype_counts": {
+        "FM-15": 8789,
+        "FM-16": 2051,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10840,
+      "n_bad_date": 0,
+      "n_after_dedup": 10840,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72356013968",
+      "n_raw": 13186,
+      "rtype_counts": {
+        "FM-15": 8746,
+        "FM-12": 2765,
+        "FM-16": 1300,
+        "SOD": 351,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10046,
+      "n_bad_date": 0,
+      "n_after_dedup": 10046,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "91197521510",
+      "n_raw": 10455,
+      "rtype_counts": {
+        "FM-15": 9114,
+        "FM-16": 995,
+        "SOD": 335,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10109,
+      "n_bad_date": 0,
+      "n_after_dedup": 10109,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72312003870",
+      "n_raw": 14179,
+      "rtype_counts": {
+        "FM-15": 8702,
+        "FM-12": 2725,
+        "FM-16": 2364,
+        "SOD": 366,
+        "SOM": 11,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 11066,
+      "n_bad_date": 0,
+      "n_after_dedup": 11066,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72326013891",
+      "n_raw": 13989,
+      "rtype_counts": {
+        "FM-15": 8745,
+        "FM-12": 2762,
+        "FM-16": 2110,
+        "SOD": 350,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 10855,
+      "n_bad_date": 0,
+      "n_after_dedup": 10855,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72211512871",
+      "n_raw": 11354,
+      "rtype_counts": {
+        "FM-15": 8786,
+        "FM-16": 2210,
+        "SOD": 346,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10996,
+      "n_bad_date": 0,
+      "n_after_dedup": 10996,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74791013717",
+      "n_raw": 10624,
+      "rtype_counts": {
+        "FM-15": 10230,
+        "FM-16": 238,
+        "SOD": 156
+      },
+      "n_after_type_filter": 10468,
+      "n_bad_date": 0,
+      "n_after_dedup": 10468,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "91165022536",
+      "n_raw": 16046,
+      "rtype_counts": {
+        "FM-15": 9675,
+        "FM-16": 3249,
+        "FM-12": 2749,
+        "SOD": 342,
+        "SY-MT": 19,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12924,
+      "n_bad_date": 0,
+      "n_after_dedup": 12924,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72546014933",
+      "n_raw": 13692,
+      "rtype_counts": {
+        "FM-15": 8774,
+        "FM-12": 2765,
+        "FM-16": 1763,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10537,
+      "n_bad_date": 0,
+      "n_after_dedup": 10537,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72507014765",
+      "n_raw": 14297,
+      "rtype_counts": {
+        "FM-15": 8752,
+        "FM-12": 2756,
+        "FM-16": 2413,
+        "SOD": 354,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 11165,
+      "n_bad_date": 0,
+      "n_after_dedup": 11165,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72343653922",
+      "n_raw": 11264,
+      "rtype_counts": {
+        "FM-15": 8757,
+        "FM-16": 2139,
+        "SOD": 357,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10896,
+      "n_bad_date": 0,
+      "n_after_dedup": 10896,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72286893138",
+      "n_raw": 9419,
+      "rtype_counts": {
+        "FM-15": 8722,
+        "FM-16": 349,
+        "SOD": 336,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9071,
+      "n_bad_date": 0,
+      "n_after_dedup": 9071,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72519014771",
+      "n_raw": 14390,
+      "rtype_counts": {
+        "FM-15": 8750,
+        "FM-12": 2772,
+        "FM-16": 2484,
+        "SOD": 362,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 11234,
+      "n_bad_date": 0,
+      "n_after_dedup": 11234,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72222313899",
+      "n_raw": 12354,
+      "rtype_counts": {
+        "FM-15": 8746,
+        "FM-16": 3250,
+        "SOD": 346,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11996,
+      "n_bad_date": 0,
+      "n_after_dedup": 11996,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72340313963",
+      "n_raw": 10770,
+      "rtype_counts": {
+        "FM-15": 8762,
+        "FM-16": 1631,
+        "SOD": 366,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10393,
+      "n_bad_date": 0,
+      "n_after_dedup": 10393,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72466093037",
+      "n_raw": 11054,
+      "rtype_counts": {
+        "FM-15": 8778,
+        "FM-16": 1512,
+        "SHEF": 386,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10290,
+      "n_bad_date": 0,
+      "n_after_dedup": 10290,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72503794745",
+      "n_raw": 10871,
+      "rtype_counts": {
+        "FM-15": 8785,
+        "FM-16": 1708,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10493,
+      "n_bad_date": 0,
+      "n_after_dedup": 10493,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72315003812",
+      "n_raw": 15572,
+      "rtype_counts": {
+        "FM-15": 8728,
+        "FM-16": 3713,
+        "FM-12": 2738,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12441,
+      "n_bad_date": 0,
+      "n_after_dedup": 12441,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72518014735",
+      "n_raw": 14426,
+      "rtype_counts": {
+        "FM-15": 8774,
+        "FM-12": 2768,
+        "FM-16": 2496,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 11270,
+      "n_bad_date": 0,
+      "n_after_dedup": 11270,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72317013723",
+      "n_raw": 13745,
+      "rtype_counts": {
+        "FM-15": 8766,
+        "FM-12": 2764,
+        "FM-16": 1826,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10592,
+      "n_bad_date": 0,
+      "n_after_dedup": 10592,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72529014768",
+      "n_raw": 14964,
+      "rtype_counts": {
+        "FM-15": 8748,
+        "FM-12": 2768,
+        "FM-16": 2587,
+        "SHEF": 475,
+        "SOD": 362,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 11335,
+      "n_bad_date": 0,
+      "n_after_dedup": 11335,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72389093193",
+      "n_raw": 12736,
+      "rtype_counts": {
+        "FM-15": 8775,
+        "FM-12": 2772,
+        "FM-16": 805,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 6
+      },
+      "n_after_type_filter": 9580,
+      "n_bad_date": 0,
+      "n_after_dedup": 9580,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72641014837",
+      "n_raw": 14508,
+      "rtype_counts": {
+        "FM-15": 8757,
+        "FM-12": 2765,
+        "FM-16": 2607,
+        "SOD": 358,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 11364,
+      "n_bad_date": 0,
+      "n_after_dedup": 11364,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72606014764",
+      "n_raw": 14339,
+      "rtype_counts": {
+        "FM-15": 8796,
+        "FM-12": 2728,
+        "FM-16": 2415,
+        "SOD": 352,
+        "SY-MT": 36,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11211,
+      "n_bad_date": 0,
+      "n_after_dedup": 11211,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72450003928",
+      "n_raw": 13363,
+      "rtype_counts": {
+        "FM-15": 8769,
+        "FM-12": 2768,
+        "FM-16": 1434,
+        "SOD": 366,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10203,
+      "n_bad_date": 0,
+      "n_after_dedup": 10203,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72679724132",
+      "n_raw": 11498,
+      "rtype_counts": {
+        "FM-15": 8778,
+        "FM-16": 2065,
+        "SOD": 366,
+        "SHEF": 277,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10843,
+      "n_bad_date": 0,
+      "n_after_dedup": 10843,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72221013858",
+      "n_raw": 15725,
+      "rtype_counts": {
+        "FM-15": 14912,
+        "FM-16": 569,
+        "SOD": 244
+      },
+      "n_after_type_filter": 15481,
+      "n_bad_date": 0,
+      "n_after_dedup": 15481,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72205712854",
+      "n_raw": 11247,
+      "rtype_counts": {
+        "FM-15": 8749,
+        "FM-16": 2137,
+        "SOD": 349,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10886,
+      "n_bad_date": 0,
+      "n_after_dedup": 10886,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72265023023",
+      "n_raw": 12732,
+      "rtype_counts": {
+        "FM-15": 8603,
+        "FM-12": 2725,
+        "FM-16": 1041,
+        "SOD": 342,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 9644,
+      "n_bad_date": 0,
+      "n_after_dedup": 9644,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72440013995",
+      "n_raw": 14050,
+      "rtype_counts": {
+        "FM-15": 8750,
+        "FM-12": 2765,
+        "FM-16": 2167,
+        "SOD": 348,
+        "SOM": 12,
+        "SY-MT": 8
+      },
+      "n_after_type_filter": 10917,
+      "n_bad_date": 0,
+      "n_after_dedup": 10917,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72422093820",
+      "n_raw": 14996,
+      "rtype_counts": {
+        "FM-15": 8757,
+        "FM-16": 2780,
+        "FM-12": 2733,
+        "SOD": 366,
+        "SHEF": 335,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11537,
+      "n_bad_date": 0,
+      "n_after_dedup": 11537,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72323003856",
+      "n_raw": 14088,
+      "rtype_counts": {
+        "FM-15": 8772,
+        "FM-12": 2747,
+        "FM-16": 2178,
+        "SOD": 366,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10950,
+      "n_bad_date": 0,
+      "n_after_dedup": 10950,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72073573805",
+      "n_raw": 12349,
+      "rtype_counts": {
+        "FM-15": 8847,
+        "FM-16": 3124,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11971,
+      "n_bad_date": 0,
+      "n_after_dedup": 11971,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72211612873",
+      "n_raw": 10704,
+      "rtype_counts": {
+        "FM-15": 8447,
+        "FM-16": 1906,
+        "SOD": 341,
+        "SOM": 10
+      },
+      "n_after_type_filter": 10353,
+      "n_bad_date": 0,
+      "n_after_dedup": 10353,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72545014990",
+      "n_raw": 11666,
+      "rtype_counts": {
+        "FM-15": 8775,
+        "FM-16": 2513,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11288,
+      "n_bad_date": 0,
+      "n_after_dedup": 11288,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72617014742",
+      "n_raw": 15216,
+      "rtype_counts": {
+        "FM-15": 8782,
+        "FM-16": 3187,
+        "FM-12": 2764,
+        "SOD": 366,
+        "SHEF": 93,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 11969,
+      "n_bad_date": 0,
+      "n_after_dedup": 11969,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72302013748",
+      "n_raw": 15121,
+      "rtype_counts": {
+        "FM-15": 8756,
+        "FM-16": 3222,
+        "FM-12": 2753,
+        "SOD": 366,
+        "SY-MT": 14,
+        "SOM": 10
+      },
+      "n_after_type_filter": 11978,
+      "n_bad_date": 0,
+      "n_after_dedup": 11978,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72201012836",
+      "n_raw": 14324,
+      "rtype_counts": {
+        "FM-15": 8769,
+        "FM-12": 2765,
+        "FM-16": 2397,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11166,
+      "n_bad_date": 0,
+      "n_after_dedup": 11166,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72467693073",
+      "n_raw": 11721,
+      "rtype_counts": {
+        "FM-15": 8785,
+        "FM-16": 2558,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11343,
+      "n_bad_date": 0,
+      "n_after_dedup": 11343,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72429093815",
+      "n_raw": 14334,
+      "rtype_counts": {
+        "FM-15": 8765,
+        "FM-12": 2765,
+        "FM-16": 2411,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11176,
+      "n_bad_date": 0,
+      "n_after_dedup": 11176,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72392523190",
+      "n_raw": 11419,
+      "rtype_counts": {
+        "FM-15": 8757,
+        "FM-16": 2297,
+        "SOD": 353,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11054,
+      "n_bad_date": 0,
+      "n_after_dedup": 11054,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72693024221",
+      "n_raw": 14068,
+      "rtype_counts": {
+        "FM-15": 8751,
+        "FM-12": 2755,
+        "FM-16": 2166,
+        "SOD": 366,
+        "SY-MT": 19,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10917,
+      "n_bad_date": 0,
+      "n_after_dedup": 10917,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72651014944",
+      "n_raw": 14203,
+      "rtype_counts": {
+        "FM-15": 8756,
+        "FM-12": 2768,
+        "FM-16": 2287,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 11
+      },
+      "n_after_type_filter": 11043,
+      "n_bad_date": 0,
+      "n_after_dedup": 11043,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72235003940",
+      "n_raw": 14524,
+      "rtype_counts": {
+        "FM-15": 8770,
+        "FM-12": 2760,
+        "FM-16": 2608,
+        "SOD": 366,
+        "SOM": 11,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 11378,
+      "n_bad_date": 0,
+      "n_after_dedup": 11378,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72324013882",
+      "n_raw": 13735,
+      "rtype_counts": {
+        "FM-15": 8755,
+        "FM-12": 2762,
+        "FM-16": 1818,
+        "SOD": 366,
+        "SY-MT": 13,
+        "SOM": 11,
+        "SHEF": 10
+      },
+      "n_after_type_filter": 10573,
+      "n_bad_date": 0,
+      "n_after_dedup": 10573,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72310013883",
+      "n_raw": 13669,
+      "rtype_counts": {
+        "FM-15": 8762,
+        "FM-12": 2764,
+        "FM-16": 1749,
+        "SOD": 366,
+        "SY-MT": 16,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10511,
+      "n_bad_date": 0,
+      "n_after_dedup": 10511,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "91285021504",
+      "n_raw": 17787,
+      "rtype_counts": {
+        "FM-15": 10193,
+        "FM-16": 4466,
+        "FM-12": 2760,
+        "SOD": 340,
+        "SY-MT": 17,
+        "SOM": 11
+      },
+      "n_after_type_filter": 14659,
+      "n_bad_date": 0,
+      "n_after_dedup": 14659,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72753014914",
+      "n_raw": 14326,
+      "rtype_counts": {
+        "FM-15": 8750,
+        "FM-12": 2770,
+        "FM-16": 2434,
+        "SOD": 350,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 11184,
+      "n_bad_date": 0,
+      "n_after_dedup": 11184,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72535014848",
+      "n_raw": 14981,
+      "rtype_counts": {
+        "FM-15": 8740,
+        "FM-16": 3092,
+        "FM-12": 2766,
+        "SOD": 358,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11832,
+      "n_bad_date": 0,
+      "n_after_dedup": 11832,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72203412812",
+      "n_raw": 11606,
+      "rtype_counts": {
+        "FM-15": 8759,
+        "FM-16": 2484,
+        "SOD": 351,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11243,
+      "n_bad_date": 0,
+      "n_after_dedup": 11243,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72645704825",
+      "n_raw": 14586,
+      "rtype_counts": {
+        "FM-15": 14260,
+        "SOD": 311,
+        "FM-16": 15
+      },
+      "n_after_type_filter": 14275,
+      "n_bad_date": 0,
+      "n_after_dedup": 14275,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72267023042",
+      "n_raw": 12896,
+      "rtype_counts": {
+        "FM-15": 8762,
+        "FM-12": 2766,
+        "FM-16": 979,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 9741,
+      "n_bad_date": 0,
+      "n_after_dedup": 9741,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72214093805",
+      "n_raw": 14425,
+      "rtype_counts": {
+        "FM-15": 8746,
+        "FM-12": 2769,
+        "FM-16": 2539,
+        "SOD": 348,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 11285,
+      "n_bad_date": 0,
+      "n_after_dedup": 11285,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72692024230",
+      "n_raw": 10320,
+      "rtype_counts": {
+        "FM-15": 8749,
+        "FM-16": 1202,
+        "SOD": 357,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9951,
+      "n_bad_date": 0,
+      "n_after_dedup": 9951,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72278623104",
+      "n_raw": 12685,
+      "rtype_counts": {
+        "FM-15": 12602,
+        "SOD": 75,
+        "FM-16": 8
+      },
+      "n_after_type_filter": 12610,
+      "n_bad_date": 0,
+      "n_after_dedup": 12610,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74394514710",
+      "n_raw": 10831,
+      "rtype_counts": {
+        "FM-15": 8764,
+        "FM-16": 1703,
+        "SOD": 352,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10467,
+      "n_bad_date": 0,
+      "n_after_dedup": 10467,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72577624166",
+      "n_raw": 11657,
+      "rtype_counts": {
+        "FM-15": 11234,
+        "SOD": 365,
+        "FM-16": 58
+      },
+      "n_after_type_filter": 11292,
+      "n_bad_date": 0,
+      "n_after_dedup": 11292,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "78543011640",
+      "n_raw": 11898,
+      "rtype_counts": {
+        "FM-15": 8374,
+        "FM-12": 2415,
+        "FM-16": 751,
+        "SOD": 341,
+        "SOM": 10,
+        "SY-MT": 7
+      },
+      "n_after_type_filter": 9125,
+      "n_bad_date": 0,
+      "n_after_dedup": 9125,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72399014711",
+      "n_raw": 11337,
+      "rtype_counts": {
+        "FM-15": 8761,
+        "FM-16": 2214,
+        "SOD": 350,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10975,
+      "n_bad_date": 0,
+      "n_after_dedup": 10975,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72289793206",
+      "n_raw": 12518,
+      "rtype_counts": {
+        "FM-15": 8723,
+        "FM-16": 3433,
+        "SOD": 350,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12156,
+      "n_bad_date": 0,
+      "n_after_dedup": 12156,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72784524163",
+      "n_raw": 10050,
+      "rtype_counts": {
+        "FM-15": 8754,
+        "FM-16": 930,
+        "SOD": 354,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9684,
+      "n_bad_date": 0,
+      "n_after_dedup": 9684,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72662024090",
+      "n_raw": 13682,
+      "rtype_counts": {
+        "FM-15": 8753,
+        "FM-12": 2766,
+        "FM-16": 1799,
+        "SOD": 343,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 10552,
+      "n_bad_date": 0,
+      "n_after_dedup": 10552,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72363023047",
+      "n_raw": 13616,
+      "rtype_counts": {
+        "FM-15": 8752,
+        "FM-12": 2739,
+        "FM-16": 1736,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10488,
+      "n_bad_date": 0,
+      "n_after_dedup": 10488,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72232013970",
+      "n_raw": 11515,
+      "rtype_counts": {
+        "FM-15": 8727,
+        "FM-16": 2410,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11137,
+      "n_bad_date": 0,
+      "n_after_dedup": 11137,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72505004781",
+      "n_raw": 10915,
+      "rtype_counts": {
+        "FM-15": 8783,
+        "FM-16": 1754,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10537,
+      "n_bad_date": 0,
+      "n_after_dedup": 10537,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70381025309",
+      "n_raw": 14430,
+      "rtype_counts": {
+        "FM-15": 8745,
+        "FM-12": 2667,
+        "FM-16": 2626,
+        "SOD": 364,
+        "SY-MT": 16,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11371,
+      "n_bad_date": 0,
+      "n_after_dedup": 11371,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72533014827",
+      "n_raw": 14615,
+      "rtype_counts": {
+        "FM-15": 8763,
+        "FM-12": 2771,
+        "FM-16": 2183,
+        "SHEF": 507,
+        "SOD": 366,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10946,
+      "n_bad_date": 0,
+      "n_after_dedup": 10946,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72491523259",
+      "n_raw": 12314,
+      "rtype_counts": {
+        "FM-15": 8779,
+        "FM-16": 3158,
+        "SOD": 366,
+        "SOM": 11
+      },
+      "n_after_type_filter": 11937,
+      "n_bad_date": 0,
+      "n_after_dedup": 11937,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72250612959",
+      "n_raw": 12343,
+      "rtype_counts": {
+        "FM-15": 8758,
+        "FM-16": 3217,
+        "SOD": 356,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11975,
+      "n_bad_date": 0,
+      "n_after_dedup": 11975,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72607014606",
+      "n_raw": 11635,
+      "rtype_counts": {
+        "FM-15": 8784,
+        "FM-16": 2473,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11257,
+      "n_bad_date": 0,
+      "n_after_dedup": 11257,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72248013957",
+      "n_raw": 15895,
+      "rtype_counts": {
+        "FM-15": 8786,
+        "FM-16": 4016,
+        "FM-12": 2727,
+        "SOD": 337,
+        "SY-MT": 17,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12802,
+      "n_bad_date": 0,
+      "n_after_dedup": 12802,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72597024225",
+      "n_raw": 13761,
+      "rtype_counts": {
+        "FM-15": 8747,
+        "FM-12": 2767,
+        "FM-16": 1857,
+        "SOD": 366,
+        "SY-MT": 13,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10604,
+      "n_bad_date": 0,
+      "n_after_dedup": 10604,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72517014737",
+      "n_raw": 14069,
+      "rtype_counts": {
+        "FM-15": 8788,
+        "FM-12": 2709,
+        "FM-16": 2182,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10970,
+      "n_bad_date": 0,
+      "n_after_dedup": 10970,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72250512904",
+      "n_raw": 12604,
+      "rtype_counts": {
+        "FM-15": 8774,
+        "FM-16": 3452,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12226,
+      "n_bad_date": 0,
+      "n_after_dedup": 12226,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72544014923",
+      "n_raw": 14035,
+      "rtype_counts": {
+        "FM-15": 8748,
+        "FM-12": 2760,
+        "FM-16": 2154,
+        "SOD": 350,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10902,
+      "n_bad_date": 0,
+      "n_after_dedup": 10902,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72645014898",
+      "n_raw": 14372,
+      "rtype_counts": {
+        "FM-15": 8759,
+        "FM-12": 2764,
+        "FM-16": 2459,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 11218,
+      "n_bad_date": 0,
+      "n_after_dedup": 11218,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72773024153",
+      "n_raw": 14332,
+      "rtype_counts": {
+        "FM-15": 8759,
+        "FM-12": 2677,
+        "FM-16": 2522,
+        "SOD": 353,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 11281,
+      "n_bad_date": 0,
+      "n_after_dedup": 11281,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72677024033",
+      "n_raw": 13236,
+      "rtype_counts": {
+        "FM-15": 8756,
+        "FM-12": 2767,
+        "FM-16": 1328,
+        "SOD": 366,
+        "SOM": 11,
+        "SY-MT": 8
+      },
+      "n_after_type_filter": 10084,
+      "n_bad_date": 0,
+      "n_after_dedup": 10084,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72638714850",
+      "n_raw": 11577,
+      "rtype_counts": {
+        "FM-15": 8756,
+        "FM-16": 2448,
+        "SOD": 361,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11204,
+      "n_bad_date": 0,
+      "n_after_dedup": 11204,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72218003820",
+      "n_raw": 14671,
+      "rtype_counts": {
+        "FM-15": 8508,
+        "FM-16": 3101,
+        "FM-12": 2676,
+        "SOD": 366,
+        "SOM": 10,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 11609,
+      "n_bad_date": 0,
+      "n_after_dedup": 11609,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72764024011",
+      "n_raw": 14265,
+      "rtype_counts": {
+        "FM-15": 8754,
+        "FM-12": 2769,
+        "FM-16": 2372,
+        "SOD": 348,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 11126,
+      "n_bad_date": 0,
+      "n_after_dedup": 11126,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72476023066",
+      "n_raw": 13156,
+      "rtype_counts": {
+        "FM-15": 8752,
+        "FM-12": 2755,
+        "FM-16": 1256,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10008,
+      "n_bad_date": 0,
+      "n_after_dedup": 10008,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72251012924",
+      "n_raw": 14197,
+      "rtype_counts": {
+        "FM-15": 8754,
+        "FM-12": 2768,
+        "FM-16": 2289,
+        "SOD": 366,
+        "SOM": 11,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 11043,
+      "n_bad_date": 0,
+      "n_after_dedup": 11043,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72779024146",
+      "n_raw": 12362,
+      "rtype_counts": {
+        "FM-15": 8748,
+        "FM-16": 3180,
+        "SOD": 347,
+        "SHEF": 76,
+        "SOM": 11
+      },
+      "n_after_type_filter": 11928,
+      "n_bad_date": 0,
+      "n_after_dedup": 11928,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72462593005",
+      "n_raw": 10874,
+      "rtype_counts": {
+        "FM-15": 8665,
+        "FM-16": 1831,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10496,
+      "n_bad_date": 0,
+      "n_after_dedup": 10496,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72467523063",
+      "n_raw": 10212,
+      "rtype_counts": {
+        "FM-15": 10053,
+        "SOD": 140,
+        "FM-16": 19
+      },
+      "n_after_type_filter": 10072,
+      "n_bad_date": 0,
+      "n_after_dedup": 10072,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72532014842",
+      "n_raw": 13635,
+      "rtype_counts": {
+        "FM-15": 8730,
+        "FM-12": 2756,
+        "FM-16": 1771,
+        "SOD": 352,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10501,
+      "n_bad_date": 0,
+      "n_after_dedup": 10501,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72495723213",
+      "n_raw": 12796,
+      "rtype_counts": {
+        "FM-15": 8768,
+        "FM-16": 3651,
+        "SOD": 365,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12419,
+      "n_bad_date": 0,
+      "n_after_dedup": 12419,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72521014895",
+      "n_raw": 13846,
+      "rtype_counts": {
+        "FM-15": 8761,
+        "FM-12": 2766,
+        "FM-16": 1930,
+        "SOD": 366,
+        "SY-MT": 12,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10691,
+      "n_bad_date": 0,
+      "n_after_dedup": 10691,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70261026411",
+      "n_raw": 13031,
+      "rtype_counts": {
+        "FM-15": 8767,
+        "FM-12": 2700,
+        "FM-16": 1170,
+        "SOD": 366,
+        "SY-MT": 16,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9937,
+      "n_bad_date": 0,
+      "n_after_dedup": 9937,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72414013866",
+      "n_raw": 13154,
+      "rtype_counts": {
+        "FM-15": 8770,
+        "FM-12": 2765,
+        "FM-16": 1227,
+        "SOD": 366,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9997,
+      "n_bad_date": 0,
+      "n_after_dedup": 9997,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72578524145",
+      "n_raw": 11721,
+      "rtype_counts": {
+        "FM-15": 8785,
+        "FM-16": 2558,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11343,
+      "n_bad_date": 0,
+      "n_after_dedup": 11343,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74757093874",
+      "n_raw": 12444,
+      "rtype_counts": {
+        "FM-15": 8764,
+        "FM-16": 3318,
+        "SOD": 350,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12082,
+      "n_bad_date": 0,
+      "n_after_dedup": 12082,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72240513976",
+      "n_raw": 12799,
+      "rtype_counts": {
+        "FM-15": 8785,
+        "FM-16": 3636,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12421,
+      "n_bad_date": 0,
+      "n_after_dedup": 12421,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72401693736",
+      "n_raw": 11828,
+      "rtype_counts": {
+        "FM-15": 8773,
+        "FM-16": 2681,
+        "SOD": 366,
+        "SOM": 8
+      },
+      "n_after_type_filter": 11454,
+      "n_bad_date": 0,
+      "n_after_dedup": 11454,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72407093730",
+      "n_raw": 14909,
+      "rtype_counts": {
+        "FM-15": 8756,
+        "FM-16": 3020,
+        "FM-12": 2724,
+        "SOD": 366,
+        "SY-MT": 31,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11776,
+      "n_bad_date": 0,
+      "n_after_dedup": 11776,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74756012816",
+      "n_raw": 12158,
+      "rtype_counts": {
+        "FM-15": 8766,
+        "FM-16": 3037,
+        "SOD": 343,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11803,
+      "n_bad_date": 0,
+      "n_after_dedup": 11803,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72411013741",
+      "n_raw": 13580,
+      "rtype_counts": {
+        "FM-15": 8739,
+        "FM-12": 2761,
+        "FM-16": 1705,
+        "SOD": 350,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10444,
+      "n_bad_date": 0,
+      "n_after_dedup": 10444,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72365623049",
+      "n_raw": 10249,
+      "rtype_counts": {
+        "FM-15": 8732,
+        "FM-16": 1166,
+        "SOD": 339,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9898,
+      "n_bad_date": 0,
+      "n_after_dedup": 9898,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74787012834",
+      "n_raw": 10451,
+      "rtype_counts": {
+        "FM-15": 8775,
+        "FM-16": 1318,
+        "SOD": 346,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10093,
+      "n_bad_date": 0,
+      "n_after_dedup": 10093,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72476593013",
+      "n_raw": 10337,
+      "rtype_counts": {
+        "FM-15": 8765,
+        "FM-16": 1194,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9959,
+      "n_bad_date": 0,
+      "n_after_dedup": 9959,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72204012838",
+      "n_raw": 11416,
+      "rtype_counts": {
+        "FM-15": 8742,
+        "FM-16": 2312,
+        "SOD": 350,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11054,
+      "n_bad_date": 0,
+      "n_after_dedup": 11054,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72384023155",
+      "n_raw": 13068,
+      "rtype_counts": {
+        "FM-15": 8749,
+        "FM-12": 2767,
+        "FM-16": 1161,
+        "SOD": 366,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9910,
+      "n_bad_date": 0,
+      "n_after_dedup": 9910,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72226013895",
+      "n_raw": 14453,
+      "rtype_counts": {
+        "FM-15": 8747,
+        "FM-12": 2768,
+        "FM-16": 2564,
+        "SOD": 350,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 11311,
+      "n_bad_date": 0,
+      "n_after_dedup": 11311,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72223013894",
+      "n_raw": 14499,
+      "rtype_counts": {
+        "FM-15": 8731,
+        "FM-12": 2742,
+        "FM-16": 2645,
+        "SOD": 352,
+        "SY-MT": 17,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11376,
+      "n_bad_date": 0,
+      "n_after_dedup": 11376,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72797624217",
+      "n_raw": 12140,
+      "rtype_counts": {
+        "FM-15": 8781,
+        "FM-16": 2981,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11762,
+      "n_bad_date": 0,
+      "n_after_dedup": 11762,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72571094025",
+      "n_raw": 12108,
+      "rtype_counts": {
+        "FM-15": 11677,
+        "SOD": 357,
+        "FM-16": 74
+      },
+      "n_after_type_filter": 11751,
+      "n_bad_date": 0,
+      "n_after_dedup": 11751,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70395025325",
+      "n_raw": 12703,
+      "rtype_counts": {
+        "FM-15": 8766,
+        "FM-16": 3565,
+        "SOD": 360,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12331,
+      "n_bad_date": 0,
+      "n_after_dedup": 12331,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "78514011603",
+      "n_raw": 6274,
+      "rtype_counts": {
+        "FM-15": 5998,
+        "SOD": 182,
+        "FM-16": 94
+      },
+      "n_after_type_filter": 6092,
+      "n_bad_date": 0,
+      "n_after_dedup": 6092,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72775024143",
+      "n_raw": 11270,
+      "rtype_counts": {
+        "FM-15": 8666,
+        "FM-16": 1774,
+        "SHEF": 470,
+        "SOD": 348,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10440,
+      "n_bad_date": 0,
+      "n_after_dedup": 10440,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72767624013",
+      "n_raw": 11715,
+      "rtype_counts": {
+        "FM-15": 8660,
+        "FM-16": 2709,
+        "SOD": 334,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11369,
+      "n_bad_date": 0,
+      "n_after_dedup": 11369,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72335013877",
+      "n_raw": 10740,
+      "rtype_counts": {
+        "FM-15": 8756,
+        "FM-16": 1619,
+        "SOD": 353,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10375,
+      "n_bad_date": 0,
+      "n_after_dedup": 10375,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72745014913",
+      "n_raw": 14968,
+      "rtype_counts": {
+        "FM-15": 8752,
+        "FM-16": 3075,
+        "FM-12": 2765,
+        "SOD": 352,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 11827,
+      "n_bad_date": 0,
+      "n_after_dedup": 11827,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72637014826",
+      "n_raw": 15751,
+      "rtype_counts": {
+        "FM-15": 8770,
+        "FM-16": 3082,
+        "FM-12": 2700,
+        "SHEF": 806,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11852,
+      "n_bad_date": 0,
+      "n_after_dedup": 11852,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72637914845",
+      "n_raw": 11989,
+      "rtype_counts": {
+        "FM-15": 8751,
+        "FM-16": 2872,
+        "SOD": 354,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11623,
+      "n_bad_date": 0,
+      "n_after_dedup": 11623,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72572424174",
+      "n_raw": 10280,
+      "rtype_counts": {
+        "FM-15": 9855,
+        "SOD": 285,
+        "FM-16": 140
+      },
+      "n_after_type_filter": 9995,
+      "n_bad_date": 0,
+      "n_after_dedup": 9995,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72432093817",
+      "n_raw": 14248,
+      "rtype_counts": {
+        "FM-15": 8765,
+        "FM-12": 2756,
+        "FM-16": 2333,
+        "SOD": 366,
+        "SY-MT": 16,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11098,
+      "n_bad_date": 0,
+      "n_after_dedup": 11098,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72248613942",
+      "n_raw": 12135,
+      "rtype_counts": {
+        "FM-15": 8759,
+        "FM-16": 3011,
+        "SOD": 353,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11770,
+      "n_bad_date": 0,
+      "n_after_dedup": 11770,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72586594161",
+      "n_raw": 14801,
+      "rtype_counts": {
+        "FM-15": 14652,
+        "SOD": 117,
+        "FM-16": 32
+      },
+      "n_after_type_filter": 14684,
+      "n_bad_date": 0,
+      "n_after_dedup": 14684,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74754093915",
+      "n_raw": 12772,
+      "rtype_counts": {
+        "FM-15": 8777,
+        "FM-16": 3617,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12394,
+      "n_bad_date": 0,
+      "n_after_dedup": 12394,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72250012919",
+      "n_raw": 15631,
+      "rtype_counts": {
+        "FM-15": 8755,
+        "FM-16": 3742,
+        "FM-12": 2742,
+        "SOD": 366,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12497,
+      "n_bad_date": 0,
+      "n_after_dedup": 12497,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72012063837",
+      "n_raw": 15214,
+      "rtype_counts": {
+        "FM-15": 15037,
+        "SOD": 170,
+        "FM-16": 7
+      },
+      "n_after_type_filter": 15044,
+      "n_bad_date": 0,
+      "n_after_dedup": 15044,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72551014939",
+      "n_raw": 13600,
+      "rtype_counts": {
+        "FM-15": 8773,
+        "FM-12": 2630,
+        "FM-16": 1807,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10580,
+      "n_bad_date": 0,
+      "n_after_dedup": 10580,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72375003103",
+      "n_raw": 13978,
+      "rtype_counts": {
+        "FM-15": 8762,
+        "FM-12": 2765,
+        "FM-16": 2061,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10823,
+      "n_bad_date": 0,
+      "n_after_dedup": 10823,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72409514792",
+      "n_raw": 11521,
+      "rtype_counts": {
+        "FM-15": 8712,
+        "FM-16": 2445,
+        "SOD": 352,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11157,
+      "n_bad_date": 0,
+      "n_after_dedup": 11157,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72306993753",
+      "n_raw": 12262,
+      "rtype_counts": {
+        "FM-15": 11607,
+        "FM-16": 400,
+        "SOD": 255
+      },
+      "n_after_type_filter": 12007,
+      "n_bad_date": 0,
+      "n_after_dedup": 12007,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72257603902",
+      "n_raw": 14883,
+      "rtype_counts": {
+        "FM-15": 14346,
+        "SOD": 366,
+        "FM-16": 171
+      },
+      "n_after_type_filter": 14517,
+      "n_bad_date": 0,
+      "n_after_dedup": 14517,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72252012907",
+      "n_raw": 10756,
+      "rtype_counts": {
+        "FM-15": 10345,
+        "SOD": 365,
+        "FM-16": 46
+      },
+      "n_after_type_filter": 10391,
+      "n_bad_date": 0,
+      "n_after_dedup": 10391,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72445003945",
+      "n_raw": 13890,
+      "rtype_counts": {
+        "FM-15": 8771,
+        "FM-12": 2766,
+        "FM-16": 1897,
+        "SOD": 366,
+        "SHEF": 63,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10668,
+      "n_bad_date": 0,
+      "n_after_dedup": 10668,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72569024089",
+      "n_raw": 13513,
+      "rtype_counts": {
+        "FM-15": 8771,
+        "FM-12": 2771,
+        "FM-16": 1582,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10353,
+      "n_bad_date": 0,
+      "n_after_dedup": 10353,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72266013962",
+      "n_raw": 13551,
+      "rtype_counts": {
+        "FM-15": 8779,
+        "FM-12": 2629,
+        "FM-16": 1750,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10529,
+      "n_bad_date": 0,
+      "n_after_dedup": 10529,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72439754831",
+      "n_raw": 10724,
+      "rtype_counts": {
+        "FM-15": 8745,
+        "FM-16": 1628,
+        "SOD": 351
+      },
+      "n_after_type_filter": 10373,
+      "n_bad_date": 0,
+      "n_after_dedup": 10373,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72594524283",
+      "n_raw": 15446,
+      "rtype_counts": {
+        "FM-15": 8783,
+        "FM-16": 6285,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 15068,
+      "n_bad_date": 0,
+      "n_after_dedup": 15068,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74003503145",
+      "n_raw": 8934,
+      "rtype_counts": {
+        "FM-15": 8457,
+        "SOD": 365,
+        "FM-16": 101,
+        "SOM": 11
+      },
+      "n_after_type_filter": 8558,
+      "n_bad_date": 0,
+      "n_after_dedup": 8558,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72506014756",
+      "n_raw": 14383,
+      "rtype_counts": {
+        "FM-15": 8778,
+        "FM-16": 3851,
+        "FM-12": 1368,
+        "SOD": 366,
+        "SOM": 10,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 12629,
+      "n_bad_date": 0,
+      "n_after_dedup": 12629,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72513014777",
+      "n_raw": 15137,
+      "rtype_counts": {
+        "FM-15": 8752,
+        "FM-16": 3247,
+        "FM-12": 2747,
+        "SOD": 366,
+        "SY-MT": 14,
+        "SOM": 11
+      },
+      "n_after_type_filter": 11999,
+      "n_bad_date": 0,
+      "n_after_dedup": 11999,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72772024144",
+      "n_raw": 13605,
+      "rtype_counts": {
+        "FM-15": 8705,
+        "FM-12": 2730,
+        "FM-16": 1344,
+        "SHEF": 458,
+        "SOD": 344,
+        "SY-MT": 13,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10049,
+      "n_bad_date": 0,
+      "n_after_dedup": 10049,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72303593740",
+      "n_raw": 11718,
+      "rtype_counts": {
+        "FM-15": 8785,
+        "FM-16": 2555,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11340,
+      "n_bad_date": 0,
+      "n_after_dedup": 11340,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72592024257",
+      "n_raw": 13541,
+      "rtype_counts": {
+        "FM-15": 8685,
+        "FM-12": 2746,
+        "FM-16": 1729,
+        "SOD": 355,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10414,
+      "n_bad_date": 0,
+      "n_after_dedup": 10414,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70371025333",
+      "n_raw": 12402,
+      "rtype_counts": {
+        "FM-15": 8772,
+        "FM-16": 3259,
+        "SOD": 359,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12031,
+      "n_bad_date": 0,
+      "n_after_dedup": 12031,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72644014925",
+      "n_raw": 14820,
+      "rtype_counts": {
+        "FM-15": 8740,
+        "FM-16": 2945,
+        "FM-12": 2759,
+        "SOD": 352,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 11685,
+      "n_bad_date": 0,
+      "n_after_dedup": 11685,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72510094746",
+      "n_raw": 12202,
+      "rtype_counts": {
+        "FM-15": 8758,
+        "FM-16": 3078,
+        "SOD": 354,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11836,
+      "n_bad_date": 0,
+      "n_after_dedup": 11836,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72531594870",
+      "n_raw": 11903,
+      "rtype_counts": {
+        "FM-15": 8785,
+        "FM-16": 2741,
+        "SOD": 366,
+        "SOM": 11
+      },
+      "n_after_type_filter": 11526,
+      "n_bad_date": 0,
+      "n_after_dedup": 11526,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72539014836",
+      "n_raw": 14984,
+      "rtype_counts": {
+        "FM-15": 8769,
+        "FM-16": 3053,
+        "FM-12": 2772,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 11822,
+      "n_bad_date": 0,
+      "n_after_dedup": 11822,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72757014916",
+      "n_raw": 11601,
+      "rtype_counts": {
+        "FM-15": 8769,
+        "FM-16": 2120,
+        "SOD": 352,
+        "SHEF": 348,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10889,
+      "n_bad_date": 0,
+      "n_after_dedup": 10889,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "78551011624",
+      "n_raw": 10918,
+      "rtype_counts": {
+        "FM-15": 8684,
+        "FM-16": 1901,
+        "SOD": 322,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10585,
+      "n_bad_date": 0,
+      "n_after_dedup": 10585,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72344013964",
+      "n_raw": 14380,
+      "rtype_counts": {
+        "FM-15": 8769,
+        "FM-12": 2735,
+        "FM-16": 2165,
+        "SOD": 366,
+        "SHEF": 319,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10934,
+      "n_bad_date": 0,
+      "n_after_dedup": 10934,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "74746003904",
+      "n_raw": 12063,
+      "rtype_counts": {
+        "FM-15": 8765,
+        "FM-16": 2934,
+        "SOD": 352,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11699,
+      "n_bad_date": 0,
+      "n_after_dedup": 11699,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72433813802",
+      "n_raw": 12734,
+      "rtype_counts": {
+        "FM-15": 12393,
+        "SOD": 205,
+        "FM-16": 136
+      },
+      "n_after_type_filter": 12529,
+      "n_bad_date": 0,
+      "n_after_dedup": 12529,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72783024149",
+      "n_raw": 13208,
+      "rtype_counts": {
+        "FM-15": 8745,
+        "FM-12": 2748,
+        "FM-16": 1318,
+        "SOD": 351,
+        "SHEF": 19,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10063,
+      "n_bad_date": 0,
+      "n_after_dedup": 10063,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72244813972",
+      "n_raw": 11827,
+      "rtype_counts": {
+        "FM-15": 8693,
+        "FM-16": 2769,
+        "SOD": 353,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11462,
+      "n_bad_date": 0,
+      "n_after_dedup": 11462,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72263023034",
+      "n_raw": 13272,
+      "rtype_counts": {
+        "FM-15": 8686,
+        "FM-12": 2695,
+        "FM-16": 1524,
+        "SOD": 345,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 10210,
+      "n_bad_date": 0,
+      "n_after_dedup": 10210,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72256013959",
+      "n_raw": 14189,
+      "rtype_counts": {
+        "FM-15": 8666,
+        "FM-12": 2723,
+        "FM-16": 2412,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 11078,
+      "n_bad_date": 0,
+      "n_after_dedup": 11078,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72357503950",
+      "n_raw": 10932,
+      "rtype_counts": {
+        "FM-15": 8785,
+        "FM-16": 1765,
+        "SOD": 366,
+        "SOM": 12,
+        "SHEF": 4
+      },
+      "n_after_type_filter": 10550,
+      "n_bad_date": 0,
+      "n_after_dedup": 10550,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72240003937",
+      "n_raw": 16409,
+      "rtype_counts": {
+        "FM-15": 8736,
+        "FM-16": 4553,
+        "FM-12": 2729,
+        "SOD": 366,
+        "SY-MT": 14,
+        "SOM": 11
+      },
+      "n_after_type_filter": 13289,
+      "n_bad_date": 0,
+      "n_after_dedup": 13289,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72506694724",
+      "n_raw": 13027,
+      "rtype_counts": {
+        "FM-15": 8758,
+        "FM-16": 3902,
+        "SOD": 355,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12660,
+      "n_bad_date": 0,
+      "n_after_dedup": 12660,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72793724222",
+      "n_raw": 12639,
+      "rtype_counts": {
+        "FM-15": 8753,
+        "FM-16": 3512,
+        "SOD": 362,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12265,
+      "n_bad_date": 0,
+      "n_after_dedup": 12265,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72515614748",
+      "n_raw": 13378,
+      "rtype_counts": {
+        "FM-15": 8787,
+        "FM-16": 4213,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 13000,
+      "n_bad_date": 0,
+      "n_after_dedup": 13000,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72635794815",
+      "n_raw": 12079,
+      "rtype_counts": {
+        "FM-15": 8783,
+        "FM-16": 2918,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11701,
+      "n_bad_date": 0,
+      "n_after_dedup": 11701,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72225593842",
+      "n_raw": 11545,
+      "rtype_counts": {
+        "FM-15": 8694,
+        "FM-16": 2473,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11167,
+      "n_bad_date": 0,
+      "n_after_dedup": 11167,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72455503936",
+      "n_raw": 11368,
+      "rtype_counts": {
+        "FM-15": 8761,
+        "FM-16": 2243,
+        "SOD": 352,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11004,
+      "n_bad_date": 0,
+      "n_after_dedup": 11004,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72268023009",
+      "n_raw": 12982,
+      "rtype_counts": {
+        "FM-15": 8741,
+        "FM-12": 2765,
+        "FM-16": 1109,
+        "SOD": 343,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 9850,
+      "n_bad_date": 0,
+      "n_after_dedup": 9850,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72428513812",
+      "n_raw": 8886,
+      "rtype_counts": {
+        "FM-15": 8715,
+        "SOD": 171
+      },
+      "n_after_type_filter": 8715,
+      "n_bad_date": 0,
+      "n_after_dedup": 8715,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72552014935",
+      "n_raw": 14131,
+      "rtype_counts": {
+        "FM-15": 8775,
+        "FM-12": 2750,
+        "FM-16": 2211,
+        "SOD": 366,
+        "SY-MT": 17,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10986,
+      "n_bad_date": 0,
+      "n_after_dedup": 10986,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "78520300398",
+      "n_raw": 25645,
+      "rtype_counts": {
+        "FM-15": 25452,
+        "SOD": 193
+      },
+      "n_after_type_filter": 25452,
+      "n_bad_date": 0,
+      "n_after_dedup": 25452,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72467793007",
+      "n_raw": 10464,
+      "rtype_counts": {
+        "FM-15": 10237,
+        "SOD": 191,
+        "FM-16": 36
+      },
+      "n_after_type_filter": 10273,
+      "n_bad_date": 0,
+      "n_after_dedup": 10273,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72628494836",
+      "n_raw": 14808,
+      "rtype_counts": {
+        "FM-15": 14465,
+        "SOD": 267,
+        "FM-16": 76
+      },
+      "n_after_type_filter": 14541,
+      "n_bad_date": 0,
+      "n_after_dedup": 14541,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72734714841",
+      "n_raw": 13129,
+      "rtype_counts": {
+        "FM-15": 8734,
+        "FM-16": 4030,
+        "SOD": 353,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12764,
+      "n_bad_date": 0,
+      "n_after_dedup": 12764,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72543094822",
+      "n_raw": 13971,
+      "rtype_counts": {
+        "FM-15": 8754,
+        "FM-12": 2767,
+        "FM-16": 2071,
+        "SOD": 355,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10825,
+      "n_bad_date": 0,
+      "n_after_dedup": 10825,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72741504803",
+      "n_raw": 13410,
+      "rtype_counts": {
+        "FM-15": 8758,
+        "FM-16": 4281,
+        "SOD": 359,
+        "SOM": 12
+      },
+      "n_after_type_filter": 13039,
+      "n_bad_date": 0,
+      "n_after_dedup": 13039,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70350025501",
+      "n_raw": 17588,
+      "rtype_counts": {
+        "FM-15": 8759,
+        "FM-16": 5681,
+        "FM-12": 2763,
+        "SOD": 366,
+        "SOM": 10,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 14440,
+      "n_bad_date": 0,
+      "n_after_dedup": 14440,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72515594761",
+      "n_raw": 11108,
+      "rtype_counts": {
+        "FM-15": 10738,
+        "SOD": 274,
+        "FM-16": 96
+      },
+      "n_after_type_filter": 10834,
+      "n_bad_date": 0,
+      "n_after_dedup": 10834,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72213653883",
+      "n_raw": 26077,
+      "rtype_counts": {
+        "FM-15": 25784,
+        "SOD": 293
+      },
+      "n_after_type_filter": 25784,
+      "n_bad_date": 0,
+      "n_after_dedup": 25784,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72216693845",
+      "n_raw": 12183,
+      "rtype_counts": {
+        "FM-15": 8665,
+        "FM-16": 3157,
+        "SOD": 349,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11822,
+      "n_bad_date": 0,
+      "n_after_dedup": 11822,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72531603887",
+      "n_raw": 11396,
+      "rtype_counts": {
+        "FM-15": 8785,
+        "FM-16": 2233,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11018,
+      "n_bad_date": 0,
+      "n_after_dedup": 11018,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72226813839",
+      "n_raw": 11792,
+      "rtype_counts": {
+        "FM-15": 8773,
+        "FM-16": 2641,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11414,
+      "n_bad_date": 0,
+      "n_after_dedup": 11414,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72216013869",
+      "n_raw": 11523,
+      "rtype_counts": {
+        "FM-15": 8780,
+        "FM-16": 2365,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11145,
+      "n_bad_date": 0,
+      "n_after_dedup": 11145,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72341813977",
+      "n_raw": 12303,
+      "rtype_counts": {
+        "FM-15": 8760,
+        "FM-16": 3175,
+        "SOD": 356,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11935,
+      "n_bad_date": 0,
+      "n_after_dedup": 11935,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72665094023",
+      "n_raw": 10811,
+      "rtype_counts": {
+        "FM-15": 8754,
+        "FM-16": 1679,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10433,
+      "n_bad_date": 0,
+      "n_after_dedup": 10433,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72330753893",
+      "n_raw": 11227,
+      "rtype_counts": {
+        "FM-15": 10791,
+        "SOD": 355,
+        "FM-16": 81
+      },
+      "n_after_type_filter": 10872,
+      "n_bad_date": 0,
+      "n_after_dedup": 10872,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "91212041415",
+      "n_raw": 17144,
+      "rtype_counts": {
+        "FM-15": 10909,
+        "FM-16": 3031,
+        "FM-12": 2820,
+        "SOD": 355,
+        "SY-MT": 19,
+        "SOM": 10
+      },
+      "n_after_type_filter": 13940,
+      "n_bad_date": 0,
+      "n_after_dedup": 13940,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72646594890",
+      "n_raw": 15025,
+      "rtype_counts": {
+        "FM-15": 14794,
+        "SOD": 223,
+        "FM-16": 8
+      },
+      "n_after_type_filter": 14802,
+      "n_bad_date": 0,
+      "n_after_dedup": 14802,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72512704726",
+      "n_raw": 14623,
+      "rtype_counts": {
+        "FM-15": 8784,
+        "FM-16": 5461,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 14245,
+      "n_bad_date": 0,
+      "n_after_dedup": 14245,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72372323184",
+      "n_raw": 10018,
+      "rtype_counts": {
+        "FM-15": 8745,
+        "FM-16": 924,
+        "SOD": 340,
+        "SOM": 9
+      },
+      "n_after_type_filter": 9669,
+      "n_bad_date": 0,
+      "n_after_dedup": 9669,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72755014958",
+      "n_raw": 26238,
+      "rtype_counts": {
+        "FM-15": 25994,
+        "SOD": 244
+      },
+      "n_after_type_filter": 25994,
+      "n_bad_date": 0,
+      "n_after_dedup": 25994,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72241012917",
+      "n_raw": 16383,
+      "rtype_counts": {
+        "FM-15": 8747,
+        "FM-16": 4496,
+        "FM-12": 2748,
+        "SOD": 366,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 13243,
+      "n_bad_date": 0,
+      "n_after_dedup": 13243,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72744014858",
+      "n_raw": 14188,
+      "rtype_counts": {
+        "FM-15": 8748,
+        "FM-16": 5071,
+        "SOD": 357,
+        "SOM": 12
+      },
+      "n_after_type_filter": 13819,
+      "n_bad_date": 0,
+      "n_after_dedup": 13819,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72451523064",
+      "n_raw": 10714,
+      "rtype_counts": {
+        "FM-15": 8784,
+        "FM-16": 1552,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10336,
+      "n_bad_date": 0,
+      "n_after_dedup": 10336,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72666024029",
+      "n_raw": 13255,
+      "rtype_counts": {
+        "FM-15": 8720,
+        "FM-12": 2693,
+        "FM-16": 1479,
+        "SOD": 342,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 10199,
+      "n_bad_date": 0,
+      "n_after_dedup": 10199,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72557014943",
+      "n_raw": 14166,
+      "rtype_counts": {
+        "FM-15": 8751,
+        "FM-12": 2755,
+        "FM-16": 2284,
+        "SOD": 354,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 11035,
+      "n_bad_date": 0,
+      "n_after_dedup": 11035,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72354503965",
+      "n_raw": 10807,
+      "rtype_counts": {
+        "FM-15": 8762,
+        "FM-16": 1680,
+        "SOD": 353,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10442,
+      "n_bad_date": 0,
+      "n_after_dedup": 10442,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72247003901",
+      "n_raw": 11733,
+      "rtype_counts": {
+        "FM-15": 8758,
+        "FM-16": 2597,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11355,
+      "n_bad_date": 0,
+      "n_after_dedup": 11355,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72743794893",
+      "n_raw": 13158,
+      "rtype_counts": {
+        "FM-15": 8783,
+        "FM-16": 3998,
+        "SOD": 365,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12781,
+      "n_bad_date": 0,
+      "n_after_dedup": 12781,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72659014929",
+      "n_raw": 14484,
+      "rtype_counts": {
+        "FM-15": 8766,
+        "FM-12": 2761,
+        "FM-16": 2567,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 11333,
+      "n_bad_date": 0,
+      "n_after_dedup": 11333,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72734404869",
+      "n_raw": 13102,
+      "rtype_counts": {
+        "FM-15": 12510,
+        "SOD": 365,
+        "FM-16": 227
+      },
+      "n_after_type_filter": 12737,
+      "n_bad_date": 0,
+      "n_after_dedup": 12737,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70219026615",
+      "n_raw": 17322,
+      "rtype_counts": {
+        "FM-15": 8756,
+        "FM-16": 5437,
+        "FM-12": 2727,
+        "SOD": 366,
+        "SHEF": 14,
+        "SOM": 12,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 14193,
+      "n_bad_date": 0,
+      "n_after_dedup": 14193,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70296026410",
+      "n_raw": 13183,
+      "rtype_counts": {
+        "FM-15": 8786,
+        "FM-16": 4019,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12805,
+      "n_bad_date": 0,
+      "n_after_dedup": 12805,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70386025329",
+      "n_raw": 14653,
+      "rtype_counts": {
+        "FM-15": 13508,
+        "FM-16": 784,
+        "SOD": 361
+      },
+      "n_after_type_filter": 14292,
+      "n_bad_date": 0,
+      "n_after_dedup": 14292,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70387025338",
+      "n_raw": 15357,
+      "rtype_counts": {
+        "FM-13": 8311,
+        "FM-15": 6805,
+        "SOD": 231,
+        "FM-16": 10
+      },
+      "n_after_type_filter": 6815,
+      "n_bad_date": 0,
+      "n_after_dedup": 6815,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70361025339",
+      "n_raw": 18766,
+      "rtype_counts": {
+        "FM-15": 8489,
+        "FM-16": 7195,
+        "FM-12": 2697,
+        "SOD": 360,
+        "SY-MT": 15,
+        "SOM": 10
+      },
+      "n_after_type_filter": 15684,
+      "n_bad_date": 0,
+      "n_after_dedup": 15684,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72351013966",
+      "n_raw": 13463,
+      "rtype_counts": {
+        "FM-15": 8747,
+        "FM-12": 2773,
+        "FM-16": 1574,
+        "SOD": 345,
+        "SOM": 12,
+        "SY-MT": 8,
+        "SHEF": 4
+      },
+      "n_after_type_filter": 10321,
+      "n_bad_date": 0,
+      "n_after_dedup": 10321,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72458603919",
+      "n_raw": 10680,
+      "rtype_counts": {
+        "FM-15": 8756,
+        "FM-16": 1566,
+        "SOD": 346,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10322,
+      "n_bad_date": 0,
+      "n_after_dedup": 10322,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72213263801",
+      "n_raw": 13770,
+      "rtype_counts": {
+        "FM-15": 13587,
+        "SOD": 172,
+        "FM-16": 11
+      },
+      "n_after_type_filter": 13598,
+      "n_bad_date": 0,
+      "n_after_dedup": 13598,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72578024156",
+      "n_raw": 13838,
+      "rtype_counts": {
+        "FM-15": 8741,
+        "FM-12": 2764,
+        "FM-16": 1956,
+        "SOD": 353,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 10697,
+      "n_bad_date": 0,
+      "n_after_dedup": 10697,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72586694178",
+      "n_raw": 10596,
+      "rtype_counts": {
+        "FM-15": 8733,
+        "FM-16": 1500,
+        "SOD": 351,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10233,
+      "n_bad_date": 0,
+      "n_after_dedup": 10233,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72774024135",
+      "n_raw": 10839,
+      "rtype_counts": {
+        "FM-15": 8752,
+        "FM-16": 1722,
+        "SOD": 353,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10474,
+      "n_bad_date": 0,
+      "n_after_dedup": 10474,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72564024018",
+      "n_raw": 13529,
+      "rtype_counts": {
+        "FM-15": 8757,
+        "FM-12": 2770,
+        "FM-16": 1613,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10370,
+      "n_bad_date": 0,
+      "n_after_dedup": 10370,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72757394928",
+      "n_raw": 11729,
+      "rtype_counts": {
+        "FM-15": 11298,
+        "SOD": 356,
+        "FM-16": 75
+      },
+      "n_after_type_filter": 11373,
+      "n_bad_date": 0,
+      "n_after_dedup": 11373,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72763024012",
+      "n_raw": 11581,
+      "rtype_counts": {
+        "FM-15": 8760,
+        "FM-16": 2462,
+        "SOD": 347,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11222,
+      "n_bad_date": 0,
+      "n_after_dedup": 11222,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72451803968",
+      "n_raw": 10588,
+      "rtype_counts": {
+        "FM-15": 10246,
+        "SOD": 269,
+        "FM-16": 73
+      },
+      "n_after_type_filter": 10319,
+      "n_bad_date": 0,
+      "n_after_dedup": 10319,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72747014918",
+      "n_raw": 15455,
+      "rtype_counts": {
+        "FM-15": 8743,
+        "FM-16": 3586,
+        "FM-12": 2748,
+        "SOD": 354,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 12329,
+      "n_bad_date": 0,
+      "n_after_dedup": 12329,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72648094853",
+      "n_raw": 12181,
+      "rtype_counts": {
+        "FM-15": 11715,
+        "SOD": 362,
+        "FM-16": 104
+      },
+      "n_after_type_filter": 11819,
+      "n_bad_date": 0,
+      "n_after_dedup": 11819,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72655594938",
+      "n_raw": 12882,
+      "rtype_counts": {
+        "FM-15": 8783,
+        "FM-16": 3721,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12504,
+      "n_bad_date": 0,
+      "n_after_dedup": 12504,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72255012912",
+      "n_raw": 15520,
+      "rtype_counts": {
+        "FM-15": 8683,
+        "FM-16": 3720,
+        "FM-12": 2739,
+        "SOD": 357,
+        "SOM": 11,
+        "SY-MT": 10
+      },
+      "n_after_type_filter": 12403,
+      "n_bad_date": 0,
+      "n_after_dedup": 12403,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72670024045",
+      "n_raw": 9992,
+      "rtype_counts": {
+        "FM-15": 9634,
+        "SOD": 337,
+        "FM-16": 21
+      },
+      "n_after_type_filter": 9655,
+      "n_bad_date": 0,
+      "n_after_dedup": 9655,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72639094849",
+      "n_raw": 15509,
+      "rtype_counts": {
+        "FM-15": 8754,
+        "FM-16": 3624,
+        "FM-12": 2738,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12378,
+      "n_bad_date": 0,
+      "n_after_dedup": 12378,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72475593129",
+      "n_raw": 10356,
+      "rtype_counts": {
+        "FM-15": 8782,
+        "FM-16": 1196,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9978,
+      "n_bad_date": 0,
+      "n_after_dedup": 9978,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72745594931",
+      "n_raw": 13921,
+      "rtype_counts": {
+        "FM-15": 8743,
+        "FM-16": 4814,
+        "SOD": 352,
+        "SOM": 12
+      },
+      "n_after_type_filter": 13557,
+      "n_bad_date": 0,
+      "n_after_dedup": 13557,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72562024023",
+      "n_raw": 13779,
+      "rtype_counts": {
+        "FM-15": 8778,
+        "FM-12": 2692,
+        "FM-16": 1916,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10694,
+      "n_bad_date": 0,
+      "n_after_dedup": 10694,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72566024028",
+      "n_raw": 13260,
+      "rtype_counts": {
+        "FM-15": 8749,
+        "FM-12": 2760,
+        "FM-16": 1362,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 11
+      },
+      "n_after_type_filter": 10111,
+      "n_bad_date": 0,
+      "n_after_dedup": 10111,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72451013985",
+      "n_raw": 13853,
+      "rtype_counts": {
+        "FM-15": 8776,
+        "FM-12": 2749,
+        "FM-16": 1941,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 10717,
+      "n_bad_date": 0,
+      "n_after_dedup": 10717,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72549094933",
+      "n_raw": 11445,
+      "rtype_counts": {
+        "FM-15": 11042,
+        "SOD": 360,
+        "FM-16": 43
+      },
+      "n_after_type_filter": 11085,
+      "n_bad_date": 0,
+      "n_after_dedup": 11085,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72349513987",
+      "n_raw": 11105,
+      "rtype_counts": {
+        "FM-15": 8791,
+        "FM-16": 1936,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10727,
+      "n_bad_date": 0,
+      "n_after_dedup": 10727,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72564524022",
+      "n_raw": 11045,
+      "rtype_counts": {
+        "FM-15": 8767,
+        "FM-16": 1900,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10667,
+      "n_bad_date": 0,
+      "n_after_dedup": 10667,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72548514940",
+      "n_raw": 11763,
+      "rtype_counts": {
+        "FM-15": 8560,
+        "FM-16": 2840,
+        "SOD": 353,
+        "SOM": 10
+      },
+      "n_after_type_filter": 11400,
+      "n_bad_date": 0,
+      "n_after_dedup": 11400,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72234013865",
+      "n_raw": 14642,
+      "rtype_counts": {
+        "FM-15": 8736,
+        "FM-16": 2826,
+        "FM-12": 2701,
+        "SOD": 353,
+        "SY-MT": 14,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11562,
+      "n_bad_date": 0,
+      "n_after_dedup": 11562,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72234853808",
+      "n_raw": 12358,
+      "rtype_counts": {
+        "FM-15": 11617,
+        "FM-16": 392,
+        "SOD": 349
+      },
+      "n_after_type_filter": 12009,
+      "n_bad_date": 0,
+      "n_after_dedup": 12009,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72574424027",
+      "n_raw": 11031,
+      "rtype_counts": {
+        "FM-15": 8760,
+        "FM-16": 1915,
+        "SOD": 344,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10675,
+      "n_bad_date": 0,
+      "n_after_dedup": 10675,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72672024061",
+      "n_raw": 13095,
+      "rtype_counts": {
+        "FM-15": 8744,
+        "FM-12": 2748,
+        "FM-16": 1241,
+        "SOD": 338,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 9985,
+      "n_bad_date": 0,
+      "n_after_dedup": 9985,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72753514919",
+      "n_raw": 11949,
+      "rtype_counts": {
+        "FM-15": 8745,
+        "FM-16": 2843,
+        "SOD": 349,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11588,
+      "n_bad_date": 0,
+      "n_after_dedup": 11588,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72520754735",
+      "n_raw": 15298,
+      "rtype_counts": {
+        "FM-15": 15088,
+        "SOD": 201,
+        "FM-16": 9
+      },
+      "n_after_type_filter": 15097,
+      "n_bad_date": 0,
+      "n_after_dedup": 15097,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72512854739",
+      "n_raw": 13840,
+      "rtype_counts": {
+        "FM-15": 13588,
+        "SOD": 211,
+        "FM-16": 41
+      },
+      "n_after_type_filter": 13629,
+      "n_bad_date": 0,
+      "n_after_dedup": 13629,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70063727406",
+      "n_raw": 13878,
+      "rtype_counts": {
+        "FM-15": 8753,
+        "FM-16": 4750,
+        "SOD": 363,
+        "SOM": 12
+      },
+      "n_after_type_filter": 13503,
+      "n_bad_date": 0,
+      "n_after_dedup": 13503,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72451623020",
+      "n_raw": 10497,
+      "rtype_counts": {
+        "FM-15": 10095,
+        "SOD": 358,
+        "FM-16": 44
+      },
+      "n_after_type_filter": 10139,
+      "n_bad_date": 0,
+      "n_after_dedup": 10139,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72784624160",
+      "n_raw": 10953,
+      "rtype_counts": {
+        "FM-15": 8781,
+        "FM-16": 1794,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10575,
+      "n_bad_date": 0,
+      "n_after_dedup": 10575,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72492023237",
+      "n_raw": 13112,
+      "rtype_counts": {
+        "FM-15": 8745,
+        "FM-12": 2763,
+        "FM-16": 1211,
+        "SOD": 366,
+        "SY-MT": 15,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9956,
+      "n_bad_date": 0,
+      "n_after_dedup": 9956,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72622564776",
+      "n_raw": 11339,
+      "rtype_counts": {
+        "FM-15": 8683,
+        "FM-16": 2286,
+        "SOD": 359,
+        "SOM": 11
+      },
+      "n_after_type_filter": 10969,
+      "n_bad_date": 0,
+      "n_after_dedup": 10969,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72268893034",
+      "n_raw": 16977,
+      "rtype_counts": {
+        "FM-15": 16637,
+        "SOD": 339,
+        "FM-16": 1
+      },
+      "n_after_type_filter": 16638,
+      "n_bad_date": 0,
+      "n_after_dedup": 16638,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72425003860",
+      "n_raw": 14506,
+      "rtype_counts": {
+        "FM-15": 8766,
+        "FM-12": 2760,
+        "FM-16": 2590,
+        "SOD": 366,
+        "SOM": 12,
+        "SY-MT": 12
+      },
+      "n_after_type_filter": 11356,
+      "n_bad_date": 0,
+      "n_after_dedup": 11356,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72503814714",
+      "n_raw": 8762,
+      "rtype_counts": {
+        "FM-15": 8587,
+        "SOD": 152,
+        "FM-16": 23
+      },
+      "n_after_type_filter": 8610,
+      "n_bad_date": 0,
+      "n_after_dedup": 8610,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72528704724",
+      "n_raw": 13105,
+      "rtype_counts": {
+        "FM-15": 8789,
+        "FM-16": 3938,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12727,
+      "n_bad_date": 0,
+      "n_after_dedup": 12727,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72536094830",
+      "n_raw": 14650,
+      "rtype_counts": {
+        "FM-15": 8674,
+        "FM-16": 2868,
+        "FM-12": 2706,
+        "SOD": 356,
+        "SY-MT": 34,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11542,
+      "n_bad_date": 0,
+      "n_after_dedup": 11542,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72605504743",
+      "n_raw": 10661,
+      "rtype_counts": {
+        "FM-15": 10275,
+        "SOD": 201,
+        "FM-16": 185
+      },
+      "n_after_type_filter": 10460,
+      "n_bad_date": 0,
+      "n_after_dedup": 10460,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72515004725",
+      "n_raw": 16674,
+      "rtype_counts": {
+        "FM-15": 8763,
+        "FM-16": 4791,
+        "FM-12": 2729,
+        "SOD": 366,
+        "SY-MT": 13,
+        "SOM": 12
+      },
+      "n_after_type_filter": 13554,
+      "n_bad_date": 0,
+      "n_after_dedup": 13554,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72582524121",
+      "n_raw": 10540,
+      "rtype_counts": {
+        "FM-15": 8768,
+        "FM-16": 1394,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10162,
+      "n_bad_date": 0,
+      "n_after_dedup": 10162,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70133026616",
+      "n_raw": 15285,
+      "rtype_counts": {
+        "FM-15": 8748,
+        "FM-16": 3444,
+        "FM-12": 2719,
+        "SOD": 344,
+        "SY-MT": 18,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12192,
+      "n_bad_date": 0,
+      "n_after_dedup": 12192,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "91232041418",
+      "n_raw": 11726,
+      "rtype_counts": {
+        "FM-15": 9242,
+        "FM-16": 2107,
+        "SOD": 366,
+        "SOM": 11
+      },
+      "n_after_type_filter": 11349,
+      "n_bad_date": 0,
+      "n_after_dedup": 11349,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70200026617",
+      "n_raw": 16508,
+      "rtype_counts": {
+        "FM-15": 8745,
+        "FM-16": 4695,
+        "FM-12": 2677,
+        "SOD": 366,
+        "SY-MT": 14,
+        "SOM": 11
+      },
+      "n_after_type_filter": 13440,
+      "n_bad_date": 0,
+      "n_after_dedup": 13440,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70026027502",
+      "n_raw": 12639,
+      "rtype_counts": {
+        "FM-15": 7357,
+        "FM-16": 4921,
+        "SOD": 349,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12278,
+      "n_bad_date": 0,
+      "n_after_dedup": 12278,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72691724284",
+      "n_raw": 13900,
+      "rtype_counts": {
+        "FM-15": 8725,
+        "FM-16": 4814,
+        "SOD": 361
+      },
+      "n_after_type_filter": 13539,
+      "n_bad_date": 0,
+      "n_after_dedup": 13539,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72643014920",
+      "n_raw": 11370,
+      "rtype_counts": {
+        "FM-15": 8778,
+        "FM-16": 2214,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10992,
+      "n_bad_date": 0,
+      "n_after_dedup": 10992,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72676494163",
+      "n_raw": 13427,
+      "rtype_counts": {
+        "FM-15": 13357,
+        "SOD": 70
+      },
+      "n_after_type_filter": 13357,
+      "n_bad_date": 0,
+      "n_after_dedup": 13357,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72406693706",
+      "n_raw": 11749,
+      "rtype_counts": {
+        "FM-15": 8793,
+        "FM-16": 2578,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11371,
+      "n_bad_date": 0,
+      "n_after_dedup": 11371,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72480023157",
+      "n_raw": 12162,
+      "rtype_counts": {
+        "FM-15": 8753,
+        "FM-12": 2750,
+        "SOD": 366,
+        "FM-16": 263,
+        "SY-MT": 18,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9016,
+      "n_bad_date": 0,
+      "n_after_dedup": 9016,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72506794720",
+      "n_raw": 12592,
+      "rtype_counts": {
+        "FM-15": 8775,
+        "FM-16": 3440,
+        "SOD": 365,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12215,
+      "n_bad_date": 0,
+      "n_after_dedup": 12215,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72417503802",
+      "n_raw": 12239,
+      "rtype_counts": {
+        "FM-15": 8779,
+        "FM-16": 3082,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11861,
+      "n_bad_date": 0,
+      "n_after_dedup": 11861,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70326025503",
+      "n_raw": 15575,
+      "rtype_counts": {
+        "FM-15": 8663,
+        "FM-16": 3788,
+        "FM-12": 2722,
+        "SOD": 350,
+        "SY-MT": 21,
+        "SHEF": 19,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12451,
+      "n_bad_date": 0,
+      "n_after_dedup": 12451,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72655014926",
+      "n_raw": 11479,
+      "rtype_counts": {
+        "FM-15": 8688,
+        "FM-16": 2422,
+        "SOD": 357,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11110,
+      "n_bad_date": 0,
+      "n_after_dedup": 11110,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "91765061705",
+      "n_raw": 11111,
+      "rtype_counts": {
+        "FM-15": 8575,
+        "FM-12": 2215,
+        "SOD": 218,
+        "FM-16": 85,
+        "SOM": 9,
+        "SY-MT": 9
+      },
+      "n_after_type_filter": 8660,
+      "n_bad_date": 0,
+      "n_after_dedup": 8660,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72713014604",
+      "n_raw": 12190,
+      "rtype_counts": {
+        "FM-15": 11449,
+        "FM-16": 449,
+        "SOD": 292
+      },
+      "n_after_type_filter": 11898,
+      "n_bad_date": 0,
+      "n_after_dedup": 11898,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70321025513",
+      "n_raw": 14849,
+      "rtype_counts": {
+        "FM-15": 11667,
+        "FM-12": 2753,
+        "SOD": 314,
+        "FM-16": 94,
+        "SY-MT": 21
+      },
+      "n_after_type_filter": 11761,
+      "n_bad_date": 0,
+      "n_after_dedup": 11761,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72439093822",
+      "n_raw": 11212,
+      "rtype_counts": {
+        "FM-15": 8704,
+        "FM-16": 2145,
+        "SOD": 351,
+        "SOM": 12
+      },
+      "n_after_type_filter": 10849,
+      "n_bad_date": 0,
+      "n_after_dedup": 10849,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72394023273",
+      "n_raw": 15807,
+      "rtype_counts": {
+        "FM-15": 8741,
+        "FM-16": 3925,
+        "FM-12": 2767,
+        "SOD": 355,
+        "SOM": 12,
+        "SY-MT": 7
+      },
+      "n_after_type_filter": 12666,
+      "n_bad_date": 0,
+      "n_after_dedup": 12666,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72552614905",
+      "n_raw": 10779,
+      "rtype_counts": {
+        "FM-15": 10390,
+        "SOD": 364,
+        "FM-16": 25
+      },
+      "n_after_type_filter": 10415,
+      "n_bad_date": 0,
+      "n_after_dedup": 10415,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70454025704",
+      "n_raw": 18352,
+      "rtype_counts": {
+        "FM-15": 8094,
+        "FM-16": 7334,
+        "FM-12": 2560,
+        "SOD": 349,
+        "SY-MT": 15
+      },
+      "n_after_type_filter": 15428,
+      "n_bad_date": 0,
+      "n_after_dedup": 15428,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "70367025322",
+      "n_raw": 8474,
+      "rtype_counts": {
+        "FM-15": 8104,
+        "SOD": 239,
+        "FM-16": 131
+      },
+      "n_after_type_filter": 8235,
+      "n_bad_date": 0,
+      "n_after_dedup": 8235,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72570594030",
+      "n_raw": 10273,
+      "rtype_counts": {
+        "FM-15": 8754,
+        "FM-16": 1162,
+        "SOD": 345,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9916,
+      "n_bad_date": 0,
+      "n_after_dedup": 9916,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72309593719",
+      "n_raw": 12474,
+      "rtype_counts": {
+        "FM-15": 8777,
+        "FM-16": 3319,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 12096,
+      "n_bad_date": 0,
+      "n_after_dedup": 12096,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72417613736",
+      "n_raw": 12096,
+      "rtype_counts": {
+        "FM-15": 8759,
+        "FM-16": 2969,
+        "SOD": 356,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11728,
+      "n_bad_date": 0,
+      "n_after_dedup": 11728,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72477693075",
+      "n_raw": 9849,
+      "rtype_counts": {
+        "FM-15": 8762,
+        "FM-16": 709,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 9471,
+      "n_bad_date": 0,
+      "n_after_dedup": 9471,
+      "n_duplicates_removed": 0
+    },
+    {
+      "station_id": "72643514991",
+      "n_raw": 12111,
+      "rtype_counts": {
+        "FM-15": 8779,
+        "FM-16": 2954,
+        "SOD": 366,
+        "SOM": 12
+      },
+      "n_after_type_filter": 11733,
+      "n_bad_date": 0,
+      "n_after_dedup": 11733,
+      "n_duplicates_removed": 0
+    }
+  ]
+}

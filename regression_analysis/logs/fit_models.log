@@ -1,0 +1,47 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+2026-11-07 22:49:48 READ work\model_data.csv 
+2026-11-07 22:49:51 READ_DONE 6373724 rows 754.2 Mb 
+2026-11-07 22:49:51 FIT_START main eligible 6272073 
+NOTE: 3/0/0/0/0/0 fixed-effects (6 observations) removed because of only 0 or only 1 outcomes or singletons.
+2026-11-07 22:52:06 MAIN_WEATHER wind_5_10 1.05; wind_10_20 1.175; wind_20_plus 1.761; visibility_5_10km 1.344; visibility_1_5km 1.82; visibility_under_1km 2.822; rain_vs_dry 1.937; temperature_5_to_15 0.8; temperature_15_to_25 0.953 
+2026-11-07 22:52:06 FIT_DONE main n 6272067 iterations 5 
+            used  (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells    771861  41.3    1205205   64.4   1205205   64.4
+Vcells 112112039 855.4  528295191 4030.6 823953269 6286.3
+2026-11-07 22:52:06 FIT_START window60 eligible 6267684 
+NOTE: 3/0/0/0/0/0 fixed-effects (6 observations) removed because of only 0 or only 1 outcomes or singletons.
+2026-11-07 22:54:19 FIT_DONE window60 n 6267678 iterations 5 
+            used  (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells    771909  41.3    1205205   64.4   1205205   64.4
+Vcells 112114318 855.4  531588183 4055.7 829043623 6325.2
+2026-11-07 22:54:20 FIT_START strict_quality eligible 6257020 
+NOTE: 1/0/0/0/0/0 fixed-effect (2 observations) removed because of only 0 or only 1 outcomes or singletons.
+2026-11-07 22:56:33 FIT_DONE strict_quality n 6257018 iterations 5 
+            used  (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells    771955  41.3    1205205   64.4   1205205   64.4
+Vcells 112116601 855.4  530906888 4050.5 829043623 6325.2
+2026-11-07 22:56:34 FIT_START route_fe eligible 6272073 
+NOTE: 212/0/0/0/0 fixed-effects (633 observations) removed because of only 0 or only 1 outcomes or singletons.
+2026-11-07 22:58:23 FIT_DONE route_fe n 6271440 iterations 5 
+            used  (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells    772001  41.3    1205205   64.4   1205205   64.4
+Vcells 112118881 855.4  563929766 4302.5 844921032 6446.3
+2026-11-07 22:58:24 FIT_START disruption eligible 6373724 
+NOTE: 3/0/0/0/0/0 fixed-effects (6 observations) removed because of only 0 or only 1 outcomes or singletons.
+2026-11-07 23:00:39 FIT_DONE disruption n 6373718 iterations 5 
+            used  (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells    772048  41.3    1205205   64.4   1205205   64.4
+Vcells 112121188 855.5  646128213 4929.6 844921032 6446.3
+2026-11-07 23:00:40 FIT_START predict_baseline eligible 4305261 
+NOTE: 3/0/0/0/0 fixed-effects (5 observations) removed because of only 0 or only 1 outcomes or singletons.
+2026-11-07 23:01:13 FIT_DONE predict_baseline n 4305256 iterations 4 
+2026-11-07 23:01:13 PREDICT_START baseline 
+2026-11-07 23:01:15 FIT_START predict_weather eligible 4305261 
+NOTE: 3/0/0/0/0 fixed-effects (5 observations) removed because of only 0 or only 1 outcomes or singletons.
+2026-11-07 23:02:35 FIT_DONE predict_weather n 4305256 iterations 4 
+2026-11-07 23:02:35 PREDICT_START weather 
+2026-11-07 23:02:38 ALL_MODELS_DONE 

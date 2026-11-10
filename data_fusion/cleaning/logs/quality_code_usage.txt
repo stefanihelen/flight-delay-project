@@ -1,0 +1,42 @@
+======================================================================
+质量码归类统计（仅 weather_match_status=='matched' 子集）
+matched 行数: 7055161
+分类依据: ISD Format Document（见脚本头注释）
+======================================================================
+
+--- temp (temp_q) ---
+  可用 usable   :  7039416 (99.777%)
+  不确定 uncertain:     2581 (0.037%)
+  不可用 erroneous :     4092 (0.058%)
+  缺测 missing    :     9072 (0.129%)
+  原始数值 NaN 行数: 9072
+
+--- vis (vis_q) ---
+  可用 usable   :  7047276 (99.888%)
+  不确定 uncertain:     5985 (0.085%)
+  不可用 erroneous :     1047 (0.015%)
+  缺测 missing    :      853 (0.012%)
+  原始数值 NaN 行数: 1747
+
+--- wind_speed (wind_speed_q) ---
+  可用 usable   :  7046476 (99.877%)
+  不确定 uncertain:      672 (0.010%)
+  不可用 erroneous :       25 (0.000%)
+  缺测 missing    :     7988 (0.113%)
+  原始数值 NaN 行数: 7988
+
+--- precip (precip_q) ---
+  可用 usable   :  6409298 (90.846%)
+  不确定 uncertain:     9113 (0.129%)
+  不可用 erroneous :        0 (0.000%)
+  缺测 missing    :   636750 (9.025%)
+  原始数值 NaN 行数: 636750
+
+--- precip_period_h 分布（matched 子集）---
+  period=   1 h :  6406220 (90.802%)
+  period=   3 h :     2513 (0.036%)
+  period=   6 h :     7607 (0.108%)
+  period=  24 h :     2653 (0.038%)
+  period= NaN h :   636168 (9.017%)
+
+主分析降水可用行（matched & precip_reported==1 & period==1h）: 6406220 (90.802%)

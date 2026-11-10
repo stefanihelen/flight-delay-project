@@ -1,0 +1,24 @@
+BTS 小样本清洗检查 (bts_flights_sample.csv)
+============================================================
+输入文件: C:\Users\houchangjie\Desktop\大数据\新建文件夹\flight_delay_project\data\samples\raw\member1\BTS\bts_flights_sample.csv
+输入原始行数: 3112
+清洗后保留行数: 3112
+剔除非2024行数: 0
+去重剔除行数: 0
+CRSDepTime==2400 航班数: 0
+cancelled 数: 162
+diverted 数: 26
+arrival_time_missing 数: 164
+arr_del15_mismatch 数: 0
+
+清洗后列: flight_id, flight_date, reporting_airline, flight_number, tail_number, origin, dest, origin_airport_id, dest_airport_id, origin_state, dest_state, crs_dep_hhmm, sched_dep_local, distance_miles, arr_delay_min, arr_del15, cancelled, diverted, arrival_time_missing, arr_del15_mismatch
+
+清洗后前 5 行:
+                      flight_id flight_date reporting_airline  flight_number tail_number origin dest  origin_airport_id  dest_airport_id origin_state dest_state  crs_dep_hhmm     sched_dep_local  distance_miles  arr_delay_min  arr_del15  cancelled  diverted  arrival_time_missing  arr_del15_mismatch
+2024-01-09_9E_4810_JFK_JAX_0900  2024-01-09                9E           4810      N325PQ    JFK  JAX              12478            12451           NY         FL           900 2024-01-09 09:00:00           828.0            1.0        0.0          0         0                     0                   0
+2024-01-09_9E_4820_JFK_CLT_1945  2024-01-09                9E           4820      N232PQ    JFK  CLT              12478            11057           NY         NC          1945 2024-01-09 19:45:00           541.0            NaN        NaN          1         0                     1                   0
+2024-01-09_9E_4836_JFK_BUF_1540  2024-01-09                9E           4836      N325PQ    JFK  BUF              12478            10792           NY         NY          1540 2024-01-09 15:40:00           301.0            NaN        NaN          1         0                     1                   0
+2024-01-09_9E_4845_JFK_SYR_1330  2024-01-09                9E           4845      N933XJ    JFK  SYR              12478            15096           NY         NY          1330 2024-01-09 13:30:00           209.0          -15.0        0.0          0         0                     0                   0
+2024-01-09_9E_4891_JFK_ORF_1729  2024-01-09                9E           4891      N296PQ    JFK  ORF              12478            13931           NY         VA          1729 2024-01-09 17:29:00           290.0            NaN        NaN          1         0                     1                   0
+
+flight_id 唯一性检查: unique=True, n=3112

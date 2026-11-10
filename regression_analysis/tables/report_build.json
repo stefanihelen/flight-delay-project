@@ -1,0 +1,24 @@
+{
+  "built_at": "2026-11-07T23:08:41.089362+08:00",
+  "report": "航班延误回归分析报告.html",
+  "embedded_figures": 3,
+  "main_n": 6272067,
+  "test_common_n": 847280,
+  "source_results": [
+    "data_audit.json",
+    "no_precip_data_audit.json",
+    "model_diagnostics.json",
+    "missingness_models.json",
+    "weather_contrasts.csv",
+    "missingness_contrasts.csv",
+    "prediction_metrics.csv",
+    "coverage.csv",
+    "paired_metric_differences.csv",
+    "calibration.csv",
+    "dummy_baseline_metrics.csv",
+    "no_precip_sample_by_month.csv",
+    "evaluation.json"
+  ],
+  "real_results_only": true,
+  "human_review_claimed": false
+}

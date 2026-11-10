@@ -1,0 +1,278 @@
+{
+  "generated_at_utc": "2026-10-29T12:20:08.315143+00:00",
+  "completed": true,
+  "selection": {
+    "origin_airports": [
+      "JFK",
+      "ORD",
+      "LAX"
+    ],
+    "local_flight_dates": [
+      "2024-01-09",
+      "2024-07-09"
+    ],
+    "rule": "保留所选出发机场及当地航班日期的全部原始航班，不按结果筛选或改标签。",
+    "random_sampling": false,
+    "random_seed": null,
+    "csv_serialization": "保留原字段顺序、字段值和记录顺序；CSV重新序列化，不宣称与源文件片段字节相同。"
+  },
+  "weather_selection": {
+    "utc_windows_inclusive_start_exclusive_end": [
+      [
+        "2024-01-08T00:00:00+00:00",
+        "2024-01-11T00:00:00+00:00"
+      ],
+      [
+        "2024-07-08T00:00:00+00:00",
+        "2024-07-11T00:00:00+00:00"
+      ]
+    ],
+    "basis": "当地日期的保守UTC包络：D-1 00:00至D+2 00:00；覆盖所选美国本土机场的跨日及90分钟前序观测需求。",
+    "exact_per_flight_timezone_conversion_performed": false,
+    "per_flight_90_minute_match_performed": false,
+    "all_original_report_types_kept": true
+  },
+  "flight_records": 3112,
+  "flight_records_by_origin_and_local_date": [
+    {
+      "origin": "JFK",
+      "flight_date": "2024-01-09",
+      "records": 303
+    },
+    {
+      "origin": "JFK",
+      "flight_date": "2024-07-09",
+      "records": 351
+    },
+    {
+      "origin": "ORD",
+      "flight_date": "2024-01-09",
+      "records": 635
+    },
+    {
+      "origin": "ORD",
+      "flight_date": "2024-07-09",
+      "records": 792
+    },
+    {
+      "origin": "LAX",
+      "flight_date": "2024-01-09",
+      "records": 475
+    },
+    {
+      "origin": "LAX",
+      "flight_date": "2024-07-09",
+      "records": 556
+    }
+  ],
+  "raw_label_counts": {
+    "noncancelled_nondiverted_arrdel15_0": 1922,
+    "cancelled": 162,
+    "noncancelled_nondiverted_arrdel15_1": 1002,
+    "diverted": 26
+  },
+  "weather": [
+    {
+      "airport": "JFK",
+      "station_id": "74486094789",
+      "records": 224,
+      "report_types": {
+        "FM-12": 48,
+        "FM-16": 26,
+        "FM-15": 144,
+        "SOD  ": 6
+      },
+      "start_utc": "2024-01-08T00:00:00+00:00",
+      "end_utc": "2024-07-10T23:51:00+00:00",
+      "records_per_utc_window": [
+        107,
+        117
+      ],
+      "fm15_fm16_per_utc_window": [
+        80,
+        90
+      ]
+    },
+    {
+      "airport": "ORD",
+      "station_id": "72530094846",
+      "records": 274,
+      "report_types": {
+        "FM-12": 48,
+        "FM-15": 145,
+        "SOD  ": 6,
+        "FM-16": 75
+      },
+      "start_utc": "2024-01-08T00:00:00+00:00",
+      "end_utc": "2024-07-10T23:51:00+00:00",
+      "records_per_utc_window": [
+        171,
+        103
+      ],
+      "fm15_fm16_per_utc_window": [
+        144,
+        76
+      ]
+    },
+    {
+      "airport": "LAX",
+      "station_id": "72295023174",
+      "records": 235,
+      "report_types": {
+        "FM-12": 48,
+        "FM-15": 144,
+        "SOD  ": 6,
+        "FM-16": 37
+      },
+      "start_utc": "2024-01-08T00:00:00+00:00",
+      "end_utc": "2024-07-10T23:53:00+00:00",
+      "records_per_utc_window": [
+        100,
+        135
+      ],
+      "fm15_fm16_per_utc_window": [
+        73,
+        108
+      ]
+    }
+  ],
+  "source_bts_manifest": "data/raw/BTS/BTS_2024_full_year/file_manifest.json",
+  "input_control_files": [
+    {
+      "path": "data/raw/BTS/BTS_2024_full_year/file_manifest.json",
+      "bytes": 8975,
+      "sha256": "fba951d86789d0b59bbaa8800080282bbb93562b1bccd7f8c22ff7028349af4b"
+    },
+    {
+      "path": "metadata/noaa_full_airports_2024.csv",
+      "bytes": 119007,
+      "sha256": "29aee9e1ae99677834e7ea66b2cf694e6e68fdeac564cc8f3cbf88625f0e064f"
+    },
+    {
+      "path": "metadata/noaa_full_inventory_2024.json",
+      "bytes": 919790,
+      "sha256": "7936383d75705f5b834f1a46a8802f9e78c5f15f72976e5dae9b29095615af2d"
+    },
+    {
+      "path": "metadata/ourairports_inventory.json",
+      "bytes": 777,
+      "sha256": "6983ec9d1b0cd2fae8e6a63183278ea72d84567d1206cf6cb1c8726a50d07a0c"
+    },
+    {
+      "path": "metadata/census_state_inventory.json",
+      "bytes": 8455,
+      "sha256": "f5d549c152a5791ad2f2ae9af358f6b2cdc17996042be5dc3ef7e81ad6c8684f"
+    }
+  ],
+  "original_sources": [
+    {
+      "source": "BTS",
+      "path": "data/raw/BTS/BTS_2024_full_year/On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2024_1.csv",
+      "bytes": 246830488,
+      "sha256": "e92febedf6cd51bd87eca0be2fba3f5c1f383b1da41119db7f1cc1a26c4d3286",
+      "records_scanned": 547271,
+      "official_url": "https://transtats.bts.gov/PREZIP/On_Time_Reporting_Carrier_On_Time_Performance_1987_present_2024_1.zip",
+      "upstream_acquired_utc": "2026-10-28T07:35:27.189691+00:00"
+    },
+    {
+      "source": "BTS",
+      "path": "data/raw/BTS/BTS_2024_full_year/On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2024_7.csv",
+      "bytes": 287485513,
+      "sha256": "08894d7a211469ff69234ea0ba5c8bad1abe565d0bfe3f1b547798a605078173",
+      "records_scanned": 634613,
+      "official_url": "https://transtats.bts.gov/PREZIP/On_Time_Reporting_Carrier_On_Time_Performance_1987_present_2024_7.zip",
+      "upstream_acquired_utc": "2026-10-28T07:35:57.015779+00:00"
+    },
+    {
+      "source": "NOAA",
+      "path": "data/raw/NOAA/2024/74486094789.csv",
+      "bytes": 7740547,
+      "sha256": "a81deadebf7dcb568346eb554516a0d85be387c91946fde84305489ede2e5dc7",
+      "records_scanned": 13048,
+      "download_url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2024/74486094789.csv"
+    },
+    {
+      "source": "NOAA",
+      "path": "data/raw/NOAA/2024/72530094846.csv",
+      "bytes": 8451465,
+      "sha256": "1f21901ce9998830e7078d28fbad99fc626d409d413d7d34c986b66a3df70176",
+      "records_scanned": 14041,
+      "download_url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2024/72530094846.csv"
+    },
+    {
+      "source": "NOAA",
+      "path": "data/raw/NOAA/2024/72295023174.csv",
+      "bytes": 8164095,
+      "sha256": "509265f8e35d389fb02f66604cc5df20be3ca10868a27cb5202fbdd2b24b28b4",
+      "records_scanned": 14049,
+      "download_url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2024/72295023174.csv"
+    },
+    {
+      "source": "OurAirports",
+      "path": "data/raw/OurAirports/airports.csv",
+      "bytes": 12751638,
+      "sha256": "9c1f3295b59f84c475f8c8555fa102505d7b4af0f931002cc5558dfeee1e43aa",
+      "copied_full_file": true,
+      "records": 86293
+    },
+    {
+      "source": "Census",
+      "path": "data/raw/Census/cb_2024_us_state_500k.zip",
+      "bytes": 3242450,
+      "sha256": "3e81cbb6cf5f60d9b01ef3e730afa14d61ce5f784252a0b33a696135e71447bc",
+      "copied_full_file": true,
+      "records": 56
+    }
+  ],
+  "outputs": [
+    {
+      "path": "airport_station_sample_mapping.csv",
+      "bytes": 1399,
+      "sha256": "cd48faa493ed49238dddbea48df1a12d736ab16e95f22bc77fdbccccdda20ce5",
+      "records": 3
+    },
+    {
+      "path": "BTS/bts_flights_sample.csv",
+      "bytes": 1150854,
+      "sha256": "431cb806ad11b411f53f2fa26b4a2817260b70da3b388c299774fd029ceee87d",
+      "records": 3112
+    },
+    {
+      "path": "BTS/flight_sample_lineage.csv",
+      "bytes": 362387,
+      "sha256": "28bb62bbb1e55d7905ceef856ea857ba50074ea696ec9dccbda649a271fb5f3c",
+      "records": 3112
+    },
+    {
+      "path": "Census/cb_2024_us_state_500k.zip",
+      "bytes": 3242450,
+      "sha256": "3e81cbb6cf5f60d9b01ef3e730afa14d61ce5f784252a0b33a696135e71447bc"
+    },
+    {
+      "path": "NOAA/72295023174.csv",
+      "bytes": 128907,
+      "sha256": "31c6a687079d3576e697b357a9ae2947756f7c0202428b0618f67d86cb8f35fd",
+      "records": 235
+    },
+    {
+      "path": "NOAA/72530094846.csv",
+      "bytes": 168009,
+      "sha256": "ec2919c6f8551f039fb4aae81385b9f727c393e48263ebfdb08e3efee1133c8b",
+      "records": 274
+    },
+    {
+      "path": "NOAA/74486094789.csv",
+      "bytes": 134441,
+      "sha256": "527d16b993f462b0f348dbbebb340bc7eca47b028dac24ba4f1c41adf380e7f9",
+      "records": 224
+    },
+    {
+      "path": "OurAirports/airports.csv",
+      "bytes": 12751638,
+      "sha256": "9c1f3295b59f84c475f8c8555fa102505d7b4af0f931002cc5558dfeee1e43aa",
+      "records": 86293
+    }
+  ],
+  "warnings": [],
+  "use": "仅用于展示与读取/关联测试，不代表全年统计，不替代全量分析，不计入新增有效体积。"
+}

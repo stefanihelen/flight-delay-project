@@ -1,0 +1,149 @@
+{
+  "matched_rows": 7055161,
+  "elements": {
+    "temp": {
+      "value_column": "temp_c",
+      "q_column": "temp_q",
+      "bucket_counts": {
+        "usable": 7039416,
+        "uncertain": 2581,
+        "erroneous": 4092,
+        "missing": 9072,
+        "other": 0
+      },
+      "bucket_pct": {
+        "usable": 99.777,
+        "uncertain": 0.037,
+        "erroneous": 0.058,
+        "missing": 0.129,
+        "other": 0.0
+      },
+      "usable_pct": 99.777,
+      "uncertain_pct": 0.037,
+      "erroneous_pct": 0.058,
+      "missing_pct": 0.129,
+      "raw_qcode_counts": {
+        "5": 6662106,
+        "1": 347051,
+        "C": 20788,
+        "A": 9471,
+        "9": 9072,
+        "7": 4092,
+        "6": 2427,
+        "2": 114,
+        "P": 40
+      },
+      "value_nan_count": 9072
+    },
+    "vis": {
+      "value_column": "vis_m",
+      "q_column": "vis_q",
+      "bucket_counts": {
+        "usable": 7047276,
+        "uncertain": 5985,
+        "erroneous": 1047,
+        "missing": 853,
+        "other": 0
+      },
+      "bucket_pct": {
+        "usable": 99.888,
+        "uncertain": 0.085,
+        "erroneous": 0.015,
+        "missing": 0.012,
+        "other": 0.0
+      },
+      "usable_pct": 99.888,
+      "uncertain_pct": 0.085,
+      "erroneous_pct": 0.015,
+      "missing_pct": 0.012,
+      "raw_qcode_counts": {
+        "5": 6693184,
+        "1": 342368,
+        "A": 11724,
+        "6": 4971,
+        "7": 1047,
+        "P": 1014,
+        "9": 853
+      },
+      "value_nan_count": 1747
+    },
+    "wind_speed": {
+      "value_column": "wind_speed_kts",
+      "q_column": "wind_speed_q",
+      "bucket_counts": {
+        "usable": 7046476,
+        "uncertain": 672,
+        "erroneous": 25,
+        "missing": 7988,
+        "other": 0
+      },
+      "bucket_pct": {
+        "usable": 99.877,
+        "uncertain": 0.01,
+        "erroneous": 0.0,
+        "missing": 0.113,
+        "other": 0.0
+      },
+      "usable_pct": 99.877,
+      "uncertain_pct": 0.01,
+      "erroneous_pct": 0.0,
+      "missing_pct": 0.113,
+      "raw_qcode_counts": {
+        "5": 6702945,
+        "1": 342754,
+        "9": 7988,
+        "A": 777,
+        "6": 250,
+        "P": 248,
+        "U": 145,
+        "7": 25,
+        "I": 22,
+        "2": 7
+      },
+      "value_nan_count": 7988
+    },
+    "precip": {
+      "value_column": "precip_mm",
+      "q_column": "precip_q",
+      "bucket_counts": {
+        "usable": 6409298,
+        "uncertain": 9113,
+        "erroneous": 0,
+        "missing": 636750,
+        "other": 0
+      },
+      "bucket_pct": {
+        "usable": 90.846,
+        "uncertain": 0.129,
+        "erroneous": 0.0,
+        "missing": 9.025,
+        "other": 0.0
+      },
+      "usable_pct": 90.846,
+      "uncertain_pct": 0.129,
+      "erroneous_pct": 0.0,
+      "missing_pct": 9.025,
+      "raw_qcode_counts": {
+        "5": 6209831,
+        "1": 199467,
+        "6": 5852,
+        "P": 3194,
+        "9": 583,
+        "I": 66,
+        "2": 1
+      },
+      "value_nan_count": 636750
+    }
+  },
+  "precip_period_h": {
+    "distribution": {
+      "1": 6406220,
+      "3": 2513,
+      "6": 7607,
+      "24": 2653,
+      "NaN": 636168
+    },
+    "note": "主分析只用 precip_period_h==1（1小时累计）；不得与3/6/24小时累计混作同一小时降水量"
+  },
+  "precip_main_analyzable_rows": 6406220
+}

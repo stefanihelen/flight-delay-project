@@ -1,0 +1,39 @@
+BTS 全年清洗自检 (读回 bts_flights_2024.parquet)
+============================================================
+文件: C:\Users\houchangjie\Desktop\大数据\新建文件夹\flight_delay_project\data\cleaned\bts_flights_2024.parquet
+行数: 7079060
+列数: 20
+
+核心列非空率:
+  flight_id                100.00%  (dtype=str)
+  flight_date              100.00%  (dtype=object)
+  reporting_airline        100.00%  (dtype=str)
+  flight_number            100.00%  (dtype=int64)
+  tail_number               99.72%  (dtype=str)
+  origin                   100.00%  (dtype=str)
+  dest                     100.00%  (dtype=str)
+  origin_airport_id        100.00%  (dtype=int64)
+  dest_airport_id          100.00%  (dtype=int64)
+  origin_state             100.00%  (dtype=str)
+  dest_state               100.00%  (dtype=str)
+  crs_dep_hhmm             100.00%  (dtype=int64)
+  sched_dep_local          100.00%  (dtype=datetime64[us])
+  distance_miles           100.00%  (dtype=float64)
+  arr_delay_min             98.39%  (dtype=float64)
+  arr_del15                 98.39%  (dtype=float64)
+  cancelled                100.00%  (dtype=int8)
+  diverted                 100.00%  (dtype=int8)
+  arrival_time_missing     100.00%  (dtype=int8)
+  arr_del15_mismatch       100.00%  (dtype=int8)
+
+flight_id 唯一: True
+月度行数之和 == 合并行数: 7079060 == 7079060
+剔除非2024总行数: 0
+剔除身份键缺失总行数: 1
+去重剔除总行数: 0
+
+前 3 行样例:
+                      flight_id flight_date reporting_airline  flight_number tail_number origin dest  origin_airport_id  dest_airport_id origin_state dest_state  crs_dep_hhmm     sched_dep_local  distance_miles  arr_delay_min  arr_del15  cancelled  diverted  arrival_time_missing  arr_del15_mismatch
+2024-01-08_9E_4801_LGA_OMA_0856  2024-01-08                9E           4801      N485PX    LGA  OMA              12953            13871           NY         NE           856 2024-01-08 08:56:00          1148.0          -11.0        0.0          0         0                     0                   0
+2024-01-09_9E_4801_LGA_OMA_0856  2024-01-09                9E           4801      N912XJ    LGA  OMA              12953            13871           NY         NE           856 2024-01-09 08:56:00          1148.0          -28.0        0.0          0         0                     0                   0
+2024-01-10_9E_4801_LGA_OMA_0856  2024-01-10                9E           4801      N918XJ    LGA  OMA              12953            13871           NY         NE           856 2024-01-10 08:56:00          1148.0          -25.0        0.0          0         0                     0                   0

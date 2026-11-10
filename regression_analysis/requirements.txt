@@ -1,0 +1,10 @@
+# Actual Python environment used to build this bundle: 3.13.7
+# Python >=3.11 is required for hashlib.file_digest.
+# R dependencies are listed in README.txt, not pip requirements.
+numpy==2.4.4
+pandas==3.0.2
+pyarrow==24.0.0
+scipy==1.17.1
+matplotlib==3.10.9
+scikit-learn==1.8.0
+PyMuPDF==1.27.2.3

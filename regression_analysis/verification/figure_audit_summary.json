@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "figure": "01_weather_associations.pdf",
+      "check": "glyph",
+      "exit_code": 0
+    },
+    {
+      "figure": "01_weather_associations.pdf",
+      "check": "collision",
+      "exit_code": 0
+    },
+    {
+      "figure": "02_temporal_test_roc.pdf",
+      "check": "glyph",
+      "exit_code": 0
+    },
+    {
+      "figure": "02_temporal_test_roc.pdf",
+      "check": "collision",
+      "exit_code": 0
+    },
+    {
+      "figure": "03_temporal_test_calibration.pdf",
+      "check": "glyph",
+      "exit_code": 0
+    },
+    {
+      "figure": "03_temporal_test_calibration.pdf",
+      "check": "collision",
+      "exit_code": 0
+    }
+  ],
+  "visual_review": "PASS; each of the three final PNGs inspected, see visual_review.json"
+}

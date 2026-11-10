@@ -1,0 +1,30 @@
+重读合并parquet: C:\Users\houchangjie\Desktop\大数据\新建文件夹\flight_delay_project\data\cleaned\noaa_obs_2024.parquet
+行数: 3905968
+列数: 19
+列名: ['station_id', 'obs_utc', 'report_type', 'temp_c', 'temp_q', 'dew_c', 'dew_q', 'slp_hpa', 'slp_q', 'wind_dir_deg', 'wind_dir_q', 'wind_speed_kts', 'wind_speed_q', 'vis_m', 'vis_q', 'precip_mm', 'precip_q', 'precip_period_h', 'precip_reported']
+
+核心列非空率:
+  obs_utc: 非空 3905968/3905968 (100.00%)
+  temp_c: 非空 3888092/3905968 (99.54%)
+  dew_c: 非空 3878268/3905968 (99.29%)
+  slp_hpa: 非空 2850858/3905968 (72.99%)
+  wind_dir_deg: 非空 3195903/3905968 (81.82%)
+  wind_speed_kts: 非空 3883962/3905968 (99.44%)
+  vis_m: 非空 3898440/3905968 (99.81%)
+  precip_mm: 非空 2909766/3905968 (74.50%)
+  precip_reported: 非空 3905968/3905968 (100.00%)
+
+report_type 分布:
+  FM-15: 3204352
+  FM-16: 701616
+
+station_id 唯一数: 346
+obs_utc 范围: 2024-01-01 00:00:00 ~ 2024-12-31 23:59:00
+
+样例前5行:
+    station_id             obs_utc report_type  temp_c temp_q  dew_c dew_q  slp_hpa slp_q  wind_dir_deg wind_dir_q  wind_speed_kts wind_speed_q    vis_m vis_q  precip_mm precip_q  precip_period_h  precip_reported
+0  70026027502 2024-01-01 00:53:00       FM-15   -26.0      1  -29.0     1      NaN     9          50.0          1       11.079914            1  16093.0     1        NaN      NaN              NaN                0
+1  70026027502 2024-01-01 01:53:00       FM-15   -26.0      1  -29.0     1      NaN     9          50.0          1       12.051836            1  14484.0     1        NaN      NaN              NaN                0
+2  70026027502 2024-01-01 02:53:00       FM-15   -26.0      1  -29.0     1      NaN     9          50.0          1       13.023758            1  14484.0     1        NaN      NaN              NaN                0
+3  70026027502 2024-01-01 04:53:00       FM-15   -27.0      1  -29.0     1      NaN     9          50.0          1       11.079914            1  16093.0     1        NaN      NaN              NaN                0
+4  70026027502 2024-01-01 05:53:00       FM-15   -26.0      1  -29.0     1      NaN     9          60.0          1       13.023758            1  14484.0     1        NaN      NaN              NaN                0

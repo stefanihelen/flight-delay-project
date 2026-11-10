@@ -1,0 +1,28 @@
+{
+  "no_precip_common": {
+    "n_eligible": 6272073,
+    "n_model": 6272067,
+    "removed_by_estimator": 6,
+    "converged": true,
+    "iterations": 5,
+    "origins": 333,
+    "dates": 366,
+    "cluster_df": 332,
+    "mean_outcome": 0.2074263556177,
+    "warnings": [],
+    "formula": "delay ~ wind categories + visibility categories + temperature + temperature squared + log distance | origin + destination + airline + month + weekday + hour"
+  },
+  "no_precip_expanded": {
+    "n_eligible": 6913364,
+    "n_model": 6913364,
+    "removed_by_estimator": 0,
+    "converged": true,
+    "iterations": 5,
+    "origins": 346,
+    "dates": 366,
+    "cluster_df": 345,
+    "mean_outcome": 0.2080748243547,
+    "warnings": [],
+    "formula": "delay ~ wind categories + visibility categories + temperature + temperature squared + log distance | origin + destination + airline + month + weekday + hour"
+  }
+}

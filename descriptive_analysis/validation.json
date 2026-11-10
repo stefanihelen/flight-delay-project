@@ -1,0 +1,38 @@
+{
+  "input_sha256_match": true,
+  "rows": 7079060,
+  "valid_arrivals": 6965246,
+  "label_consistency": true,
+  "group_totals_reconcile": true,
+  "weather_windows_valid": true,
+  "python": "3.13.3",
+  "pandas": "2.2.3",
+  "pyarrow": "24.0.0",
+  "matplotlib": "3.10.3",
+  "independent_check": {
+    "status": "passed",
+    "checked_at": "2026-11-04T23:08:37+08:00",
+    "input_directory": "D:\\大数据中期大作业",
+    "method": "Parquet分块读取，按延误分钟阈值独立累计总体及每月分子分母",
+    "counts": {
+      "flights": 7079060,
+      "valid_arrivals": 6965246,
+      "delayed": 1449966,
+      "cancelled": 96315,
+      "diverted": 17499,
+      "matched": 7055161
+    }
+  },
+  "heatmap_revision": {
+    "minimum_valid_arrivals_for_color": 100,
+    "masked_cells": 21,
+    "total_cells": 288,
+    "visual_review": "AI已查看重绘PNG，灰显、n标注、色标和图注可读；本次新增人工审核未记录",
+    "teacher_prescribed_threshold": false
+  },
+  "revision_preservation_check": {
+    "unchanged_statistical_tables": 25,
+    "unchanged_other_figures": 6,
+    "method": "修订前后SHA-256比对一致"
+  }
+}

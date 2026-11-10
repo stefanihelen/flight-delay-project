@@ -1,0 +1,58 @@
+NOAA ISD Global-Hourly 2024 字段格式核验笔记
+=============================================
+核验日期：2026-10-31
+依据官方文档：https://www.ncei.noaa.gov/pub/data/noaa/isd-format-document.pdf
+样本核对文件：
+  data/raw/NOAA/2024/72219013874.csv (ATL, 91列, 带BOM带引号)
+  data/raw/NOAA/2024/72676494163.csv (WYS, 36列, 带BOM带引号)
+  data/raw/NOAA/2024/72475423186.csv (SGU, 53列, 试采集跳过)
+  data/samples/raw/member1/NOAA/72530094846.csv (ORD样本, 无BOM无引号)
+
+1. 表头与列数
+- 列数各站不一致：WYS 36列、SGU 53列、ATL 91列；以实际表头为准。
+- 正式CSV表头带BOM(EF BB BF)且字段带双引号；样本CSV无BOM无引号。
+- 统一用 encoding="utf-8-sig" + dtype=str 读取，pandas自动剥BOM和引号。
+- 关键列 WND/VIS/TMP/DEW/SLP/AA1/REM 在抽查的3个正式站均存在；
+  脚本仍对缺失列兜底补空列，避免KeyError。
+
+2. DATE 精度
+- 实证所有抽查站 DATE 均为完整 UTC 时间戳：YYYY-MM-DDTHH:MM:SS
+  例：2024-01-01T00:52:00。无仅日期记录。
+- obs_utc 直接按UTC解析，无需从REM的METAR时刻组补造。
+- 样本3站733条 bad_date=0。
+
+3. REPORT_TYPE
+- FM-15=METAR例行报, FM-16=SPECI特报, FM-12=SYNOP地面天气图, SOD=日总结。
+- 仅 FM-15/FM-16 进入清洗输出；FM-12/SOD 等仅统计。
+- 原始 REPORT_TYPE 字段无尾随空格（CALL_SIGN 才有尾随空格如"KATL "），
+  脚本仍 .strip() 后比较以防万一。
+
+4. 字段解析（实证值对照官方文档）
+- TMP="+0089,5" -> temp_c=8.9, temp_q=5；缺失 +9999 -> NaN。
+- DEW="+0000,5" -> dew_c=0.0, dew_q=5；缺失 +9999 -> NaN。
+- SLP="10203,5" -> slp_hpa=1020.3, slp_q=5；缺失 99999 -> NaN。
+- WND="220,5,N,0026,5" -> dir=220, dir_q=5, type=N, speed=2.6m/s=5.05kt, speed_q=5；
+  缺失方向 999, 缺失风速 9999。VRB风方向为999(如WYS "999,9,V,0015,5")。
+- VIS="016093,5,N,5" -> vis_m=16093, vis_q=5。
+  【重要】文档明确 UNITS=Meters 且无 SCALING FACTOR，码值直接=米。
+  任务书早期曾写"VIS×10"，与官方文档矛盾；以文档为准。
+  实证：ATL FM-15 VIS=016093 对应 METAR "10SM" = 10*1609.344 = 16093m。
+  缺失 999999 -> NaN；>160000 封顶为 160000。
+- AA1="01,0000,9,5" -> period=1h, depth=0.0mm, condition=9, quality=5。
+  深度码=毫米*10；缺失 9999 -> NaN；period 缺失 99 -> NaN。
+  口径：AA1整段缺失 -> precip_mm=NaN 且 precip_reported=0（缺测≠无雨）；
+  AA1存在（含depth=0）-> precip_reported=1。
+
+5. REM(METAR原文)交叉核验
+- REM 前缀格式："MET<xxx><MM/DD/YY> <HH:MM:SS> METAR/SPECI <ICAO> ..."
+- 核验脚本必须从 " METAR " 或 " SPECI " 关键字后开始解析，
+  否则前缀日期 "MM/DD/YY" 中的斜杠会被温露点正则误匹配。
+- 样本15条核验：温度/露点/风/能见度/气压 全部在容差内一致。
+
+6. 去重
+- 同 (station_id, obs_utc, report_type) 保留首条，记录删除数。
+- 样本3站571条FM-15/16中 dup_rm=0。
+
+7. SGU 试采集文件
+- data/raw/NOAA/2024/72475423186.csv (SGU) 不在正式清单 metadata/noaa_full_airports_2024.csv，
+  按任务要求跳过，不进入清洗。

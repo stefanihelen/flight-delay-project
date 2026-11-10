@@ -1,0 +1,49 @@
+{
+  "backend": "Python Matplotlib exclusively",
+  "archetype": "quantitative grid; three separate single-panel figures",
+  "figures": [
+    {
+      "name": "01_weather_associations",
+      "question": "Which weather conditions are associated with delay after adjustment?",
+      "role": "Adjusted association and cluster-robust uncertainty",
+      "source": "tables/weather_contrasts.csv",
+      "size_inches": [
+        7.2,
+        5.5
+      ],
+      "interval": "Two-way origin/date cluster-robust 95% CI; no multiplicity correction"
+    },
+    {
+      "name": "02_temporal_test_roc",
+      "question": "Does adding weather improve held-out discrimination?",
+      "role": "Temporal prediction comparison on common covered test flights",
+      "source": "holdout predictions",
+      "size_inches": [
+        5.5,
+        5.1
+      ],
+      "interval": "None; point estimates only"
+    },
+    {
+      "name": "03_temporal_test_calibration",
+      "question": "Are predicted probabilities calibrated on the held-out period?",
+      "role": "Descriptive calibration, without refitting",
+      "source": "tables/calibration.csv",
+      "size_inches": [
+        5.5,
+        5.1
+      ],
+      "interval": "None; descriptive bin summaries only"
+    }
+  ],
+  "source_data": "Observed 2024 BTS flights linked to NOAA weather; no synthetic observations",
+  "exports": [
+    "PNG 300 dpi",
+    "editable-text PDF",
+    "editable-text SVG"
+  ],
+  "minimum_glyph_pt": 5,
+  "alignment": "NOT APPLICABLE: each figure has one plot area",
+  "cohort_rule": "Inference cohort defined in regression; evaluation excludes any row lacking either prediction and reports exclusions",
+  "image_integrity": "Charts computed directly from tabular results; no image editing or manipulation"
+}

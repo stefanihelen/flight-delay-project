@@ -1,0 +1,4 @@
+﻿airport_code,bts_airport_id,city,state,departures,arrivals,ourairports_ident,airport_name,airport_latitude,airport_longitude,airport_match_method,station_id,station_name,station_icao,station_latitude,station_longitude,distance_km,station_begin,station_end,status,reason
+PBI,14027,"West Palm Beach/Palm Beach, FL",FL,29476,29475,KPBI,President Donald J. Trump International Airport,26.683201,-80.095596,historical_identifier_candidate,72203012844,PALM BEACH INTERNATIONAL AIRPORT,KPBI,26.685,-80.099,0.393,19430206,20250827,review_station,使用历史机场标识候选
+SGU,14794,"St. George, UT",UT,3023,3023,KSGU,St George Regional Airport,37.036389,-113.510306,iata_code,72475423186,ST GEORGE MUNICIPAL ARPT,KSGU,37.1,-113.6,10.647,20060101,20250825,review_station,距离超过10公里
+XWA,16869,"Williston, ND",ND,1972,1973,KXWA,Williston Basin International Airport,48.260863,-103.75116,iata_code,,,,,,,,,review_no_station,25公里内没有满足年份条件的站点

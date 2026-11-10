@@ -1,0 +1,5 @@
+split,model,total_rows,model_prediction_rows,missing_prediction_rows,common_prediction_rows,excluded_common_rows,common_coverage_rate
+validation,baseline,1119192,1119088,104,1119088,104,0.9999070758189837
+validation,weather,1119192,1119088,104,1119088,104,0.9999070758189837
+test,baseline,847620,847280,340,847280,340,0.9995988768551946
+test,weather,847620,847280,340,847280,340,0.9995988768551946

@@ -1,0 +1,14 @@
+{
+  "raw_rows_total": 7079061,
+  "kept_rows_total": 7079060,
+  "dropped_non2024_total": 0,
+  "dropped_missing_key_total": 1,
+  "dup_dropped_total": 0,
+  "n_crs2400_total": 1,
+  "cancelled_total": 96315,
+  "diverted_total": 17499,
+  "arr_time_missing_total": 97854,
+  "arr_del15_mismatch_total": 0,
+  "flight_id_unique": true,
+  "n_months": 12
+}

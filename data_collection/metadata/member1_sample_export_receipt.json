@@ -1,0 +1,8 @@
+{
+  "completed": true,
+  "generated_at_utc": "2026-10-29T12:20:08.315143+00:00",
+  "sample_directory": "data/samples/raw/member1",
+  "flight_records": 3112,
+  "weather_records": 733,
+  "sample_manifest_sha256": "83552b65ae278eae8730e8a90b3a114ce563efa408bd990a2ffac4e977e58d73"
+}

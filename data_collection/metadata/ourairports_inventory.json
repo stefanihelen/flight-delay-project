@@ -1,0 +1,33 @@
+{
+  "source": "OurAirports",
+  "source_page": "https://ourairports.com/data/",
+  "download_url": "https://ourairports.com/data/airports.csv",
+  "filename": "airports.csv",
+  "bytes": 12751638,
+  "sha256": "9c1f3295b59f84c475f8c8555fa102505d7b4af0f931002cc5558dfeee1e43aa",
+  "records": 86293,
+  "us_records": 32697,
+  "fields": [
+    "id",
+    "ident",
+    "type",
+    "name",
+    "latitude_deg",
+    "longitude_deg",
+    "elevation_ft",
+    "continent",
+    "iso_country",
+    "iso_region",
+    "municipality",
+    "scheduled_service",
+    "icao_code",
+    "iata_code",
+    "gps_code",
+    "local_code",
+    "home_link",
+    "wikipedia_link",
+    "keywords"
+  ],
+  "checked_at_utc": "2026-10-28T11:07:20.515688+00:00",
+  "downloaded_at": null
+}

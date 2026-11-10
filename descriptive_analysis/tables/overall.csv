@@ -1,0 +1,2 @@
+﻿flights,valid_arrivals,delayed,cancelled,diverted,delay_rate,cancel_rate,matched,origins,airlines,sha256
+7079060,6965246,1449966,96315,17499,0.20817154196707482,0.013605619955191791,7055161,348,15,7eb3dc4b1eceaf994207717f3460f6df7d0a519c21b3f4ecb2f9654d592f610b

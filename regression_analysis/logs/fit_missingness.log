@@ -1,0 +1,10 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+2026-11-07 23:03:25 START no_precip_common 
+NOTE: 3/0/0/0/0/0 fixed-effects (6 observations) removed because of only 0 or only 1 outcomes or singletons.
+2026-11-07 23:05:25 DONE no_precip_common n 6272067 
+2026-11-07 23:05:25 START no_precip_expanded 
+2026-11-07 23:07:38 DONE no_precip_expanded n 6913364 

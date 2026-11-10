@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "method": "Opened and inspected each final PNG; checked text, intervals, labels, legend, margins, and data correspondence.",
+  "panels": [
+    {
+      "figure": "01_weather_associations",
+      "role": "Adjusted association; nine contrasts",
+      "center": "Odds ratio",
+      "interval": "95% two-way airport/date cluster-robust CI",
+      "n": 6272067,
+      "alignment": "Not applicable: one plot area",
+      "visual": "All nine markers and confidence intervals clear; reference line at 1; log scale labelled; complete caption; no clipping."
+    },
+    {
+      "figure": "02_temporal_test_roc",
+      "role": "Temporal discrimination comparison",
+      "center": "All-score empirical ROC",
+      "interval": "None; point estimates only",
+      "n": 847280,
+      "alignment": "Not applicable: one plot area",
+      "visual": "Both curves and baseline diagonal clear; legend away from curves; source and temporal split complete; axes include 0 and 1."
+    },
+    {
+      "figure": "03_temporal_test_calibration",
+      "role": "Descriptive held-out calibration",
+      "center": "Observed rate per model-specific prediction quantile bin",
+      "interval": "None; descriptive bins, explicitly stated",
+      "n": 847280,
+      "alignment": "Not applicable: one plot area",
+      "visual": "All bin points visible; differing bins declared; diagonal and legends legible; no misleading test-set recalibration."
+    }
+  ],
+  "rendered_text": "All final PDF glyph audits and collision audits exited 0.",
+  "source_warnings": "All four static-source warnings are reviewed in source_preflight_reviews.json.",
+  "image_integrity": "Actual data only; no image manipulation or statistical subsampling."
+}

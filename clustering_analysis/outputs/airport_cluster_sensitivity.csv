@@ -1,0 +1,4 @@
+﻿scenario,excluded_airport,wind_cap,capped_airports,compared_airports,unchanged_airports,changed_airports,adjusted_rand_index,silhouette,changed_airport_codes
+original,,,0,231,231,0,1.0,0.24013978598183155,
+remove_highest_wind_airport,OGG,,0,230,228,2,0.9797269093309656,0.2551797475992613,"BRO, DEN"
+cap_wind_rate_at_p95,,0.055062646911467575,12,231,226,5,0.9476776047607617,0.25914548606751386,"BRO, DEN, FLG, LGA, MLU"

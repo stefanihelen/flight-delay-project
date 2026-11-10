@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "input_rows": 7079060,
+  "fitted_models": 9,
+  "main_n": 6272067,
+  "model_convergence_and_attrition": "passed",
+  "odds_ratio_and_interval_ordering": "passed",
+  "prediction_confusion_matrix_and_thresholds": "passed",
+  "deliverable_files": "passed",
+  "scope": "Numerical/file consistency only; independent of separate visual inspection."
+}

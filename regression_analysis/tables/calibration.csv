@@ -1,0 +1,21 @@
+split,model,bin,n,mean_prediction,observed_rate,prediction_min,prediction_max,binning
+test,baseline,1,84728,0.08354748477910552,0.09489188934000567,0.0290001317948991,0.105280147825945,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,baseline,2,84728,0.12077820142450962,0.11133273534132754,0.105280340958346,0.135429024414977,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,baseline,3,84728,0.15000275222540888,0.12653432159380607,0.135429127805584,0.164838410029264,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,baseline,4,84728,0.17967601369402858,0.14297516759512793,0.164838440514411,0.194538191175913,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,baseline,5,84728,0.20925325484070437,0.159675668020017,0.194538813333156,0.224020352473266,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,baseline,6,84728,0.23915688313945266,0.17461759984892833,0.224020591279801,0.254552205517623,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,baseline,7,84728,0.2705894797780364,0.19333632329336228,0.254552563688307,0.28716699512284,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,baseline,8,84728,0.3050863607680174,0.2155957888773487,0.287167120357812,0.324118802500833,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,baseline,9,84728,0.34734714240141185,0.23986167500708147,0.324119832110377,0.374564408032168,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,baseline,10,84728,0.424918385274862,0.27995467850061373,0.374565036684111,0.69918770385936,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,weather,1,84728,0.06837582091945306,0.07668067226890757,0.0188206415385153,0.0876530397155216,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,weather,2,84728,0.10161782262198908,0.09857426116514022,0.0876533119321242,0.114932262762875,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,weather,3,84728,0.12766109442952564,0.11735199697856671,0.114932326564734,0.140262676719117,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,weather,4,84728,0.1529607026624319,0.13247096591445567,0.140262803221062,0.165713500712078,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,weather,5,84728,0.1786255191886753,0.15192144273439712,0.165713764231268,0.191893455245168,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,weather,6,84728,0.2058032289978188,0.16802001699556227,0.191893489008457,0.220170731999219,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,weather,7,84728,0.23562245170852186,0.19086960626947408,0.220170869292828,0.251948859992622,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,weather,8,84728,0.2707307751582351,0.2159144556699084,0.251949203833058,0.291330688998371,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,weather,9,84728,0.3189301358979898,0.24809980171844018,0.291332145747749,0.352502230261901,Up to 10 model-specific quantile bins; duplicate boundaries merged
+test,weather,10,84728,0.4363393481512438,0.3388726277027665,0.35250236192931,0.900780697603106,Up to 10 model-specific quantile bins; duplicate boundaries merged

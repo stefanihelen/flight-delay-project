@@ -1,0 +1,25 @@
+# 本地 Python 环境与缓存
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# 本地编辑器与 Windows 生成文件
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+~$*
+
+# 完整原始数据与大型清洗中间表保留在本地
+/data_collection/data/raw/BTS/BTS_2024_full_year/
+/data_collection/data/raw/NOAA/2024/
+/data_fusion/data/cleaned/bts_monthly/
+/data_fusion/data/cleaned/noaa_station/
+/data_fusion/data/cleaned/bts_flights_2024.parquet
+/data_fusion/data/cleaned/noaa_obs_2024.parquet
+/data_fusion/data/integrated/flights_weather_2024.parquet
+
+# 回归重跑生成的中间数据和本地 R 依赖
+/regression_analysis/work/
+/data_collection/data/raw/BTS/BTS_2024_full_year.zip

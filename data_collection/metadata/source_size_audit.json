@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-10-29T12:19:56.461251+00:00",
+  "bts_manifest": "data/raw/BTS/BTS_2024_full_year/file_manifest.json",
+  "bts_months": 12,
+  "bts_csv_bytes": 3201887863,
+  "noaa_formal_stations": 346,
+  "noaa_csv_bytes": 2517133047,
+  "main_sources_csv_bytes": 5719020910,
+  "bts_share_in_main_sources": 0.5598664375227822,
+  "noaa_share_in_main_sources": 0.4401335624772178,
+  "size_checks": {
+    "main_total_at_least_2_decimal_GB": true,
+    "each_main_at_least_200_decimal_MB": true,
+    "max_main_share_at_most_80_percent": true
+  },
+  "basis": "12个月BTS解压CSV与正式NOAA清单CSV；不计ZIP副本、样本或SGU试采集。",
+  "limitation": "这是原始文件体积核算，不替代有效字段/报告类型口径、质量核验或完整文件SHA核验。"
+}

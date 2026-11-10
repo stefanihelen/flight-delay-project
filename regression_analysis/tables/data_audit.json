@@ -1,0 +1,567 @@
+{
+  "status": "passed",
+  "started_at": "2026-11-07T22:48:21.314342+08:00",
+  "completed_at": "2026-11-07T22:49:10.972871+08:00",
+  "input_path": "C:\\Users\\lenovo\\Documents\\Codex\\2026-11-07\\new-chat\\work\\member2\\data\\integrated\\flights_weather_2024.parquet",
+  "input_sha256": "7eb3dc4b1eceaf994207717f3460f6df7d0a519c21b3f4ecb2f9654d592f610b",
+  "expected_sha256_match": true,
+  "input_rows": 7079060,
+  "input_columns": 44,
+  "batch_size": 250000,
+  "output_path": "C:\\Users\\lenovo\\Documents\\Codex\\2026-11-07\\new-chat\\work\\model_data.csv",
+  "output_rows": 6373724,
+  "output_columns": [
+    "date_id",
+    "month",
+    "weekday",
+    "hour",
+    "origin",
+    "dest",
+    "airline",
+    "station",
+    "route",
+    "distance_log",
+    "temp10",
+    "temp10sq",
+    "wind",
+    "vis",
+    "rain",
+    "strict_q",
+    "within60",
+    "y_delay",
+    "y_severe",
+    "y_disrupt"
+  ],
+  "main_valid_arrivals": 6272073,
+  "checks": {
+    "flight_id_missing": 0,
+    "flight_date_missing_or_not_2024": 0,
+    "invalid_cancelled_code": 0,
+    "invalid_diverted_code": 0,
+    "cancelled_and_diverted_both_one": 0,
+    "arr_delay_infinite": 0,
+    "valid_arrival_label_inconsistency": 0,
+    "matched_invalid_gap": 0,
+    "matched_timestamp_missing": 0,
+    "matched_future_weather": 0,
+    "matched_gap_timestamp_disagreement_gt_0_001min": 0,
+    "within60_flag_disagreement": 0,
+    "duplicate_flight_id_hash_rows": 0
+  },
+  "maximum_gap_difference_minutes": 0.0,
+  "flight_id_uniqueness": {
+    "method": "pandas.util.hash_pandas_object(index=False), deterministic uint64 hashes streamed then numpy.unique",
+    "hashed_ids": 7079060,
+    "unique_hashes": 7079060,
+    "duplicate_hash_rows": 0,
+    "interpretation": "No missing IDs and no equal hashes; identical IDs would have equal deterministic hashes, so no identical flight_id values were found. Repeated hashes would require exact-string resolution.",
+    "hash_collisions_observed": false
+  },
+  "sample_flow": [
+    {
+      "stage": "all_input",
+      "all_flights": 7079060,
+      "valid_arrivals": 6965246,
+      "delayed_ge15": 1449966,
+      "severe_ge60": 511633,
+      "cancelled": 96315,
+      "diverted": 17499,
+      "removed_all_from_previous": 0,
+      "removed_valid_arrivals_from_previous": 0
+    },
+    {
+      "stage": "matched_weather_0_to_90_min",
+      "all_flights": 7055161,
+      "valid_arrivals": 6941700,
+      "delayed_ge15": 1445480,
+      "severe_ge60": 510018,
+      "cancelled": 96048,
+      "diverted": 17413,
+      "removed_all_from_previous": 23899,
+      "removed_valid_arrivals_from_previous": 23546
+    },
+    {
+      "stage": "four_weather_values_finite",
+      "all_flights": 6405811,
+      "valid_arrivals": 6302955,
+      "delayed_ge15": 1309898,
+      "severe_ge60": 461186,
+      "cancelled": 87146,
+      "diverted": 15710,
+      "removed_all_from_previous": 649350,
+      "removed_valid_arrivals_from_previous": 638745
+    },
+    {
+      "stage": "four_weather_quality_usable",
+      "all_flights": 6385872,
+      "valid_arrivals": 6284029,
+      "delayed_ge15": 1303570,
+      "severe_ge60": 458457,
+      "cancelled": 86214,
+      "diverted": 15629,
+      "removed_all_from_previous": 19939,
+      "removed_valid_arrivals_from_previous": 18926
+    },
+    {
+      "stage": "precipitation_period_one_hour",
+      "all_flights": 6373724,
+      "valid_arrivals": 6272073,
+      "delayed_ge15": 1300994,
+      "severe_ge60": 457528,
+      "cancelled": 86066,
+      "diverted": 15585,
+      "removed_all_from_previous": 12148,
+      "removed_valid_arrivals_from_previous": 11956
+    },
+    {
+      "stage": "nonnegative_wind_visibility_precipitation",
+      "all_flights": 6373724,
+      "valid_arrivals": 6272073,
+      "delayed_ge15": 1300994,
+      "severe_ge60": 457528,
+      "cancelled": 86066,
+      "diverted": 15585,
+      "removed_all_from_previous": 0,
+      "removed_valid_arrivals_from_previous": 0
+    },
+    {
+      "stage": "valid_controls_and_distance",
+      "all_flights": 6373724,
+      "valid_arrivals": 6272073,
+      "delayed_ge15": 1300994,
+      "severe_ge60": 457528,
+      "cancelled": 86066,
+      "diverted": 15585,
+      "removed_all_from_previous": 0,
+      "removed_valid_arrivals_from_previous": 0
+    }
+  ],
+  "monthly_sample_counts": [
+    {
+      "month": 1,
+      "all_input": 547271,
+      "valid_arrivals_input": 525370,
+      "selected_all_outcomes": 509660,
+      "selected_main_arrivals": 489287,
+      "selected_main_delayed": 117499
+    },
+    {
+      "month": 2,
+      "all_input": 519221,
+      "valid_arrivals_input": 515269,
+      "selected_all_outcomes": 491539,
+      "selected_main_arrivals": 487912,
+      "selected_main_delayed": 77027
+    },
+    {
+      "month": 3,
+      "all_input": 591767,
+      "valid_arrivals_input": 585413,
+      "selected_all_outcomes": 553249,
+      "selected_main_arrivals": 547395,
+      "selected_main_delayed": 113134
+    },
+    {
+      "month": 4,
+      "all_input": 582185,
+      "valid_arrivals_input": 576915,
+      "selected_all_outcomes": 510278,
+      "selected_main_arrivals": 505694,
+      "selected_main_delayed": 96558
+    },
+    {
+      "month": 5,
+      "all_input": 609743,
+      "valid_arrivals_input": 599226,
+      "selected_all_outcomes": 567268,
+      "selected_main_arrivals": 557648,
+      "selected_main_delayed": 146758
+    },
+    {
+      "month": 6,
+      "all_input": 611132,
+      "valid_arrivals_input": 601272,
+      "selected_all_outcomes": 578289,
+      "selected_main_arrivals": 569124,
+      "selected_main_delayed": 141160
+    },
+    {
+      "month": 7,
+      "all_input": 634613,
+      "valid_arrivals_input": 613938,
+      "selected_all_outcomes": 596128,
+      "selected_main_arrivals": 576853,
+      "selected_main_delayed": 169887
+    },
+    {
+      "month": 8,
+      "all_input": 619024,
+      "valid_arrivals_input": 604302,
+      "selected_all_outcomes": 584925,
+      "selected_main_arrivals": 571348,
+      "selected_main_delayed": 132676
+    },
+    {
+      "month": 9,
+      "all_input": 582622,
+      "valid_arrivals_input": 578262,
+      "selected_all_outcomes": 545776,
+      "selected_main_arrivals": 541917,
+      "selected_main_delayed": 83288
+    },
+    {
+      "month": 10,
+      "all_input": 615497,
+      "valid_arrivals_input": 608514,
+      "selected_all_outcomes": 582800,
+      "selected_main_arrivals": 577275,
+      "selected_main_delayed": 75614
+    },
+    {
+      "month": 11,
+      "all_input": 575404,
+      "valid_arrivals_input": 571933,
+      "selected_all_outcomes": 517897,
+      "selected_main_arrivals": 514997,
+      "selected_main_delayed": 73952
+    },
+    {
+      "month": 12,
+      "all_input": 590581,
+      "valid_arrivals_input": 584832,
+      "selected_all_outcomes": 335915,
+      "selected_main_arrivals": 332623,
+      "selected_main_delayed": 73441
+    }
+  ],
+  "weather_missing_all_input": {
+    "temp_c": 14235,
+    "wind_speed_kts": 13180,
+    "vis_m": 6888,
+    "precip_mm": 653990
+  },
+  "weather_nonfinite_all_input": {
+    "temp_c": 14235,
+    "wind_speed_kts": 13180,
+    "vis_m": 6888,
+    "precip_mm": 653990
+  },
+  "control_missing_all_input": {
+    "flight_date": 0,
+    "sched_dep_local": 0,
+    "origin": 0,
+    "dest": 0,
+    "reporting_airline": 0,
+    "station_id": 1972,
+    "distance_miles": 0
+  },
+  "weather_match_status_all_input": {
+    "matched": 7055161,
+    "no_obs_within_90": 18904,
+    "no_station_usable": 3023,
+    "no_station": 1972
+  },
+  "precipitation_period_counts_all_input": {
+    "1.0": 6412561,
+    "<NA>": 653408,
+    "6.0": 7849,
+    "24.0": 2663,
+    "3.0": 2579
+  },
+  "variable_ranges": {
+    "all_input:arr_delay_min": {
+      "min": -126.0,
+      "max": 3803.0
+    },
+    "all_input:distance_miles": {
+      "min": 11.0,
+      "max": 5095.0
+    },
+    "all_input:precip_mm": {
+      "min": 0.0,
+      "max": 101.5999984741211
+    },
+    "all_input:temp_c": {
+      "min": -60.599998474121094,
+      "max": 51.099998474121094
+    },
+    "all_input:vis_m": {
+      "min": 0.0,
+      "max": 138404.0
+    },
+    "all_input:weather_gap_minutes": {
+      "min": 0.0,
+      "max": 8633.0
+    },
+    "all_input:wind_speed_kts": {
+      "min": 0.0,
+      "max": 51.123111724853516
+    },
+    "selected:arr_delay_min": {
+      "min": -126.0,
+      "max": 3803.0
+    },
+    "selected:distance_miles": {
+      "min": 11.0,
+      "max": 5095.0
+    },
+    "selected:precip_mm": {
+      "min": 0.0,
+      "max": 99.80000305175781
+    },
+    "selected:temp_c": {
+      "min": -44.400001525878906,
+      "max": 50.0
+    },
+    "selected:vis_m": {
+      "min": 0.0,
+      "max": 138404.0
+    },
+    "selected:weather_gap_minutes": {
+      "min": 0.0,
+      "max": 90.0
+    },
+    "selected:wind_speed_kts": {
+      "min": 0.0,
+      "max": 51.123111724853516
+    }
+  },
+  "selected_category_counts": {
+    "wind": {
+      "0": 1630900,
+      "1": 3217411,
+      "2": 1424320,
+      "3": 101093
+    },
+    "vis": {
+      "0": 6001447,
+      "1": 178121,
+      "2": 161398,
+      "3": 32758
+    },
+    "rain": {
+      "0": 6043272,
+      "1": 330452
+    },
+    "strict_q": {
+      "0": 15926,
+      "1": 6357798
+    },
+    "within60": {
+      "0": 4459,
+      "1": 6369265
+    },
+    "y_delay": {
+      "-1": 101651,
+      "0": 4971079,
+      "1": 1300994
+    },
+    "y_severe": {
+      "-1": 101651,
+      "0": 5814545,
+      "1": 457528
+    },
+    "y_disrupt": {
+      "0": 4971079,
+      "1": 1402645
+    }
+  },
+  "selected_distinct_counts": {
+    "origin": 336,
+    "dest": 348,
+    "airline": 15,
+    "station": 336,
+    "route": 6669
+  },
+  "quality_codes_usable": [
+    "0",
+    "1",
+    "4",
+    "5",
+    "A",
+    "C"
+  ],
+  "quality_codes_strict": [
+    "1",
+    "5"
+  ],
+  "numeric_present_quality_code9_all_input": {
+    "temp_q": 0,
+    "wind_speed_q": 0,
+    "vis_q": 0,
+    "precip_q": 0
+  },
+  "quality_filter_interpretation": "The main accepted set 0,1,4,5,A,C is prespecified and conservative. Other codes are outside this accepted set, not necessarily bad or missing. NOAA ISD code 9 means passed gross limits if the element is present.",
+  "definitions": {
+    "y_delay": "1 if valid arrival arr_delay_min >=15, 0 otherwise valid arrival, -1 otherwise",
+    "y_severe": "1 if valid arrival arr_delay_min >=60, 0 otherwise valid arrival, -1 otherwise",
+    "y_disrupt": "1 if cancelled=1 or diverted=1 or y_delay=1; 0 if y_delay=0; -1 otherwise",
+    "valid_arrival": "cancelled=0 and diverted=0 and arr_del15 in {0,1} and finite arrival delay",
+    "date_id": "Days since 2024-01-01 from flight_date; origin-local operating date",
+    "wind": "0:<5; 1:[5,10); 2:[10,20); 3:>=20 knots",
+    "vis": "0:>=10000; 1:[5000,10000); 2:[1000,5000); 3:<1000 meters",
+    "rain": "1 if precipitation_mm>0; all retained observations have precipitation_period_h=1",
+    "distance_log": "ln(distance_miles / 500)",
+    "temp10": "(temperature_C - 15)/10",
+    "temp10sq": "temp10 squared",
+    "within60": "weather_gap_minutes<=60"
+  },
+  "limitations": [
+    "All four weather variables must be finite and have usable codes; this is a complete-weather-record analysis, not an imputed full-population model.",
+    "Positive precipitation is not identified as liquid rain versus snow; the compact name rain means any reported precipitation.",
+    "Extreme but finite temperature/visibility/delay values are retained; no arbitrary winsorization or unverified corrections were applied.",
+    "Unique flight_id verifies the provided identifiers, not the correctness of upstream entity resolution.",
+    "Checks verify the provided timestamps and differences, not the original airport-timezone conversion or source weather-station mapping."
+  ],
+  "software": {
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "pyarrow": "24.0.0"
+  },
+  "monthly_weather_quality_diagnostics": [
+    {
+      "month": 1,
+      "input_n": 547271,
+      "matched_n": 546684,
+      "complete_weather_matched_n": 511336,
+      "excluded_quality_among_complete_n": 1555,
+      "non_one_hour_precip_remaining_n": 121,
+      "temp_c_nonfinite_matched_n": 2077,
+      "wind_speed_kts_nonfinite_matched_n": 403,
+      "vis_m_nonfinite_matched_n": 176,
+      "precip_mm_nonfinite_matched_n": 33451
+    },
+    {
+      "month": 2,
+      "input_n": 519221,
+      "matched_n": 518634,
+      "complete_weather_matched_n": 493075,
+      "excluded_quality_among_complete_n": 1374,
+      "non_one_hour_precip_remaining_n": 162,
+      "temp_c_nonfinite_matched_n": 3385,
+      "wind_speed_kts_nonfinite_matched_n": 432,
+      "vis_m_nonfinite_matched_n": 155,
+      "precip_mm_nonfinite_matched_n": 22790
+    },
+    {
+      "month": 3,
+      "input_n": 591767,
+      "matched_n": 589979,
+      "complete_weather_matched_n": 554778,
+      "excluded_quality_among_complete_n": 1293,
+      "non_one_hour_precip_remaining_n": 236,
+      "temp_c_nonfinite_matched_n": 245,
+      "wind_speed_kts_nonfinite_matched_n": 628,
+      "vis_m_nonfinite_matched_n": 170,
+      "precip_mm_nonfinite_matched_n": 34543
+    },
+    {
+      "month": 4,
+      "input_n": 582185,
+      "matched_n": 579708,
+      "complete_weather_matched_n": 513508,
+      "excluded_quality_among_complete_n": 863,
+      "non_one_hour_precip_remaining_n": 2367,
+      "temp_c_nonfinite_matched_n": 554,
+      "wind_speed_kts_nonfinite_matched_n": 737,
+      "vis_m_nonfinite_matched_n": 126,
+      "precip_mm_nonfinite_matched_n": 65439
+    },
+    {
+      "month": 5,
+      "input_n": 609743,
+      "matched_n": 608757,
+      "complete_weather_matched_n": 569079,
+      "excluded_quality_among_complete_n": 1518,
+      "non_one_hour_precip_remaining_n": 293,
+      "temp_c_nonfinite_matched_n": 649,
+      "wind_speed_kts_nonfinite_matched_n": 660,
+      "vis_m_nonfinite_matched_n": 79,
+      "precip_mm_nonfinite_matched_n": 39015
+    },
+    {
+      "month": 6,
+      "input_n": 611132,
+      "matched_n": 610518,
+      "complete_weather_matched_n": 579693,
+      "excluded_quality_among_complete_n": 1161,
+      "non_one_hour_precip_remaining_n": 243,
+      "temp_c_nonfinite_matched_n": 372,
+      "wind_speed_kts_nonfinite_matched_n": 840,
+      "vis_m_nonfinite_matched_n": 99,
+      "precip_mm_nonfinite_matched_n": 29864
+    },
+    {
+      "month": 7,
+      "input_n": 634613,
+      "matched_n": 632585,
+      "complete_weather_matched_n": 597681,
+      "excluded_quality_among_complete_n": 1218,
+      "non_one_hour_precip_remaining_n": 335,
+      "temp_c_nonfinite_matched_n": 175,
+      "wind_speed_kts_nonfinite_matched_n": 874,
+      "vis_m_nonfinite_matched_n": 79,
+      "precip_mm_nonfinite_matched_n": 34039
+    },
+    {
+      "month": 8,
+      "input_n": 619024,
+      "matched_n": 618325,
+      "complete_weather_matched_n": 586485,
+      "excluded_quality_among_complete_n": 1141,
+      "non_one_hour_precip_remaining_n": 419,
+      "temp_c_nonfinite_matched_n": 228,
+      "wind_speed_kts_nonfinite_matched_n": 761,
+      "vis_m_nonfinite_matched_n": 76,
+      "precip_mm_nonfinite_matched_n": 30967
+    },
+    {
+      "month": 9,
+      "input_n": 582622,
+      "matched_n": 581643,
+      "complete_weather_matched_n": 546928,
+      "excluded_quality_among_complete_n": 785,
+      "non_one_hour_precip_remaining_n": 367,
+      "temp_c_nonfinite_matched_n": 263,
+      "wind_speed_kts_nonfinite_matched_n": 936,
+      "vis_m_nonfinite_matched_n": 165,
+      "precip_mm_nonfinite_matched_n": 33778
+    },
+    {
+      "month": 10,
+      "input_n": 615497,
+      "matched_n": 614698,
+      "complete_weather_matched_n": 585489,
+      "excluded_quality_among_complete_n": 2618,
+      "non_one_hour_precip_remaining_n": 71,
+      "temp_c_nonfinite_matched_n": 587,
+      "wind_speed_kts_nonfinite_matched_n": 831,
+      "vis_m_nonfinite_matched_n": 296,
+      "precip_mm_nonfinite_matched_n": 27906
+    },
+    {
+      "month": 11,
+      "input_n": 575404,
+      "matched_n": 573365,
+      "complete_weather_matched_n": 521366,
+      "excluded_quality_among_complete_n": 2679,
+      "non_one_hour_precip_remaining_n": 790,
+      "temp_c_nonfinite_matched_n": 280,
+      "wind_speed_kts_nonfinite_matched_n": 485,
+      "vis_m_nonfinite_matched_n": 181,
+      "precip_mm_nonfinite_matched_n": 51464
+    },
+    {
+      "month": 12,
+      "input_n": 590581,
+      "matched_n": 580265,
+      "complete_weather_matched_n": 346393,
+      "excluded_quality_among_complete_n": 3734,
+      "non_one_hour_precip_remaining_n": 6744,
+      "temp_c_nonfinite_matched_n": 257,
+      "wind_speed_kts_nonfinite_matched_n": 401,
+      "vis_m_nonfinite_matched_n": 145,
+      "precip_mm_nonfinite_matched_n": 233494
+    }
+  ]
+}

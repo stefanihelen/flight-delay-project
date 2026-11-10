@@ -1,0 +1,78 @@
+==============================================================================
+机场时区表与州界归属核验 — 运行日志
+子任务归属：成员2 清洗与融合 / 机场时区表 + Census 州界核验
+运行环境：Windows + Python 3.13.16；pandas 3.1.0；timezonefinder 9.2.0；pyshp 3.1.6；shapely 2.2.0
+==============================================================================
+
+一、坐标来源
+------------------------------------------------------------------------------
+机场总数（bts_airports_2024.csv）: 348
+  coord_source=mapping_reviewed: 348
+说明：348 机场坐标全部来自 metadata/airport_station_mapping_reviewed.csv (airport_latitude/airport_longitude)，未触发 OurAirports 回退。
+
+二、时区查询（timezonefinder）
+------------------------------------------------------------------------------
+时区获取成功: 348
+时区获取失败/None: 0
+时区方法分布: {'timezonefinder': 348}
+唯一 IANA 时区数: 22
+None 清单及处理: 无（timezonefinder 对全部 348 个坐标均直接返回 IANA 名，包括 AK/HI/PR/VI/GU/AS/MP 等领地机场；未触发 territory_rule / alaska_lon_rule 推断分支）
+
+三、金标准 5 机场断言核验
+------------------------------------------------------------------------------
+code  expected                    got                         result
+JFK   America/New_York            America/New_York            PASS
+ORD   America/Chicago             America/Chicago             PASS
+LAX   America/Los_Angeles         America/Los_Angeles         PASS
+DEN   America/Denver              America/Denver              PASS
+PHX   America/Phoenix             America/Phoenix             PASS
+
+四、Census 州界 point-in-polygon 核验
+------------------------------------------------------------------------------
+坐标系说明：cb_2024_us_state_500k 为 NAD83 十进制度（GRS1980 椭球）；机场坐标为 WGS84 十进制度。两者在 1:500k 比例尺下偏差远小于制图误差，本次未做投影/基准转换，近似按同一经纬度处理（pyshp 读 SHP + shapely STRtree dwithin=0.5deg 粗筛 + contains/touches 判定）。
+SHP 多边形数: 56
+落入多边形内 (how=inside): 348
+与 BTS state 一致 (state_consistent=1): 345
+与 BTS state 不一致 (state_consistent=0): 0
+不适用 (state_consistent=na): 3
+BTS state=TT 的机场数: 3
+
+五、TT 地区异常码单独说明
+------------------------------------------------------------------------------
+BTS 用 'TT' 作为海外领地聚合州码，对应 Census 中三个独立多边形：
+  GUM  BTS_state=TT  polygon=GU (Guam)  state_consistent=na  (编码体系差异，非位置错误)
+  PPG  BTS_state=TT  polygon=AS (American Samoa)  state_consistent=na  (编码体系差异，非位置错误)
+  SPN  BTS_state=TT  polygon=MP (Commonwealth of the Northern Mariana Islands)  state_consistent=na  (编码体系差异，非位置错误)
+
+六、州界不一致清单（state_consistent=0）
+------------------------------------------------------------------------------
+  （无）348 个机场全部落入对应州多边形，无真实位置不一致。
+
+七、边界/离岸/领地异常逐条说明
+------------------------------------------------------------------------------
+  GUM: how=inside;crs=NAD83/WGS84近似未投影;BTS_TT_territory_code;polygon=GU(Guam);known_encoding_diff
+  PPG: how=inside;crs=NAD83/WGS84近似未投影;BTS_TT_territory_code;polygon=AS(American Samoa);known_encoding_diff
+  SPN: how=inside;crs=NAD83/WGS84近似未投影;BTS_TT_territory_code;polygon=MP(Commonwealth of the Northern Mariana Islands);known_encoding_diff
+
+八、自检：读回两个 CSV 打印行数与样例
+------------------------------------------------------------------------------
+airport_timezones.csv 行数: 348 列: ['airport_code', 'bts_airport_id', 'lat', 'lon', 'coord_source', 'tz_iana', 'tz_method', 'tz_note']
+样例前3行:
+  airport_code bts_airport_id       lat         lon     coord_source          tz_iana      tz_method  tz_note
+           ABE          10135 40.651773  -75.442797 mapping_reviewed America/New_York timezonefinder      NaN
+           ABI          10136 32.411301  -99.681900 mapping_reviewed  America/Chicago timezonefinder      NaN
+           ABQ          10140 35.039976 -106.608925 mapping_reviewed   America/Denver timezonefinder      NaN
+airport_state_check.csv 行数: 348 列: ['airport_code', 'bts_airport_id', 'lat', 'lon', 'polygon_state', 'polygon_state_name', 'bts_state', 'state_consistent', 'note']
+样例前3行:
+  airport_code bts_airport_id       lat         lon polygon_state polygon_state_name bts_state state_consistent                            note
+           ABE          10135 40.651773  -75.442797            PA       Pennsylvania        PA                1 how=inside;crs=NAD83/WGS84近似未投影
+           ABI          10136 32.411301  -99.681900            TX              Texas        TX                1 how=inside;crs=NAD83/WGS84近似未投影
+           ABQ          10140 35.039976 -106.608925            NM         New Mexico        NM                1 how=inside;crs=NAD83/WGS84近似未投影
+
+九、临时目录清理
+------------------------------------------------------------------------------
+解压临时目录 C:\Users\houchangjie\Desktop\大数据\新建文件夹\flight_delay_project\data\cleaned\_census_tmp_03 存在? False（应为 False）
+
+==============================================================================
+END
+==============================================================================

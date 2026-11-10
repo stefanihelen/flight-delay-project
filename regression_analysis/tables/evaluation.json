@@ -1,0 +1,42 @@
+{
+  "split": {
+    "train": "2024-01 through 2024-08",
+    "validation": "2024-09 through 2024-10",
+    "test": "2024-11 through 2024-12"
+  },
+  "comparison_population": "Same rows with finite probabilities for both models in each split",
+  "threshold_selection": {
+    "objective": "Maximum validation F1",
+    "grid": "0.05 to 0.60 inclusive, step 0.01",
+    "tie_break": "Lowest threshold",
+    "selected": {
+      "baseline": 0.23,
+      "weather": 0.21
+    }
+  },
+  "average_precision_definition": "sklearn average_precision_score; AP, not trapezoidal PR-AUC",
+  "bootstrap": {
+    "method": "Non-circular moving calendar-day block bootstrap of daily sums and counts",
+    "block_length_days": 7,
+    "repetitions": 2000,
+    "seed": 20261107,
+    "test_calendar_days": 61,
+    "observed_test_days": 61,
+    "interval": "95% percentile interval",
+    "refit_models": false,
+    "paired": true,
+    "scope": "Conditional held-out loss uncertainty for fixed fitted models and thresholds; excludes training/model-selection uncertainty.",
+    "limitations": "Approximately 61 test days provide limited independent time blocks; no claim of future-year uncertainty.",
+    "auc_ap_intervals": "Not estimated; ROC AUC and AP are point estimates only."
+  },
+  "log_score_clipping": "Machine epsilon only; raw probabilities used for other metrics",
+  "calibration": "Up to 10 model-specific quantile bins; duplicate boundaries merged; no test-set recalibration",
+  "uncertainty_warning": "Fitted-model and tuning uncertainty are excluded; short held-out time horizon limits generalization.",
+  "software": {
+    "python": "3.13.7",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "matplotlib": "3.10.9"
+  },
+  "qa_skipped": false
+}
