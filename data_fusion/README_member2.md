@@ -67,6 +67,18 @@ pip install pandas pyarrow numpy tzdata timezonefinder pyshp shapely
 | `docs/quality_report.md` | 质量报告（10 项口径） | 含已核验/未核验清单 |
 | `metadata/member2_deliverable_checksums.sha256` | 本模块交付文件 SHA-256 清单 | 见文件内条数 |
 
+### 从 GitHub 克隆后的输入准备
+
+以下路径以仓库根目录为起点。清洗脚本在 `data_fusion/` 下查找输入，运行前按下表准备文件。
+
+| 输入 | 来源 | 脚本读取位置 |
+| --- | --- | --- |
+| BTS 和 NOAA 代表性样本 | `data_collection/data/samples/` | `data_fusion/data/samples/` |
+| 全年 BTS、NOAA 及辅助原始数据 | 按 `data_collection/README_member1.md` 获取，放在 `data_collection/data/raw/` | `data_fusion/data/raw/` |
+| `bts_airports_2024.csv`、`airport_station_mapping_reviewed.csv`、`noaa_full_airports_2024.csv`、`census_states_2024.csv` | `data_collection/metadata/` | `data_fusion/metadata/` |
+
+样本和原始数据目录可以用本地目录联接，避免复制全年数据。四个 CSV 可以单独复制到目标目录。准备样本并安装依赖后，进入 `data_fusion/` 运行 `python cleaning/01_clean_bts.py --mode sample` 和 `python cleaning/02_clean_noaa.py samples`。全量复现按下一节执行。
+
 ## 四 复现步骤
 
 按顺序在项目根目录运行（先小样本核验，后全量；命令已与脚本实际参数逐一核对）：

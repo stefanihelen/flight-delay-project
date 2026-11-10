@@ -12,7 +12,9 @@ Desktop.ini
 ~$*
 
 # 完整原始数据与大型清洗中间表保留在本地
-/data_collection/data/raw/BTS/BTS_2024_full_year/
+/data_collection/data/raw/BTS/BTS_2024_full_year/*
+!/data_collection/data/raw/BTS/BTS_2024_full_year/file_manifest.json
+!/data_collection/data/raw/BTS/BTS_2024_full_year/checksums.sha256
 /data_collection/data/raw/NOAA/2024/
 /data_fusion/data/cleaned/bts_monthly/
 /data_fusion/data/cleaned/noaa_station/
