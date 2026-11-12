@@ -14,8 +14,8 @@
 依赖：Python 3.11+、pandas、numpy、pyarrow、matplotlib。实际版本见validation.json。
 
 ```powershell
-python member3_descriptive.py "D:\大数据中期大作业"
-python verify_member3.py "D:\大数据中期大作业"
+python member3_descriptive.py "..\data_fusion"
+python verify_member3.py "..\data_fusion"
 ```
 
 参数是成员2交付包根目录。结果写入脚本所在目录的tables、figures和报告文件，重新运行会更新这些结果。读取全年部分列，建议留出数GB可用内存；不需要联网。原始数据不修改。
@@ -35,7 +35,7 @@ wind_bin和vis_bin左闭右开；precip_bin仅对1小时累计区分有雨无雨
 
 ```powershell
 python plot_month_hour.py
-python verify_member3.py "D:\大数据中期大作业"
+python verify_member3.py "..\data_fusion"
 ```
 
 plot_month_hour.py读取现有tables/month_hour.csv，仅更新figures/03_month_hour.png；完整分析脚本也调用同一绘图函数。有效到达数n<100的格子灰显并标注n，完整统计仍保留。100是本次修订选定的展示规则，不是老师规定；修改门槛时还须同步报告文字。

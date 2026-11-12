@@ -18,24 +18,37 @@ R依赖：data.table、fixest、jsonlite。code/install_r_packages.R将这些依
 仅生成HTML使用Python标准库，但自动生成requirements.txt时需要已安装上述Python分析依赖。
 
 推荐的一键执行方式
-先进入本交付member4_regression文件夹，确保python与Rscript在PATH中，依次执行：
+
+以下命令在仓库根目录 D:\flight-delay-project 中执行。
+确保 Python 与 Rscript 已加入 PATH，并已准备完整融合主表。
+
+进入回归模块并安装依赖：
+
+  cd regression_analysis
   python -m pip install -r requirements.txt
   Rscript code/install_r_packages.R work
-  .\run_analysis.ps1 -InputParquet "INPUT.parquet"
-将INPUT.parquet替换为真实主表的绝对路径。run_analysis.ps1会按顺序运行预处理、模型、评估、报告和最终一致性核验。
-在缺少原环境图形QA技能的其他计算机，可加 -SkipFigureQA；此时仍应自行查看最终PNG，不能声称复现了原自动图形核验。
 
-目录与命令
-以下命令从项目根目录执行。根目录下放置outputs/member4_regression本交付文件夹，并用work保存中间结果。
-请将第一条和第二条命令的 INPUT.parquet 替换为实际主表绝对路径。Windows也可使用带引号的正斜杠路径。
+运行完整回归流程：
 
-  python outputs/member4_regression/code/prepare_regression.py --input "INPUT.parquet" --work work --out outputs/member4_regression
-  python outputs/member4_regression/code/prepare_no_precip.py --input "INPUT.parquet" --work work --out outputs/member4_regression
-  Rscript outputs/member4_regression/code/fit_models.R work/model_data.csv outputs/member4_regression work
-  Rscript outputs/member4_regression/code/fit_missingness_sensitivity.R work outputs/member4_regression
-  python outputs/member4_regression/code/evaluate_and_plot.py --out outputs/member4_regression --work work --bootstrap-repetitions 2000 --block-length 7
-  python outputs/member4_regression/code/build_report.py --out outputs/member4_regression
-  python outputs/member4_regression/code/verify_results.py --out outputs/member4_regression
+  .\run_analysis.ps1 -InputParquet "..\data_fusion\data\integrated\flights_weather_2024.parquet" -SkipFigureQA
+
+脚本依次运行预处理、模型估计、预测评估、报告生成和结果一致性核验。
+work目录由脚本自动创建，用于中间数据和本地R依赖。
+
+-SkipFigureQA用于跳过依赖原作者本机工具的自动图形检查，不跳过分析和绘图。
+运行后仍需人工查看figures目录中的三张PNG。
+
+目录与分步命令
+
+以下命令均在regression_analysis目录中执行，先安装上述依赖。
+
+  python code/prepare_regression.py --input "../data_fusion/data/integrated/flights_weather_2024.parquet" --work work --out .
+  python code/prepare_no_precip.py --input "../data_fusion/data/integrated/flights_weather_2024.parquet" --work work --out .
+  Rscript code/fit_models.R work/model_data.csv . work
+  Rscript code/fit_missingness_sensitivity.R work .
+  python code/evaluate_and_plot.py --out . --work work --bootstrap-repetitions 2000 --block-length 7 --skip-qa
+  python code/build_report.py --out .
+  python code/verify_results.py --out .
 
 执行顺序
 两个预处理脚本流式读取，每批25万行；全部模型使用完整合格队列。

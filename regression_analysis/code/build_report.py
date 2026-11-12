@@ -203,7 +203,8 @@ AP使用average_precision_score，并非梯形积分PR-AUC。ROC-AUC与AP只有�
 预处理保留y_severe，但本次未另拟合严重延误模型。
 本次自动核验不替代原始采集真实性、站点映射、时区转换和教师评分所需的人工核验。
 """
-    (out / "README.txt").write_text(readme, encoding="utf-8")
+    if not (out / "README.txt").exists():
+        (out / "README.txt").write_text(readme, encoding="utf-8")
     ai = """# AI 使用记录与核验说明
 
 日期：2026-11-07。工具：Codex，当前会话及其协作子代理。未将未知具体模型版本写成已知事实。
@@ -234,7 +235,8 @@ AP使用average_precision_score，并非梯形积分PR-AUC。ROC-AUC与AP只有�
 
 AI加快了字段审查、代码实现、全量计算和一致性核验，但不能弥补资料缺失或替代对模型估计对象的判断。完整记录分析仍存在选择偏差；大样本显著性不等于重要性或因果性。对数值警告、概率校准、短测试期和跨年推广的限制需要如实保留。协作审查帮助发现月份类别外推与降水缺失问题，但独立原始记录核查仍需学生完成。
 """
-    (out / "AI_USAGE.md").write_text(ai, encoding="utf-8")
+    if not (out / "AI_USAGE.md").exists():
+        (out / "AI_USAGE.md").write_text(ai, encoding="utf-8")
 
 
 def main() -> None:
