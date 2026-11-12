@@ -175,7 +175,7 @@ West Yellowstone文件共13,427条，其中FM-15为13,357条；文件大小5,822
 
 ### 逐文件证据位置
 
-所有路径相对于`flight_delay_project`根目录。BTS全年包通常解压到BTS目录下的子文件夹，以下“全年包解压目录”以本机实际位置为准，不要求复制同一份CSV到第二个目录。
+本文件中的 data/、`metadata/`、`logs/` 和 crawler/ 路径均相对于 data_collection/ 目录。BTS全年文件清单与校验值位于 data/raw/BTS/BTS_2024_full_year/。代表性原始样本及抽样说明位于 data/samples/raw/member1/。BTS全年包通常解压到BTS目录下的子文件夹，以下“全年包解压目录”以本机实际位置为准，不要求复制同一份CSV到第二个目录。
 
 | 文件或位置 | 记录内容 |
 |---|---|

@@ -12,6 +12,24 @@
 | 回归分析 | 于思源 | 分析延误与天气等特征的关联，并用时间切分评估预测表现。见 [回归运行说明](regression_analysis/README.txt)。报告的 HTML 和 PDF 均在 [回归目录](regression_analysis/)。 |
 | 机场聚类 | 游敏凤（组长） | 汇总出发机场特征，比较 K-means 方案，并对三类机场进行画像和敏感性检验。见 [聚类运行说明](clustering_analysis/README.md)。 |
 
+## 与课程建议目录的对应关系
+
+本项目按工作模块组织目录，各类材料与课程建议结构的对应关系如下。
+
+| 课程建议目录 | 本项目对应位置 |
+| --- | --- |
+| data/raw | data_collection/data/raw 和 data_collection/data/samples/raw |
+| data/cleaned | data_fusion/data/cleaned |
+| data/integrated | data_fusion/data/integrated |
+| crawler | data_collection 中的采集脚本 |
+| processing | data_fusion/cleaning |
+| analysis | descriptive_analysis、regression_analysis 和 clustering_analysis |
+| visualization | 各分析模块中的绘图脚本及 figures 目录 |
+| docs | 各模块中的说明文档、质量报告和分析报告 |
+| data_sources.md | data_collection/data_sources.md |
+
+复现顺序为：数据采集 → 数据清洗与融合 → 描述性分析 → 回归分析 → 机场聚类。各模块运行入口见上方“项目结构与分工”，具体命令和依赖环境见对应模块说明。回归与聚类均使用完整融合主表，分别按各自说明运行。
+
 ## 数据来源与本地存放
 
 - 数据来源包括美国 BTS 航班准点数据、NOAA Global Hourly 天气观测、OurAirports 机场数据及美国 Census 州界数据。数据范围、下载与样本说明见 [数据来源说明](data_collection/data_sources.md)。
