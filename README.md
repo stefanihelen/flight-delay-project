@@ -30,6 +30,15 @@
 
 复现顺序为：数据采集 → 数据清洗与融合 → 描述性分析 → 回归分析 → 机场聚类。各模块运行入口见上方“项目结构与分工”，具体命令和依赖环境见对应模块说明。回归与聚类均使用完整融合主表，分别按各自说明运行。
 
+## 提交材料索引
+
+| 提交材料 | 仓库位置 |
+|---|---|
+| 数据源清单与采集日志 | [数据源清单](data_collection/data_sources.md)、[采集日志](data_collection/logs/)、[文件级元数据](data_collection/metadata/) |
+| 数据集 | [原始代表性样本与抽样说明](data_collection/data/samples/raw/member1/)、[融合样本与质量统计](data_fusion/data/integrated/)、[BTS文件清单与校验值](data_collection/data/raw/BTS/BTS_2024_full_year/)。完整大体积数据按各模块README获取或重建。 |
+| 多源数据关联图 | [PDF版](data_fusion/docs/05_data_lineage_diagram.pdf)、[PNG版](data_fusion/docs/05_data_lineage_diagram.png) |
+| AI使用材料 | [全组AI使用说明](AI_USAGE.md)，各成员详细记录位置见该文件。 |
+
 ## 数据来源与本地存放
 
 - 数据来源包括美国 BTS 航班准点数据、NOAA Global Hourly 天气观测、OurAirports 机场数据及美国 Census 州界数据。数据范围、下载与样本说明见 [数据来源说明](data_collection/data_sources.md)。
